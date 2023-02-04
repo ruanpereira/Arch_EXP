@@ -1,0 +1,227 @@
+First, we test the connection:
+
+$ ping archlinux.org -c 5 (pinging the url 5 times)
+
+Att the date:
+
+$ timedatectl set-ntp true
+
+Load you keyboard layout:
+
+$ loadkeys br-abnt2
+
+Create the partitions:
+
+$ cfdisk
+
+Here, create the 3 partitions: home, boot and swap.
+
+Home is gonna be your home directory, all files by you will be here. If you
+want, you can split the root and home directory, to make the home archives be
+in a different local than root. With this, you can recover your files if the
+system dies.
+
+Boot is the partition that loads the system(or systems, in a dual boot case.)
+If you don't have a system, create one. If you have, don't create. Just use
+the partition that is already there.
+
+Swap is the swap partition. Swap is a partition that works just like the pagi-
+nation files of Windows. The idea is that, if your RAM is filled, the blocks
+of memory gonna be passed to the swap files, to free the RAM memory.
+
+Format the partitions:
+
+mkfs.ext4 /dev/sdx (formatando as partições com o tipo de arquivos de cada, ext4 para root e home, fat para EFI)
+
+mkfs.fat -F 32 /dev/sdx (apenas se vc tiver criado uma partição Efi)
+
+Criando e ativando o swap:
+
+mkswap /dev/sdx(criar swap)
+swapon /dev/sdx (ativar o swap)
+
+Agora, montamos as partições: 
+
+mount /dev/sdx(partição root) /mnt
+
+mount /dev/sdx(partição Efi) (caso criado)
+
+Antes de instalar as coisas, vamos atualizar a mirror list para downloads mais rápidos: 
+
+Primeiro, fazemos o backup da mirrorlist atual, em caso de algum problema: 
+
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+
+pacman -Sy
+
+pacman -S pacman-contrib
+
+rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist
+
+Agora, realizamos a instalação dos principais pacotes: 
+
+pacstrap -i /mnt base base-devel linux linux-headers linux-firmware intel-ucode(ou amd-ucode) sudo nano vim git neofetch (pra se exibir) networkmanager(gerenciador de internet) dhcpcd (dhcp client) pulseaudio(audio) bluez(p/ bluetooth) man-db man-pages texinfo
+
+Gerando o filesystem table:
+genfstab -U /mnt >> /mnt/etc/fstab 
+
+Entrando como root no root paertition
+
+arch-chroot /mnt
+
+Setando a senha de superusuario: 
+passwd 
+
+Criando usuários comuns: 
+
+useradd -m *nomedousuario*
+
+Setando a senha do usuário: 
+
+passwd *nomedousuario*
+
+Setando  as permissões do usuário comum: 
+
+usermod -aG wheel(grupo para executar ttudo e ter privilégios de root),storage(acesso a memória externa, como hds, usbs, etc),power *nomedousuário* 
+
+Editando o arquivo sudoers para permitir o comando sudo para os membros do grupo wheel, e assim todos os usuários de wheel poderem usar sudo: 
+
+EDITOR=nano visudo 
+
+Dentro, descomente a linha %wheel ALL=(ALL) ALL e, se quiser, adicione a linha logo abaixo da que vc descomentou. Serve para pedir novamente o usuário a senha após determinado período de tempo:
+
+Defaults timestamp_timeout=0
+
+Salve as alterações e saia. 
+
+Gerando a linguagem do sistema: 
+
+nano /etc/locale.gen 
+
+descomente a linguagem do sistema a ser utilizada(en_US.UTF-8 para ingles americano, e pt_BR-UTF-8 para portugues brasileiro) 
+
+Gerando o local:
+locale-gen
+
+Criamos um arquivo de configuração de locale com o comando: 
+
+echo LANG=*insira a linguagem a ser utilzada, por exemplo pt_BR.UTF-8* > /etc/locale.conf
+
+No fim, exporte a linguagem:
+
+export LANG=pt_BR.UTF-8 (mesma coisa de cima)
+
+Agora, criamos o hostname para o computador: 
+
+echo *insira aqui seu hostname* > /etc/hostname
+
+Agora editemos o arquivo hosts para receber os ips padrão: 
+
+nano /etc/hosts
+
+E adicione as seguitnes linhas: 
+
+127.0.0.1      localhost
+::1                  localhost
+127.0.1.1     *hostname*.localdomain                  localhost
+
+Para setar a região/timezone e linkar a informação ao localtime: 
+
+ln -sf /usr/share/zoneinfo/*tab*(para ver a lista de zonas e ver qual é a sua, no caso o meu é America)/*tab*(Insira o local, no meu caso Fortaleza) /etc/localtime
+
+Syncando o relógio interno: 
+
+hwclock --systohc
+
+Instalando o bootloader (importantissimo):
+
+Veja qual a partição em que está o boot (no caso, como tetmos dual boot com windows, a partição é a do boot do winddows). Pode fazer isso com cfdisk ou fdisk
+
+Crie um diretório de efi
+
+mkdir /boot/efi 
+
+Monte a partição neste diretório criado: 
+
+mount /dev/sdx /boot/efi
+
+Instale os pacotes necessários para o bootloeader: 
+
+pacman -S grub efibootmgr dosfstools mtools 
+
+Edite o arquivo do grub para que o grub possa procurar pelo windows: 
+
+nano /etc/default/grub
+
+Dentro do arquivo,  edite a linha final, descomentando-a, que contém: 
+
+#GRUB_DISABLE_OS_PROBER=false 
+
+Porque? Bom, os-prober é um pacote cuja função é realizar a busca de outros sistemas operacionais para adicionar uma entrada UEFI. é necessário instalá-lo. Por padrão, fica desativado o os-prober no grub, porque a intenção normalemnte é instalar o arch sem dualboot, e também por razões de segurança, como explicado no arquivo. 
+
+Instale agora:
+
+pacman -S os-prober
+
+grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
+
+Agora, geramos o arquivo de configuração do grub: 
+
+grub-mkconfig -o /boot/grub/grub.cfg 
+
+(Neste momento, isso não vai fazer o dualboot. Porque? Ainda não sei. Mas não faz. Funciona após dar reboot no sistema.)
+
+Por fim, iremos iniciar os serviços de internet. 
+
+Primeiramente, o dhcp: 
+
+systemctl enable dhcpcd.service
+
+E agora a conexão com a internet: 
+
+systemctl enable NetworkManager.service 
+
+Agora, podemos sair do ambiente arch-chroot: 
+
+exit (ou CTRL+D)
+
+Desmontamos todas as partições:
+
+umount -l(isso é um L minúsculo)R /mnt 
+
+Agora, corra pro abraço: 
+
+reboot
+
+Tire o pendrive, se benza, e vá. 
+
+
+Depois disso, ao iniciar o sistema zerado, remonte a partição onde temos o EFI do windows:
+
+sudo mount /dev/sdx /boot/Efi
+
+E refaça a configuração de grub:
+
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+Agora, é pra aparecer. 
+Se não aparecer 
+Rode o os-prober, e depois refaça novamente a configuração de grub. 
+
+Aí não é possível se não der
+
+A partir daí, arch já está instalado no computador. Porém, a fins didáticos, vamos instalar uma interface gráfica , o KDE. Pode-se instalar o que lhe apetecer, deve a partir daí procurar sobre ambientes gráficos e window managers e escolher um, e instalar no seu sistema. 
+
+Para o KDE:
+
+sudo pacman -S xorg xorg-xinit xterm plasma plasma-desktop kde-applications kdeplasma-addons  sddm 
+
+Agora, vamos ativar: 
+
+sudo nano ~/.xinitrc
+
+E dentro, escrever exec startkde, para que o ambiente seja configurado para iniciar sempre. 
+
+Depois, iniciamos o serviço: 
+
+sudo systemctl enable sddm.service 

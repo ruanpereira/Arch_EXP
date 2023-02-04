@@ -1,0 +1,201 @@
+#+TITLE: Básico do org mode
+
+* Podemos elencar níveis de prioridade a partir de diferentes asteriscos
+
+Ex:
+
+* Tipos de bichos q eu gosto:
+
+** gato
+Apertando tab na estrela vc muda a quantidade de
+estrelas, veja como uma hierarquia
+
+*** siames
+Com alt (meta) + enter, vc coloca na próxima linha
+a mesma quantia de estrelas. 
+
+**** siames branco
+
+**** siames preto
+
+Vc pode alternar a ordem das coisas que sejam
+de mesma quantidade de estrelas com meta + up ou down.
+
+* TAGS                                                          :TagDoguinho:
+
+
+Vc pode colocar diversas tags em cada coisa com o nível
+de estrela x, basicamente vc pode deixar destacado
+o que cada coisa representa ou coisa do tipo. Pode
+colocar mais de uma, e a utilidade inicial disso
+é que vc pode justamente filtrar por tags para
+encontrar os conteúdos que vc queira.
+
+Vc adiciona com c-c c-c.
+
+* Listas
+
+1) Preciso atualizar o documento
+2) encontrar os doc disso
+3) terminar de ver o básico de arch
+   - loa
+   - gr
+
+Assim como nos níveis de estrela, vc pode rearranjar
+com meta+ up/down. 
+  
+Shift + left/right vc muda o tipo das listas q vc está fazendo.
+
+Vc tb pode fazer umas checkbox fudida, por exemplo importando o que eu
+tenho na taskboard do google.
+
+- Progresso na task [0/1] [0%]
+  - [ ]Ler cap 4
+  - [ ] Tente
+
+Agora deste vídeo: https://www.youtube.com/watch?v=34zODp_lhqg, junto com o
+manuel do org mode: https://orgmode.org/org.html#Installation. 
+
+
+O melhor jeito que encontrei para mexer nisso foi: ver o que ele fazia e passar
+pela documentação até chegar no ponto em que ele estava.
+
+Aprendemos o seguinte:
+Isto aqui abaixo é a porra da headline:
+
+* New redline   se vc apertar tab aqui ele cicla entre tudo zipado, só a 
+** Level 2 redline  linha de baixo e o resto. Ponteiro tem que estar no headline
+*** New redline
+**** 4
+***** 5
+****** 6
+******* 7 ... meta + enter vc repete o nível anterior na próxima linha
+
+Podemos "ciclar" visivelmente as headlines. A ideia disso é esconder partes
+do texto, compactar ele. Podemos ciclar localmente uma headline ao colocar o pon
+teiro na headline que queremos ciclar e apertando tab. Irá ciclar entre FOLDED
+(zipado) ----> CHILDREN (primeira headline no nível abaixo) ----> SUBTREE (tudo)
+
+
+Caso queira mexer em todo o buffer, ou seja ciclar todo o buffer,  c-u tab.
+irá ciclar entre overview ---> contents ----> mostrar tudo, com relação às
+headlines, mas por todo o buffer, sem selecionar nada. Você PODE escolher quanto
+do conteúdo completo pode ver, ao colocar um prefixo N (nível qualquer),  quando
+chamar o comando.
+
+Pode testar isso aqui, lembrando que este texto está localizado no 7 nível. 
+
+Podemos voltar para a visibilidade original do buffer com c-u c-u TAB.
+
+Podemos mostrar tudo do doc com c-u c-u c-u tab.
+
+Para mostrar todas as headlines abaixo, mas sem o conteúdo deles, c-c c-k.
+(testa esse comando ali no nível 4 por exemplo, e cicle com o tab até voltar
+ao show all.)
+
+Para navegar entre os headlines, c-c c-n para avançar(next), c-c c-p para voltar
+(previous), c-c c-f para proxímo headline no mesmo nível, c-c c-b para voltar
+no mesmo nível.
+
+
+E o mais daora, c-c c-j mostra o documento completo num buffer temporário para
+você escolher onde quer dropar. Dentro do modo, TAB cicla visibilidade,
+setas para cima e para baixo vai e volta nas headlines, enter seleciona (RET)
+e / faz uma pesquisa sparse-tree. Pesquisa sparse-tree é, dentro da headline,
+você poder pesquisar por uma palavra chave. 
+
+
+
+* Getting started in org mode (editing)
+
+Como dito acima, alt(meta or m)-RET(famoso enter), vai inserir um novo headline
+item ou linha. Se usado no começo de alguma linha, enquanto o ponteiro estiver
+em cima de um headline, o criado vai ser antes da linha atual. Ex: tente fazer
+o comando no headline de teste aqui em baixo:
+
+o headline é pra aparecer abaixo daqui e antes do BONECAO, se correto.
+
+* (<<<----- alt + enter aqui)BONECAO DE TESTE
+
+
+Agora, caso no meio da linha, a linha é cortada e o resto da linha é a nova
+headline. 
+
+SE combar o prefixo c-u, o headline vai sair no final da subtree atual, preser-
+vando seus conteúdos.
+
+SE tiver dois c-u, ai vai pro subtree filho.
+
+Para colocar um TODO (FINALMENTE ESTOU APRENDENDO ISSO) com o mesmo nível que o
+do headline atual, use meta+shift+enter.
+
+Ou seja, abaixo deve aparecer um TODO  de nível 1. Tenta ai
+
+* TODO chupe aqui
+
+Para mudar o estado do TODO, shift+esquerda ou shift+direita.
+
+Para mexer na hierarquia, podemos aumentar ou diminuir o nível com meta+seta
+esquerda/direita, para diminuir ou aumentar, respectivamente.
+
+Para alterar mais de uma headline, selecione a partir do início da primeira,
+e finalize na linha após a última para poder mudar simultaneamente.
+
+Para aumentar ou diminuir a subtree toda, meta+shift+left ou right.
+
+Para mover uma headline, meta+up ou down.
+
+Para desativar o headline ou ativar, c-c *.
+
+
+
+** how to toggle heading : tab
+
+
+Para mexer com listas, o org reconhecer listas ordenadas, desordenadas
+e descritivas.
+
+ - Listas desordenadas começam com "-" "+" ou "*"
+
+ - Listas ordenadas começam com um número seguido de um "." ou parêntese direi-
+   to.("1." ou "1)")
+
+ - Listas descritivas são listas de items desordenados, e contém :: para
+   destinguir o termo da descrição.
+
+
+Exemplos:
+* Lord of the Rings
+My favorite scenes are (in this order)
+1. The attack of the Rohirrim
+2. Eowyn's fight with the witch king
+   + this was already my favorite scene in the book
+   + I really like Miranda Otto.
+3. Peter Jackson being shot by Legolas
+   - on DVD only
+   He makes a really funny face when it happens.
+But in the end, no individual scenes matter but the film as a whole.
+Important actors in this film are:
+- Elijah Wood :: He plays Frodo
+- Sean Astin :: He plays Sam, Frodo's friend.  I still remember him
+     very well from his role as Mikey Walsh in /The Goonies/.
+
+
+Para adicionar checkboxes (o outro vídeo explicou mal para cacete), meta+shift+
+RET.
+
+Para percorrer os items da lista, shift+up ou shift+down.
+
+Para mover, meta+up ou meta+down.
+
+Para aumentar ou diminuir a identação do item, meta + esquerda ou meta + direita
+Para o mesmo, mas com os subitems, meta+shift+esquerda/direita.
+
+Para alterar o valor da checkbox, c-c c-c. 
+
+- [ ] V1
+- [ ] V2
+- [X] V4
+- [ ] V3
+
+O mano do vídeo usa DOOM EMACS, então comandos de LÁ USAM VIM. PAREI EM 13:27. 
