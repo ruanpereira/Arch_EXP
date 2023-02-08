@@ -1,4 +1,3 @@
-Just copy and paste this in the init.el file, from the line below to the end. 
 ;;Remover a tela de boas vindas
 (setq inhibit-startup-message t)
 ;; Remover menus de cima
@@ -11,7 +10,7 @@ Just copy and paste this in the init.el file, from the line below to the end.
 ;;MELPA - repositório
 
 (add-to-list 'package-archives
-	     '("melpa" . "https://melpa.org/packages/"))
+	     '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize) ;; iniciar pacotes
 
 (unless (package-installed-p 'use-package)   ;;checa se o pacote use-package esta instalado. caso não, renove a lista e instale.
@@ -72,7 +71,25 @@ Just copy and paste this in the init.el file, from the line below to the end.
 
 ;; Keybind personalizado
 (global-set-key (kbd "C-<tab>") 'other-window)    ;;trocado o keybind padrão para troca entre janelas do emacs
+(global-set-key (kbd "C-<tab>") 'other-window) ; alterar janela
+(global-set-key (kbd "M-<up>") 'enlarge-window) ; alterar tamanho da janela inferior
+(global-set-key (kbd "M-<down>") 'shrink-window) ; aumentar tamanho da janela inferior
+(global-set-key (kbd "M-<left>") 'enlarge-window-horizontally)
+(global-set-key (kbd "M-<right>") 'shrink-window-horizontally)
+
+(global-set-key (kbd "C-x k") 'kill-this-buffer)
+(global-set-key (kbd "C-w") 'backward-kill-word)
+
 (cua-mode t)
+
+;; Git integration
+(use-package magit
+  :ensure t
+  :init
+  (progn
+    (bind-key "C-x g" 'magit-status)))
+
+
 
   ;;melpa stuff
 (custom-set-variables
