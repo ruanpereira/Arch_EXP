@@ -86,7 +86,19 @@
 ;; I don't wan't the keywords in my exports by default
 (setq-default org-export-with-todo-keywords nil)
 
+;; Configurando copilador
+(defun code-compile ()
+  (interactive)
+  (unless (file-exists-p "Makefile")
+    (set (make-local-variable 'compile-command)
+     (let ((file (file-name-nondirectory buffer-file-name)))
+       (format "%s -o %s %s"
+           (if  (equal (file-name-extension file) "cpp") "g++" "gcc" )
+           (file-name-sans-extension file)
+           file)))
+    (compile compile-command)))
 
+(global-set-key [f9] 'code-compile)
 
 ;;tema aplicado
 (use-package doom-themes
