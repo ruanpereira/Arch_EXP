@@ -1,3 +1,5 @@
+;;FAVOR LEIA T O D O S os comentários antes de rodar
+;;Um comando para rodar sempre que for instalar um novo pacote ou fechar e abrir o arquivo = package-refresh-contents
 ;;Remover a tela de boas vindas
 (setq inhibit-startup-message t)
 ;; Remover menus de cima
@@ -99,6 +101,9 @@
     (compile compile-command)))
 
 (global-set-key [f9] 'code-compile)
+
+;; APAGUE/COMENTE ESSA PARTE ANTES DE COMPILAR A PRIMEIRA VEZ. DEPOIS DA PRIMEIRA COMPILAÇÃO, FECHE E ABRA O ARQUIVO, M-x package-refresh-contents, 
+;; M-x package-install yasnippet-snippets. Salve, feche e abre, e depois coloca isso aqui. Salve, feche e abre denovo.
 
 ;; Autocomplete for any lang.
 (require 'yasnippet)
