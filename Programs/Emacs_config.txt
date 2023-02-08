@@ -100,7 +100,9 @@
 
 (global-set-key [f9] 'code-compile)
 
-
+;; Autocomplete for any lang.
+(require 'yasnippet)
+(yas-global-mode 1)
 
 ;;tema aplicado
 (use-package doom-themes
