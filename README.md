@@ -21,4 +21,10 @@ For programs usability, my experience is: If you want and have the time, you can
 
 If you don't use this type of thing, IT'S AMAZING!!!! Being capable of doing a lot of things (install the programs, debug them, personalizing your system) is really cool. Windows don't has this type of experience. The fact that you can choose how you system looks is cool enough for me, but as a newbie dev, itt's awesome that i have a system that is so light that i can heavy loads of code(like MachineLearning) and a I7-7500U can handle it. THe liberty to have many options of develop environments, the smoothness of propramming here, the control of libs, code, how it works, etc, everything is fascinating. 
 
+You have like (i use two monitors):
+
+1. The normal work with some personality: ![image](https://user-images.githubusercontent.com/77154574/218199152-c7e93d3c-f61f-4710-becf-e59d0873d26e.png)
+2. The full work env (based on I use arch btw): ![image](https://user-images.githubusercontent.com/77154574/218198308-de14b915-3569-49d1-96a6-65632620b8dc.png)
+or ![image](https://user-images.githubusercontent.com/77154574/218199739-51393029-a74e-4230-bee8-997f4eaba9d5.png)
+3. The BALDIADO(don't try to translate this, just feel it): 
 
