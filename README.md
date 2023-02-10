@@ -19,3 +19,6 @@ Actually, i use KDE DE (how to install in the install file), with linux standard
 
 For programs usability, my experience is: If you want and have the time, you can do whatever you want. For undergraduates and Linux TI entusiasts, it's a good mid point. Becauuse you can do muuch things, but some details can fall from your grasp. By exameple, programs like MatLab, AutoCad and others alike are hard to find here, and in the end, Windows will do the ob. I'm a dual booter (don't even know if this term exists lol), and it's necessary for my usage. Games, the type of programs i mencioned before, and some other tricky things is just better in Windows. At least for now. Most are licensed programs, the ones that give you that big headache. 
 
+If you don't use this type of thing, IT'S AMAZING!!!! Being capable of doing a lot of things (install the programs, debug them, personalizing your system) is really cool. Windows don't has this type of experience. The fact that you can choose how you system looks is cool enough for me, but as a newbie dev, itt's awesome that i have a system that is so light that i can heavy loads of code(like MachineLearning) and a I7-7500U can handle it. THe liberty to have many options of develop environments, the smoothness of propramming here, the control of libs, code, how it works, etc, everything is fascinating. 
+
+
