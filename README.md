@@ -26,5 +26,8 @@ You have like (i use two monitors):
 1. The normal work with some personality: ![image](https://user-images.githubusercontent.com/77154574/218199152-c7e93d3c-f61f-4710-becf-e59d0873d26e.png)
 2. The full work env (based on I use arch btw): ![image](https://user-images.githubusercontent.com/77154574/218198308-de14b915-3569-49d1-96a6-65632620b8dc.png)
 or ![image](https://user-images.githubusercontent.com/77154574/218199739-51393029-a74e-4230-bee8-997f4eaba9d5.png)
-3. The BALDIADO(don't try to translate this, just feel it): 
+3. The BALDIADO(don't try to translate this, just feel it): ![image](https://user-images.githubusercontent.com/77154574/218201241-0c9e02c8-8204-4e16-8277-750ee9a522ee.png)
 
+All this in 30 minutes searching ideas from my not-creative mind. More examples are in [unix reddit](https://www.reddit.com/r/unixporn/)
+
+This is what i like about it.
