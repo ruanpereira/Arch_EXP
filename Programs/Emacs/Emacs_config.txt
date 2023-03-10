@@ -2,6 +2,10 @@
 ;;Um comando para rodar sempre que for instalar um novo pacote ou fechar e abrir o arquivo = package-refresh-contents
 ;;Remover a tela de boas vindas
 (setq inhibit-startup-message t)
+
+;;Setar um buffer da sua escolha para iniciar
+;;Para matar esse buffer, M-x kill-buffer-and-window ou então crie um bind pra isso
+(setq initial-buffer-choice "~/Workspace/TASKBOARD.org")
 ;; Remover menus de cima
 (tool-bar-mode -1)
 
@@ -37,7 +41,7 @@
     (ac-config-default)
     (global-auto-complete-mode t)))
 
-;; Git integration
+;; Git integration, sempre verifique o versionamento do arquivo com o bind!!!
 (use-package magit
   :ensure t
   :init
@@ -88,7 +92,9 @@
 ;; I don't wan't the keywords in my exports by default
 (setq-default org-export-with-todo-keywords nil)
 
-;; Configurando copilador
+;; Configurando compilador
+;; para compilar arquivos do
+;;tipo .cpp é preciso usar M-x e digitar gud-gdb, y e RUN!.\n"
 (defun code-compile ()
   (interactive)
   (unless (file-exists-p "Makefile")
@@ -101,9 +107,6 @@
     (compile compile-command)))
 
 (global-set-key [f9] 'code-compile)
-
-;; APAGUE/COMENTE ESSA PARTE ANTES DE COMPILAR A PRIMEIRA VEZ. DEPOIS DA PRIMEIRA COMPILAÇÃO, FECHE E ABRA O ARQUIVO, M-x package-refresh-contents, 
-;; M-x package-install yasnippet-snippets. Salve, feche e abre, e depois coloca isso aqui. Salve, feche e abre denovo.
 
 ;; Autocomplete for any lang.
 (require 'yasnippet)
