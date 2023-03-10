@@ -1,0 +1,22 @@
+PELO AMOR DE DEUS, VOCE PRECISA VER ISSO
+
+DEPOIS DE INSTLAR O CLION NORMALMENTE, FOADSE COMPLETAMENTE O SEU LOCAL DE INSTA
+LAÇÃO.
+
+PARA QUE O CLION SEJA ACESSADO PELO SISTEMA NORMALMENTE, INSIRA O PATH
+DO BAGULHO NO SEU .bashrc no final do arquivo.
+
+COmo assim?
+
+
+para o do clion
+
+nano .bashrc
+
+export PATH="/opt/Clion/clion-2022.3.2/bin:$PATH"
+
+salve, e depois
+
+source ~/.bashrc
+
+
