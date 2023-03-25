@@ -31,9 +31,9 @@ Now, we mount the partitions:
 
 mount /dev/sdx(root partition) /mnt
 
-if home, mount /dev/sdx (home partition) /mint/home
+if home, mount /dev/sdx (home partition) /mnt/home
 
-mount /dev/sdx(Efi partition) (if created) /mint/boot
+mount /dev/sdx(Efi partition) (if created) /mnt/efi
 
 Before installing things, let's update the mirror list for faster downloads: 
 
