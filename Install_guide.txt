@@ -53,7 +53,7 @@ pacstrap
  -i /mnt base base-devel linux linux-headers linux-firmware 
 intel-ucode(or amd-ucode) sudo nano vim git neofetch (to show off) 
 networkmanager(internet manager) dhcpcd (dhcp client) 
-pulseaudio(audio) bluez(for bluetooth) man-db man-pages texinfo
+pulseaudio(audio) bluez(for bluetooth) man-db man-pages texinfo emacs
 
 Generating the filesystem table:
 genfstab -U /mnt >> /mnt/etc/fstab 
