@@ -31,7 +31,7 @@ Now, we mount the partitions:
 
 mount /dev/sdx(root partition) /mnt
 
-if home, mount /dev/sdx (home partition) /mnt/home
+if home, mount /dev/sdx (home partition) /mnt/home (you need to create it with mkdir)
 
 mount /dev/sdx(Efi partition) (if created) /mnt/efi
 
