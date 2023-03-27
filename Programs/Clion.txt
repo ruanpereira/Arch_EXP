@@ -19,4 +19,4 @@ salve, e depois
 
 source ~/.bashrc
 
-
+funciona p qualquer programa em uqalquer diret
