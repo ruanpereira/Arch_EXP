@@ -48,3 +48,14 @@ To execute a external command (a shell one, by example), use :! -command-.
 To paste, use shift+insert. 
 
 to navigate files, go to SPC f f
+
+
+#####TO USE LATEX IN SPACEMACS#######
+
+On terminal:
+$ sudo pacman -S texlive-most texlive-lang texlive-bibtexextra texlive-fontsextra biber evince
+
+
+Go to the dot spacemacs file, and do the installation following : https://www.spacemacs.org/layers/+lang/latex/README.html.
+
+Now, in the neutral mode, do SPC m a. Should open the file. 
