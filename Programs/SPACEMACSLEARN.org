@@ -58,4 +58,7 @@ $ sudo pacman -S texlive-most texlive-lang texlive-bibtexextra texlive-fontsextr
 
 Go to the dot spacemacs file, and do the installation following : https://www.spacemacs.org/layers/+lang/latex/README.html.
 
+While configuring the latex, add :variables latex-enable-magic t, to enable the 
+funny leters (Omega, by example). 
+
 Now, in the neutral mode, do SPC m a. Should open the file. 
