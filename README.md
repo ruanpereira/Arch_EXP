@@ -7,7 +7,7 @@ Arch Linux is a linux operational system, x86_84 based, where the idea of the sy
 <!---  Espaço para futura foto do Arch         -->
 The system only come with the bare minimum installation, and you construct the system as it pleases you. Since the partition table, to the desktop enviroment(or windows manager) of your choice. 
 
-# Installation script on this repo
+# Installation script forked here.
 After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for 
 the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, listed on another archive here. 
 # The Experience (2023)
