@@ -7,6 +7,9 @@ Arch Linux is a linux operational system, x86_84 based, where the idea of the sy
 <!---  Espaço para futura foto do Arch         -->
 The system only come with the bare minimum installation, and you construct the system as it pleases you. Since the partition table, to the desktop enviroment(or windows manager) of your choice. 
 
+# Installation script on this repo
+After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for 
+the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, listed on another archive here. 
 # The Experience (2023)
 Actually, i use KDE DE (how to install in the install file), with linux standard newer kernel available. I don't use zsh, or other bash things. For installing, i use pacman and yay, pretty good ones, i recommend. To the pacman, some tips: 
 
@@ -31,3 +34,14 @@ or ![image](https://user-images.githubusercontent.com/77154574/218199739-5139302
 All this in 30 minutes searching ideas from my not-creative mind. More examples are in [unix reddit](https://www.reddit.com/r/unixporn/)
 
 This is what i like about it.
+
+## Trying a windows manager again
+
+From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. So, i have some alternatives. 
+
+Searching, one of them was awesome: https://awesomewm.org/
+
+You can see some possible examples of inspirations here: https://github.com/awesomeWM/awesome/issues/1395
+
+It is a dynamic window manager, so i don't necessally need to be only on the keyboard, but i can. Also, it seems pretty af. 
+
