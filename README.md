@@ -10,7 +10,7 @@ The system only come with the bare minimum installation, and you construct the s
 
 # Installation script forked here.
 After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for 
-the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, listed on another archive here. 
+the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, based on another archive here. You can find the edited script on a forked project here. 
 # The Experience (2023)
 Actually, i use KDE DE (how to install in the install file), with linux standard newer kernel available. I don't use zsh, or other bash things. For installing, i use pacman and yay, pretty good ones, i recommend. To the pacman, some tips: 
 
