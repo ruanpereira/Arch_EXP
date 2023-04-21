@@ -1,0 +1,9 @@
+#nmcli 
+#to connect to a wifi, if you don't have any GUI interfaces.
+
+# to see the AP name
+$ nmcli dev wifi 
+
+# to connect
+$ nmcli device wifi connect *APname* password *password*
+
