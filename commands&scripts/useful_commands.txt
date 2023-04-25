@@ -35,5 +35,8 @@ $ nmcli connection up *SSID* --ask
 #see the process with 1s atualization
 $ htop
 
+##### route #####
+#see all the kernel ip routing table
+$ route
 
 
