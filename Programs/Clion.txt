@@ -20,3 +20,16 @@ salve, e depois
 source ~/.bashrc
 
 funciona p qualquer programa em uqalquer diret
+
+P/ zsh:
+
+nano ~/.zshrc
+
+#go to the end of the file
+
+path+=("/home/gh0st/sources/clion-2023.1.2/b>
+export PATH
+
+and restart the terminal or 
+
+source ~/.zshrc
