@@ -1,0 +1,31 @@
+#To use spacemacs as a dev env for python:
+
+First, install anaconda in your pc via the site
+
+after installation, i suggest you to, after reopening your terminal, deactivate the auto enable of the base venv, for organizational purposes.
+
+So after having conda, create a env with the packages you need for your project, and with some upgrades for spacemacs with python:
+
+conda create -n "nomedasuaenvsemaspas" pacote1 pacote2 pacote3 flask8 isort yapf python-language-server
+
+After that, open emacs, and go to the dot files with
+
+SPC f e d
+
+In the layers section (dotsspacemacs-configuration-layers), add:
+
+python
+(conda :variables conda-anaconda-home "/home/user/anaconda3") *mude isso apenas se tiver mudado o local de instalação do seu anaconda*
+
+Salve, feche e abra o emacs. Espere baixar as coisa. Fecha e abre pra dar sorte, e prnt.
+
+Crie seu python file ai
+
+Depois disso, ative sua venv com SPC m n a e escolha o nome da venv.
+
+Code bem muito ai.
+
+e compile com SPC m c c. Para assistência e lista de comandos:
+
+https://develop.spacemacs.org/layers/+lang/conda/README.html
+https://develop.spacemacs.org/layers/+lang/python/README.html#management-of-python-versions-and-virtual-environments
