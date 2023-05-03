@@ -6,7 +6,7 @@ after installation, i suggest you to, after reopening your terminal, deactivate 
 
 So after having conda, create a env with the packages you need for your project, and with some upgrades for spacemacs with python:
 
-conda create -n "nomedasuaenvsemaspas" pacote1 pacote2 pacote3 flask8 isort yapf python-language-server
+conda create -n "nomedasuaenvsemaspas" pacote1 pacote2 pacote3 flake8 isort yapf python-language-server
 
 After that, open emacs, and go to the dot files with
 
