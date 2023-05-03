@@ -29,3 +29,9 @@ e compile com SPC m c c. Para assistência e lista de comandos:
 
 https://develop.spacemacs.org/layers/+lang/conda/README.html
 https://develop.spacemacs.org/layers/+lang/python/README.html#management-of-python-versions-and-virtual-environments
+
+#to use git
+
+go to dot-spacemacs file, in the config layer, add git
+
+list of commands in this video, need update: https://www.youtube.com/watch?v=NDP91RNgT4A&list=PLhqJJNjsQ7KFkMVBunWWzFD8SlH714qm4&index=9
