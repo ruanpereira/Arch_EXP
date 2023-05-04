@@ -84,7 +84,50 @@ on visual mode in spacemacs and select the part that you want. In the end, press
 both the staged and unstaged files
 
 If you prefer to not commit directly to the master/main branch, you can create/manage your branches. 
+To do this, you just press @ b b
+
 To commit, you need to press @ c c
+On this new buffer, you can add a main comment on the top part, or
+a longer subcomment on the lower part 
+
+To finish the process of commiting, type @ ,,
+
+To undo any staget file etc, select the file and type @ u
+
+You can discart files with @ x
+
+If you are lost, or curious, you can press @ ? to see all the avaliable commands.
+
+To push changes, after you opened the git status buffer:
+
+@ p p, and select the remote that you will push
+
+To pull changes
+
+@ F p, and choose the branch that you will pull
+
+To analyze files that have both upstream and local changes, you can press 
+
+@ e , on the status buffer
+
+Now, you have 3 buffers: the buffer that refers to the file on upstream
+another that refers to the local, and another that is the file how it is.
+
+You can navigate with @ n or @ p
+
+To quit from this:
+
+@ q
+
+Ans respond. That will do the merge, and resolve conflicts.
+
+To merge from branches, you can too press @ m
+
+
+
+
+
+
 
 
 
