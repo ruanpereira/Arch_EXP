@@ -33,3 +33,7 @@ export PATH
 and restart the terminal or 
 
 source ~/.zshrc
+
+
+
+Or, after installing normally (without doing the export part), open the program, close any project (if open), and click on the settings in the left inferior corner, and on create new desktop entry (for all users).
