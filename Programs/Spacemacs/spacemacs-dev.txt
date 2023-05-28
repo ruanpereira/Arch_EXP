@@ -124,7 +124,17 @@ Ans respond. That will do the merge, and resolve conflicts.
 To merge from branches, you can too press @ m
 
 
+To use org mode, after putting the org layer.
 
+Close, open emacs.
+
+Close again.
+
+go to a terminal and put:
+
+rm ~/.emacs.d/elpa/28.2/develop/org*/*.elc
+
+now open again. 
 
 
 
