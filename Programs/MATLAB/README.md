@@ -1,7 +1,7 @@
 # How to install Matlab in Arch Linux
 
-First things first: download MATLAB zip in `**`https://www.mathworks.com**, take sure you're in your MathWorks account and have a valid license.
-After this, go to the local that you was downloaded. IN the local that you choose (e.g. ~/MATLAB**, extract with
+First things first: download MATLAB zip in ```https://www.mathworks.com```, take sure you're in your MathWorks account and have a valid license.
+After this, go to the local that you was downloaded. IN the local that you choose (e.g. ~/MATLAB), extract with
 
 ```unzip -K matlab....zip```
 
