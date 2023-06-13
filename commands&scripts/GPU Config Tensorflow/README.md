@@ -1,4 +1,5 @@
-# **Sionna's Tutorial codes**
+# **GPU setup for TensorFlow**
+or TensorFlow setup for GPU? it doesn't mattter.
 If you for any reason need to configure the graphic card acess for TensorFlow, follow these steps.
 I like to use anaconda package manager for organize my virtual environment, if you don't like the snake, ignore this tutorial.
 
