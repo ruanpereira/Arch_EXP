@@ -68,7 +68,7 @@ bindsym $mod+Shift+q kill
 set $file_manager pcmanfm
 set $editor emacs
 set $browser firefox
-set $print flameshot
+set $print spectacle
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
@@ -218,7 +218,7 @@ exec "setxkbmap br"
 bindsym $mod+z exec $file_manager
 bindsym $mod+x exec $editor
 bindsym $mod+c exec $browser
-bindsym $Print exec $print
+bindsym Print exec $print
 
 # Transparency with picom compositor
 exec_always --no-startup-id killall picom && picom -b
