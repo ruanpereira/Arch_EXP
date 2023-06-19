@@ -215,7 +215,7 @@ exec "setxkbmap br"
 bindsym $mod+z exec $file_manager
 bindsym $mod+x exec $editor
 bindsym $mod+c exec $browser
-bindsym $Print exec $print
+bindsym Print exec $print
 
 # Transparency with picom compositor
 exec_always --no-startup-id killall picom && picom -b
