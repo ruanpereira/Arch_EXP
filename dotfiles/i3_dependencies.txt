@@ -1,3 +1,3 @@
 # Programas que devem ser instalados juntos ao i3
 - sudo pacman -S i3, i3 gaps (if possible)
-- sudo pacman -S rofi neovim polybar emacs alacritty feh
+- sudo pacman -S rofi neovim polybar emacs alacritty feh gh
