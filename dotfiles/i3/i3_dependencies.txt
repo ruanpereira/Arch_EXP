@@ -1,7 +1,7 @@
 # Programas que devem ser instalados juntos ao i3 para uma instalação pura
 # i3 e adicionais, melhora de experiencia do user
 - sudo pacman -S i3, i3 gaps (if possible)
-- sudo pacman -S rofi neovim polybar emacs alacritty feh gh git tmux zsh
+- sudo pacman -S rofi neovim polybar emacs alacritty feh gh git tmux zsh gnome-screenshot/spectacle(choose what makes you happy) diodon/klipper 
 # em caso de uma instalação pura, apenas com o i3
 - sudo pacman pulseaudio pipewire cups openvpn ifw firefox bitwarden flatpak pcmanfm alsa networkmanager xorg xinit lightdm bluez bluez-utils 
 - sudo flatpak spotify(by flatpak)

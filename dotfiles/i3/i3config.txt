@@ -24,7 +24,7 @@ font pango:Ubuntu Regular 10
 exec --no-startup-id dex --autostart --environment i3
 
 # start polybar
-exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
+#exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -39,9 +39,6 @@ bindsym $mod+p exec /home/$USER/.config/scripts/lock
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-
-# For printing the screen
-exec --no-startup-id flameshot
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -65,10 +62,10 @@ bindsym $mod+Shift+q kill
 
 # Default apps
 
-set $file_manager pcmanfm
-set $editor emacs
+set $file_manager ranger
+set $editor nvim
 set $browser firefox
-set $print flameshot
+set $print spectacle
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
@@ -130,16 +127,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Firefox"
-set $ws2 "2: Term"
-set $ws3 "3: Code"
-set $ws4 "4: Spotify"
-set $ws5 "5: Tasks"
-set $ws6 "6: Discord"
-set $ws7 "7: P"
-set $ws8 "8: Accel"
-set $ws9 "9: Don't"
-set $ws10 "10: Know"
+set $ws0 "1: Firefox"
+set $ws1 "2: Term"
+set $ws2 "3: Code"
+set $ws3 "4: Spotify"
+set $ws4 "5: Tasks"
+set $ws5 "6: Discord"
+set $ws6 "7: P"
+set $ws7 "8: Accel"
+set $ws8 "9: Don't"
+set $ws9 "10: Know"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
