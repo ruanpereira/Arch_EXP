@@ -27,3 +27,5 @@ To run emacs from terminal
 $ emacs (or emacs-client)
 
 You can use two prefixes to the above comamnd. -t for opening emacs or spacemacs inside the terminal (does not work good with spacemacs, the effects and colors are not completely repassed) or -c to open a frame normally. 
+
+Add env
