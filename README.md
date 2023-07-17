@@ -43,3 +43,4 @@ From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 
 A smart and good way to solve a problem in i3, the display resolution and external HDMI recognition problem, is to install arandr and open it, configure, and save the configuration. Inside the file saved, it will have the configuration of the xrandr you want! So, ignore the /bin/sh part, and paste that command in your i3 config.  
 
 Another WM that i will be testing is Hyprland. Need a basic configuration.
+All im learning is from : https://wiki.hyprland.org/Getting-Started/Master-Tutorial/
