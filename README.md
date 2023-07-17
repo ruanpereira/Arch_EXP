@@ -38,13 +38,8 @@ This is what i like about it.
 
 ## Trying a windows manager again
 
-From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. So, i have some alternatives. 
+From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. After using and trying to improve my i3 config files for at least 1.5 years, my experience with it says that, it is good if you use i3 in a PC, but it is not good for notebooks. Many limitations in automation and simple tasks (like using wifi, or using a output monitor).
 
-Searching, one of them was awesome: https://awesomewm.org/
+A smart and good way to solve a problem in i3, the display resolution and external HDMI recognition problem, is to install arandr and open it, configure, and save the configuration. Inside the file saved, it will have the configuration of the xrandr you want! So, ignore the /bin/sh part, and paste that command in your i3 config.  
 
-You can see some possible examples of inspirations here: https://github.com/awesomeWM/awesome/issues/1395
-
-It is a dynamic window manager, so i don't necessally need to be only on the keyboard, but i can. Also, it seems pretty af. 
-
-A smart and good way to solve a problem in i3, the display resolution and external HDMI recognition problem, is to install arandropen it, configure, and save the configuration. Inside the file saved, it will have the configuration of the xrandr you want! So, ignore the /bin/sh part, and paste that command in your i3 config.  
-
+Another WM that i will be testing is Hyprland. Need a basic configuration.
