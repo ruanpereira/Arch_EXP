@@ -46,3 +46,5 @@ You can see some possible examples of inspirations here: https://github.com/awes
 
 It is a dynamic window manager, so i don't necessally need to be only on the keyboard, but i can. Also, it seems pretty af. 
 
+A smart and good way to solve a problem in i3, the display resolution and external HDMI recognition problem, is to install arandropen it, configure, and save the configuration. Inside the file saved, it will have the configuration of the xrandr you want! So, ignore the /bin/sh part, and paste that command in your i3 config.  
+
