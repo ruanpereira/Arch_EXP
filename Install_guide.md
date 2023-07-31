@@ -4,9 +4,7 @@ First test the connection:
 
 ping archlinux.org -c 5 (testing internet)
 
-We update the date:
-
-timedatectl set-ntp true
+#If you are using wireless conection, use iwd. before testing the connection.
 
 Load the keyboard:
 
