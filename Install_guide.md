@@ -308,13 +308,17 @@ sudo pacman -S xorg xorg-xinit xterm zsh alacritty plasma plasma-desktop kde-app
 
 Now, let's activate: 
 
-sudo nano ~/.xinitrc
+```sh
+sudo nvim ~/.xinitrc
+```
 
 And inside, write exec startkde, so that the environment is set to always start. 
 
 Then we start the service: 
 
+```sh
 sudo systemctl enable sddm.service 
+```
 
 And reboot.
 
@@ -326,11 +330,11 @@ To i3
 sudo pacman -S xorg sddm i3-wm i3lock i3status i3blocks dmenu zsh alacritty
 
 # Those below are only if you are going to install a WM.
+```sh
 systemctl enable sddm.service
 systemctl enable systemd-timesyncd
 systemctl enable fstrim.timer
 systemctl enable systemd-homed
+```
+Use polybar. After this, it will be all by yourself.
 
-Use polybar.
-
-Finish this part properly later. 
