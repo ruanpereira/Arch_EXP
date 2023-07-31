@@ -6,7 +6,7 @@ INSTALLATION MANUAL, FOR LEARN AND GUIDE PURPOSES
 ping archlinux.org -c 5 (testing internet)
 ```
 
-If you are using wireless conection, use iwd. before testing the connection.
+If you are using wireless conection, use iwctl. before testing the connection.
 
 # Load the keyboard:
 
@@ -253,10 +253,6 @@ you are going to have the explanation for the rest. For now, follow
 without thinking about.
 
 # Finally, we will start the services. 
-
-----First, dhcp: 
-
------systemctl enable dhcpcd.service
 
 ```sh
 systemctl enable NetworkManager.service 
