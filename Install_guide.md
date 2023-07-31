@@ -140,28 +140,41 @@ Save the changes and exit.
 
 # Generating the system language: 
 
-nano /etc/locale.gen 
+```sh
+nvim /etc/locale.gen 
+```
 
 uncomment the system language to be used (en_US.UTF-8 for US English, and pt_BR-UTF-8 for Brazilian Portuguese) 
 
 # Generating the locale:
+
+```sh
 locale-gen
+```
 
 # We create a locale configuration file with the command :
 
+```sh
 echo LANG=*insert the language to be utilized, for example pt_BR.UTF-8* > /etc/locale.conf
+```
 
 # Keep changes persistent:
 
+```sh
 echo "KEYMAP=br" >> /etc/vconsole.conf
+```
 
 # Now we create the hostname for the computer: 
 
+```sh
 echo *insert your hostname here* > /etc/hostname
+```
 
 # Edit the hosts file to receive the default ips: 
 
+```sh
 nano /etc/hosts
+```
 
 And add the following lines: 
 
@@ -171,17 +184,23 @@ And add the following lines:
 
 # To set the region/timezone and link the information to localtime: 
 
+```sh
 ln -sf /usr/share/zoneinfo/*tab*(to see the list of zones and see which one is yours 
 zone, in this case mine is America)/*tab*(Insert the local, in my case 
 Fortaleza) /etc/localtime
+```
 
 # Syncing the internal clock: 
 
+```sh
 hwclock --systohc
+```
 
 # Install your packages. For continuation of this guide, i just put the needed, but my list of packages are in pacman-pkgs.txt:
 
+```sh
 pacman -S intel-ucode grub efibootmgr os-prober dosfstools neovim networkmanager
+```
 
 # Installing the bootloader ( extremely important):
 
@@ -189,13 +208,17 @@ See which partition the boot is on (in this case, as we have dual boot with wind
 
 Mount the partition in this created directory: 
 
+```sh
 mount /dev/sdx /mnt/efi
 (If you are dual booting, here on /dev/sdx you put the 
 EFI partition that already exists with your other system).
+```
 
 Edit the grub file so grub can search for windows: 
 
+```sh
 nvim /etc/default/grub
+```
 
 Inside the file, edit this lines, uncommenting it, which contains:
 
@@ -209,11 +232,15 @@ other operating systems to add a UEFI entry.
 
 It needs to be installed. By default, os-prober is disabled in grub, because the intention is usually to install arch without dualboot, and also for security reasons, as explained in the file. 
 
+```sh
 grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/efi
+```
 
-Now we generate the grub configuration file: 
+# Now we generate the grub configuration file: 
 
+```sh
 grub-mkconfig -o /boot/grub/grub.cfg 
+```
 
 (At this point, os-prober will probably fails to find your other system. 
  Or not. Mine fails. Why? Because when you run it on this instance, 
@@ -225,53 +252,59 @@ So, after finishing installing, more down on the file,
 you are going to have the explanation for the rest. For now, follow
 without thinking about.
 
-Finally, we will start the services. 
+# Finally, we will start the services. 
 
 ----First, dhcp: 
 
 -----systemctl enable dhcpcd.service
 
+```sh
 systemctl enable NetworkManager.service 
 systemctl enable bluetooth.service
 systemctl enable sshd.service
 systemctl enable firewalld.service
 systemctl enable iwd.service # if wireless
+```
 
-Now we can exit the arch-chroot environment: 
+# Exit the arch-chroot environment: 
 
+```sh
 exit (or CTRL+D)
+```
 
 We unmount all partitions:
 
+```sh
 umount -l(that's a lowercase L)R /mnt 
+```
 
 Now, go for the hug: 
 
+```sh
 reboot
-
+```
 Take out the USB stick, bless yourself, and go. 
 
 # IF THE GRUB DOES NOT RECOGNIZE THE WINDOWS
 After rebooting, you log into arch again, and remount the partition that has Windows, as did above:
 
-
+```sh
 os-prober (this time it will recognize that windows exists, 
 a warning message will appear. If not, just reboot again and try again, until it works.)
 
 grub mkconfig again
+```
 
 And now dual boot is configured.
 
-
-
 From this point on, arch is already installed on your computer. However, for didactic purposes, let's install a graphical user interface, KDE. 
-You can install whatever you like, from there you have to look up 
-environments and window managers and choose one and install it on your 
-system. 
+You can install whatever you like, from there you have to look up environments and window managers and choose one and install it on your system. 
 
-For KDE
+# For KDE
 
+```sh
 sudo pacman -S xorg xorg-xinit xterm zsh alacritty plasma plasma-desktop kde-applications kdeplasma-addons sddm 
+```
 
 Now, let's activate: 
 
