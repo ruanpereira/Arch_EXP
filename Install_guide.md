@@ -207,7 +207,7 @@ hwclock --systohc
 # Install your packages. For continuation of this guide, i just put the needed, but my list of packages are in pacman-pkgs.txt:
 
 ```sh
-pacman -S intel-ucode grub efibootmgr os-prober dosfstools neovim networkmanager
+pacman -S intel-ucode grub efibootmgr os-prober dosfstools neovim networkmanager dhcpcd
 ```
 
 # Installing the bootloader ( extremely important):
@@ -263,7 +263,8 @@ without thinking about.
 # Finally, we will start the services. 
 
 ```sh
-systemctl enable NetworkManager.service 
+systemctl enable NetworkManager.service
+systemctl enable dhcpcd.service
 systemctl enable bluetooth.service
 systemctl enable sshd.service
 systemctl enable firewalld.service
