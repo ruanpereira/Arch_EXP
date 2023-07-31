@@ -8,7 +8,7 @@ ping archlinux.org -c 5 (testing internet)
 
 # If you are using wireless conection, use iwd. before testing the connection.
 
-Load the keyboard:
+# Load the keyboard:
 
 ```sh
 loadkeys br-abnt2       # example for a pt-BR keyboard.
@@ -17,17 +17,21 @@ loadkeys br-abnt2       # example for a pt-BR keyboard.
 
 # Update system clock
 
+```sh
 timedatectl set-ntp true
-
+```
 # Partitions
 
 Check disks with:
-
+```sh
 fdisk -l
+```
 
 Create the partitions on the disk:
 
+```sh
 cfdisk /dev/disk_to_be_partitioned
+```
 
 In the program, create the 3( or 4) partitions: 
 
@@ -43,67 +47,92 @@ mkdir after mounting the root partition.
 
 # We format the partitions with the filesystems for each:
 
+```sh
 mkfs.ext4 /dev/sdx (for home partition, with the number of 
 the partition that you created before for home)
 mkfs.ext4 /dev/sdy (for root partitions, with the number of
 the partition that you created before for root)
 
 mkfs.fat -F 32 /dev/sdx (only if you created an EFI partition)
-
+```
 # Creating and activating swap:
 
+```sh
 mkswap /dev/sdx(create swap)
 swapon /dev/sdx (activate swap)
+```
 
 # Now, we mount the partitions: 
 
 First, create home and EFI mounting points:
 
+```sh
 mkdir /mnt/home /mnt/efi
+```
 
+Mounting:
+
+```sh
 mount /dev/sdx(root partition) /mnt
-
-if home, mount /dev/sdx (home partition) /mnt/home (you 
-should have this created by now, with mkdir)
-
+mount /dev/sdx (home partition) /mnt/home
 mount /dev/sdx(Efi partition) (if created, if not, just use the partition that Windows or other system has created) /mnt/efi
+```
 
-Now we perform the installation of the main packages: 
+# Performing the installation of the main packages: 
 
+```sh
 pacstrap -K /mnt base base-devel linux linux-headers linux-firmware git zsh neovim alacritty ntfs-3g
+```
 
-Generating the filesystem table:
+# Generating the filesystem table:
+
+```sh
 genfstab -U /mnt >> /mnt/etc/fstab 
+```
 
-Logging into the root partition as root
+# Logging into the root partition as root
 
+```sh
 arch-chroot /mnt
+```
 
 # From now on, you can manually setup the rest, or use a script.
 
 # Manually:
 
-Set the superuser password: 
+# Set the superuser password: 
+
+```sh
 passwd 
+```
 
-Create ordinary users: 
+# Create ordinary users: 
 
+```sh
 useradd -m *username*
+```
 
-Set the user's password: 
+# Set the user's password: 
 
+```sh
 passwd *username*
+```
 
-Set the permissions of the ordinary user: 
+# Set the permissions of the ordinary user: 
 
+```sh
 usermod -aG wheel(group to run everything and have privileges of 
 root users),storage(access to external memory, such as hds, usbs, etc),power *username* 
+```
 
-Editing the sudoers file to allow the sudo command for members of the wheel group, so that all wheel users can use sudo: 
+# Editing the sudoers file to allow the sudo command for members of the wheel group, so that all wheel users can use sudo: 
 
-EDITOR=nano visudo 
+```sh
+EDITOR=nvim visudo
+```
 
-Inside, uncomment the line %wheel ALL=(ALL) ALL and, if you wish, add the line just below the one you uncommented. This is to prompt the user again for the password after a certain period of time:
+Inside, uncomment the line %wheel ALL=(ALL) ALL. 
+If you wish, add the line just below the one you uncommented. This is to prompt the user again for the password after a certain period of time:
 
 Defaults timestamp_timeout=0
 
