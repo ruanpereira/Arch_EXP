@@ -169,7 +169,7 @@ echo LANG=*insert the language to be utilized, for example pt_BR.UTF-8* > /etc/l
 # Keep changes persistent:
 
 ```sh
-echo "KEYMAP=br" >> /etc/vconsole.conf
+echo "KEYMAP=br-abnt2" >> /etc/vconsole.conf
 ```
 
 # Now we create the hostname for the computer: 
