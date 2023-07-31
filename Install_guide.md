@@ -6,7 +6,7 @@ INSTALLATION MANUAL, FOR LEARN AND GUIDE PURPOSES
 ping archlinux.org -c 5 (testing internet)
 ```
 
-# If you are using wireless conection, use iwd. before testing the connection.
+If you are using wireless conection, use iwd. before testing the connection.
 
 # Load the keyboard:
 
