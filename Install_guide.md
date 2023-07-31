@@ -10,7 +10,10 @@ ping archlinux.org -c 5 (testing internet)
 
 Load the keyboard:
 
-loadkeys br-abnt2
+```sh
+loadkeys br-abnt2       # example for a pt-BR keyboard.
+```
+
 
 # Update system clock
 
