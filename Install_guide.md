@@ -8,6 +8,14 @@ ping archlinux.org -c 5 (testing internet)
 
 If you are using wireless conection, use iwctl. before testing the connection.
 
+# To use iwctl:
+```sh
+iwctl
+device list
+station YOURDEVICE scan (Your network)
+station YOURDEVICE connect YOURSSID
+```
+
 # Load the keyboard:
 
 ```sh
