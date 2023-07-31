@@ -2,9 +2,9 @@ INSTALLATION MANUAL, FOR LEARN AND GUIDE PURPOSES
 
 # First test the connection:
 
-'''sh
+```sh
 ping archlinux.org -c 5 (testing internet)
-'''
+```
 
 # If you are using wireless conection, use iwd. before testing the connection.
 
