@@ -35,12 +35,12 @@ emacs
 neofetch
 calibre 
 openvpn
-anaconda (por fora, desconsiderar)
 bitwarden
 julia
 clion (from source)
 spyder (from anaconda)
 discord
+htop
 
 #Fonts you possibly gonna use
 font-manager
@@ -79,12 +79,9 @@ texlive-humanities
 texlive-pictures
 texlive-pstricks
 
-#htop dependencies
-ncurses
-automake
-autoconf
-gcc
-lm_sensors
-hwloc
-libcap
-libnl
+#Virtual Machine
+virtualbox
+qemu
+
+
+
