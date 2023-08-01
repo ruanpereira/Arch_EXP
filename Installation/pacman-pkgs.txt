@@ -31,7 +31,7 @@ firefox
 emacs
 calibre 
 openvpn
-anaconda
+anaconda (por fora, desconsiderar)
 bitwarden
 
 # For i3 functionality
