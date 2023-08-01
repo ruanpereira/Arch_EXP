@@ -32,6 +32,7 @@ emacs
 calibre 
 openvpn
 anaconda
+bitwarden
 
 # For i3 functionality
 redshit
