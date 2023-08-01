@@ -1,4 +1,4 @@
-# PARA INSTALAR E RODAR O SYNC DO ONEDRIVE
+ # PARA INSTALAR E RODAR O SYNC DO ONEDRIVE
 
 Instale o pikaur (ou outro de sua escolha). A partir daí, instale o AUR package do onedrive:
 
@@ -47,9 +47,10 @@ Para usar
 Procure por calibre
 E prnt.
 
-Para usar o calibre
+# USANDO O CALIBRE:
+
 Botao direito nas colunas, Columns. 
-Desmarque as que vocr nao quer.
+Desmarque as que voce nao quer.
 E adicione as que voce quiser. 
 Lookup name é o que fica registrado na configuração.
 Column reading é como mostra.
@@ -58,8 +59,12 @@ Toda cez que realizar uma mudança desta, você provavelmente vai ter que reinic
 
 Adicionar novas bibliotecas significa criar uma nova configuração. 
 
-Adicione os arquivos arrastsndo para a tela. 
+Adicione os arquivos arrastando para a tela. 
 E edite os metadados com edit metadata.
 Colque um título.
 Autores dentro de authors
 - Para mais de um autor, separe com "E comercial "
+
+# PARA ADICIONAR A BIBLIOTECA QUE VOCÊ POSSUI NO DRIVE:
+Ao instalar, selecione a pasta do onedrive criada, e siga com a instalação. 
+Caso tenha já instalado, Vá em Biblioteca > Adicionar bibliotecas.
