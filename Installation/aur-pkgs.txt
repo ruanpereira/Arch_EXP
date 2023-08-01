@@ -1,8 +1,8 @@
-pikaur
+# Using pikaur
 jerry (no needed)
 onedrive-abraunegg
 konsave
-snapd
-spotify (from snap)
-powerlevel10k
-alacritty-themes
+spotify
+powerlevel10k  #(to configure, go to the github page)
+alacritty-themes #configure theme and activate by just typing on the console
+htop (from source)
