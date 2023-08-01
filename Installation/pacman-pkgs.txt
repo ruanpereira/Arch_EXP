@@ -5,7 +5,7 @@ efibootmgr
 os-prober
 dosfstools
 
-#Audio
+#Audio (pulse_audio, jack and alsa are old envs)
 pipewire
 wireplumber
 pipewire-alsa
@@ -40,6 +40,7 @@ julia
 clion (from source)
 spyder (from anaconda)
 
+
 #Fonts you possibly gonna use
 font-manager
 nerd-fonts
@@ -57,7 +58,7 @@ ttf-roboto
 ttf-hack
 ttf-ubuntu-font-family
 
-#Latex base
+#Latex dependencies
 biber
 texlive-basic
 texlive-latex
@@ -76,3 +77,13 @@ texlive-publishers
 texlive-humanities
 texlive-pictures
 texlive-pstricks
+
+#htop dependencies
+ncurses
+automake
+autoconf
+gcc
+sensors
+hwloc
+libcap
+libnl-3
