@@ -23,6 +23,7 @@ wget
 openssh
 git
 github-cli
+cups
 
 #Bluetooth
 bluez
@@ -83,7 +84,7 @@ ncurses
 automake
 autoconf
 gcc
-sensors
+lm_sensors
 hwloc
 libcap
-libnl-3
+libnl
