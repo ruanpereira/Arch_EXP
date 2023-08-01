@@ -22,6 +22,9 @@ firewalld
 curl
 wget
 openssh
+git
+github-cli
+julia
 
 #Bluetooth
 bluez
