@@ -1,0 +1,65 @@
+# PARA INSTALAR E RODAR O SYNC DO ONEDRIVE
+
+Instale o pikaur (ou outro de sua escolha). A partir daí, instale o AUR package do onedrive:
+
+$ pikaur -S onedrive-abraunegg
+
+Depois de instalar, inicie com:
+
+$ onedrive
+
+O link que aparece, voce clica e é redirecionado para a pagina de login.
+Logue com a conta que deseja utilizar, e aceite a autorizacao.
+Apos realizar o login e aceite.
+Pegue o url apos a resposta e cole no terminal. 
+
+#Para realizar a sincronização da pasta no sistema linux, vamos usar o systemctl.
+Vamos primeiro criar uma pasta para o one drive:
+Crie uma pasta onde quiser. Por ex:
+
+$ mkdir ~/Onedrive
+
+(Apenas se já tiver instalado o onedrive anteriormente)Pare todos os processos de onedrive existentes, caso exista, e remova o arquivo items.sql3 em ~/.config/onedrive/ .
+
+Para mostrar a sua configuração:
+$ onedrive --display-config
+Para syncar a pasta criada com o onedrive:
+Va para o diretório da pasta criada, entre na pasta e:
+$ onedrive --synchronize --local-first
+
+Caso faça login na sua conta do onedrive pelo navegador, e verifique as pastas, é pra tudo estar no seu My files.
+Se vc criar algo pela web, ou manualmente, é pra aparecer no seu computador. 
+
+#COMANDOS
+Para atualizar manualmente:
+$ onedrive --monitor
+Para atualizar sempre:
+$ systemctl --user enable onedrive
+Para atualizar sempre, naquela sessao:
+$ systemctl -- user start onedrive
+Para verificar se ta prestando:
+$systemctl --user status onedrive
+
+# PARA INSTALAR E CONFIGURAR O CALIBRE
+Instale o calibre:
+$ sudo pacman -S calibre
+Para usar 
+Procure por calibre
+E prnt.
+
+Para usar o calibre
+Botao direito nas colunas, Columns. 
+Desmarque as que vocr nao quer.
+E adicione as que voce quiser. 
+Lookup name é o que fica registrado na configuração.
+Column reading é como mostra.
+Column type é o tipo da coluna (normalmente queremos sim ou nao)
+Toda cez que realizar uma mudança desta, você provavelmente vai ter que reiniciar.
+
+Adicionar novas bibliotecas significa criar uma nova configuração. 
+
+Adicione os arquivos arrastsndo para a tela. 
+E edite os metadados com edit metadata.
+Colque um título.
+Autores dentro de authors
+- Para mais de um autor, separe com "E comercial "
