@@ -1,4 +1,6 @@
 pikaur
-jerry
+jerry (no needed)
 onedrive-abraunegg
 konsave
+snapd
+spotify (from snap)
