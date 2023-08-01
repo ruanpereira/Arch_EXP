@@ -4,3 +4,5 @@ onedrive-abraunegg
 konsave
 snapd
 spotify (from snap)
+powerlevel10k
+alacritty-themes
