@@ -40,7 +40,7 @@ bitwarden
 julia
 clion (from source)
 spyder (from anaconda)
-
+discord
 
 #Fonts you possibly gonna use
 font-manager
