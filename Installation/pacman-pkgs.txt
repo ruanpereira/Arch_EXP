@@ -12,30 +12,32 @@ pipewire-alsa
 pipewire-pulse
 pipewire-jack
 
-#Network
+#Connectivity
 dhcpcd
 networkmanager
 network-manager-applet
 nm-connection-editor
-
 firewalld
 curl
 wget
 openssh
 git
 github-cli
-julia
 
 #Bluetooth
 bluez
 bluez-utils
 
+#Programs and for programming
 firefox 
 emacs
 calibre 
 openvpn
 anaconda (por fora, desconsiderar)
 bitwarden
+julia
+clion (from source)
+spyder (from anaconda)
 
 # For i3 functionality
 redshit
