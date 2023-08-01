@@ -31,6 +31,7 @@ bluez-utils
 #Programs and for programming
 firefox 
 emacs
+neofetch
 calibre 
 openvpn
 anaconda (por fora, desconsiderar)
@@ -39,25 +40,6 @@ julia
 clion (from source)
 spyder (from anaconda)
 
-# For i3 functionality
-redshit
-xf86-input-libinput
-numlockx
-lm_sensors
-mtools
-util-linux
-unrar
-unzip
-tmux
-btop
-htop
-xclip
-exa
-bat
-man-db
-man-pages
-neofetch
-texinfo
 
 #Fonts used
 font-manager
