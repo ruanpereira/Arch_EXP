@@ -41,6 +41,7 @@ clion (from source)
 spyder (from anaconda)
 discord
 htop
+obs-studio
 
 #Fonts you possibly gonna use
 font-manager
