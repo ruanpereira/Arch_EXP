@@ -5,4 +5,4 @@ konsave
 spotify
 powerlevel10k  #(to configure, go to the github page)
 alacritty-themes #configure theme and activate by just typing on the console
-miniconda
+miniconda (from sh archive from site)
