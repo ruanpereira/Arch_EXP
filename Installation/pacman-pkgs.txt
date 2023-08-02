@@ -82,7 +82,13 @@ texlive-pstricks
 
 #Virtual Machine
 virtualbox
+virtualbox-guest-iso
 qemu
-
+libvirt
+iptables-nft
+dnsmasq
+openbsd-netcat
+bridge-utils
+virt-manager
 
 
