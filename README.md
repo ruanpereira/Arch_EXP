@@ -1,5 +1,10 @@
 # Arch_EXP
-A repo for configurations, ideas, apps, scripts and the experience of using a Arch system
+A repo for configurations, ideas, apps, scripts and the experience of using a Arch Linux system and is built by a collaboration of two (~unoccupied~) telecom engineering undergraduates:
+<p align="center"><a href="https://github.com/ruanpereira/Arch_EXP/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=ruanpereira/Arch_EXP">
+</a></p>
+
+
 
 # What is Arch Linux?
 
