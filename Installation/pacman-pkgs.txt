@@ -42,6 +42,8 @@ spyder (from anaconda)
 discord
 htop
 obs-studio
+alacritty
+kitty
 
 #Fonts you possibly gonna use
 font-manager
