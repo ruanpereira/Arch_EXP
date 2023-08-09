@@ -93,4 +93,7 @@ openbsd-netcat
 bridge-utils
 virt-manager
 
+# For python support on Emacs (lsp-mode)
+sudo pacman -S python-lsp-server
+sudo pacman -S --asdeps python-mccabe python-pycodestyle python-pyflakes python-pylint yapf python-whatthepatch flake8 python-rope python-pydocstyle
 
