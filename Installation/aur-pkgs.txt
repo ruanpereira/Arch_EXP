@@ -7,5 +7,5 @@ ttf-all-the-icons
 powerlevel10k  #(to configure, go to the github page)
 alacritty-themes #configure theme and activate by just typing on the console
 miniconda (from sh archive from site)
-hyprland-git
+haskell-language-server-static (for emacs lsp)
 
