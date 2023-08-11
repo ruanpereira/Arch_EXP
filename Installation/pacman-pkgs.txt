@@ -44,6 +44,11 @@ htop
 obs-studio
 alacritty
 kitty
+steam
+heroic game launcher
+spectacle
+libreoffice-still
+
 
 #Fonts you possibly gonna use
 font-manager
