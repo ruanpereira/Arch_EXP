@@ -43,7 +43,6 @@ discord
 htop
 obs-studio
 alacritty
-kitty
 steam
 heroic game launcher
 spectacle
