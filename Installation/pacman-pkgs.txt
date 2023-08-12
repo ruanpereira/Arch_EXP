@@ -5,7 +5,6 @@ grub
 efibootmgr
 os-prober
 dosfstools
-base-devel
 
 #Audio (pulse_audio, jack and alsa are old envs)
 pipewire
@@ -32,6 +31,7 @@ bluez
 bluez-utils
 
 #Programs and for programming
+base-devel
 firefox 
 emacs
 neofetch
