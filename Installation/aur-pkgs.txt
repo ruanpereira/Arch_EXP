@@ -3,6 +3,8 @@ jerry (no needed)
 onedrive-abraunegg
 konsave
 spotify
+heroic-game-launcher-bin
+brave-bin
 ttf-all-the-icons
 powerlevel10k  #(to configure, go to the github page)
 alacritty-themes #configure theme and activate by just typing on the console
