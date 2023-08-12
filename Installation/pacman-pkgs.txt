@@ -47,6 +47,7 @@ alacritty
 steam
 spectacle
 libreoffice-still
+gimp
 
 
 #Fonts you possibly gonna use
