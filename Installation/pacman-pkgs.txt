@@ -1,3 +1,4 @@
+# First enable multilib, paralell downloads and ILoveCandy pplssssssssss.
 #Boot and processor
 intel-ucode
 grub
@@ -44,7 +45,6 @@ htop
 obs-studio
 alacritty
 steam
-heroic game launcher
 spectacle
 libreoffice-still
 
