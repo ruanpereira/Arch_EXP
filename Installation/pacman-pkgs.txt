@@ -5,6 +5,7 @@ grub
 efibootmgr
 os-prober
 dosfstools
+base-devel
 
 #Audio (pulse_audio, jack and alsa are old envs)
 pipewire
