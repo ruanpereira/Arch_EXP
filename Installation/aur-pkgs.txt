@@ -5,7 +5,7 @@ jerry (no needed)
 #For calibre
 onedrive-abraunegg
 
-#Saving configs
+#Saving configs from KDE
 konsave
 
 #Programs
