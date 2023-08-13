@@ -10,4 +10,5 @@ powerlevel10k  #(to configure, go to the github page)
 alacritty-themes #configure theme and activate by just typing on the console
 miniconda (from sh archive from site)
 haskell-language-server-static (for emacs lsp)
-
+#Fonts
+ttf-ms-win10-auto
