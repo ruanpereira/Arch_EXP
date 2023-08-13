@@ -1,14 +1,21 @@
 # Using pikaur
+#Optional
 jerry (no needed)
+
+#For calibre
 onedrive-abraunegg
+
+#Saving configs
 konsave
+
+#Programs
 spotify
 heroic-game-launcher-bin
-brave-bin
-ttf-all-the-icons
-powerlevel10k  #(to configure, go to the github page)
 alacritty-themes #configure theme and activate by just typing on the console
 miniconda (from sh archive from site)
 haskell-language-server-static (for emacs lsp)
+
 #Fonts
 ttf-ms-win10-auto
+ttf-all-the-icons
+powerlevel10k  #(to configure, go to the github page)
