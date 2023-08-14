@@ -45,7 +45,6 @@ discord
 htop
 obs-studio
 alacritty
-steam
 spectacle
 libreoffice-still
 gimp
