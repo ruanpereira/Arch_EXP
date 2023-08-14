@@ -67,7 +67,7 @@ ttf-indic-otf
 ttf-roboto
 ttf-hack
 ttf-ubuntu-font-family
-wqy-zenhei
+
 
 #Latex dependencies
 biber
