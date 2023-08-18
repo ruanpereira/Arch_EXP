@@ -72,6 +72,8 @@ Desktop environtments will be the first sign of a beaultiful computer, but also 
 
 ## Desktop Environtment vs Window Manager <a name="Desktop-Environtment-vs-Window-Manager"></a>
 
+D.E. is short for desktop environtment. WM is for window manager. 
+
 From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. After using and trying to improve my i3 config files for at least 1.5 years, my experience with it says that, it is good if you use i3 in a PC, but it is not good for notebooks. Many limitations in automation and simple tasks (like using wifi, or using a output monitor).
 
 A smart and good way to solve a problem in i3, the display resolution and external HDMI recognition problem, is to install arandr and open it, configure, and save the configuration. Inside the file saved, it will have the configuration of the xrandr you want! So, ignore the /bin/sh part, and paste that command in your i3 config.  
