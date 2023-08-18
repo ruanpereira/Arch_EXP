@@ -9,7 +9,7 @@ A repo for configurations, ideas, apps, scripts and the experience of using a Ar
 2. [Installation Discussions](#Installation-Discussions)
 3. [The Experience using Arch](#The-Experience-(2023))
 4. [Mid 2023](#Mid-2023)
-5. [Programs and functionality](#Programs-and-functionality)
+5. [Programs and functionality](#Programs-and-Functionality)
 6. [WM vs DE](#Desktop-Environtment-vs-Window-Manager)
 
 
