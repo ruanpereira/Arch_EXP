@@ -59,7 +59,7 @@ Desktop environtments will be the first sign of a beaultiful computer, but also 
 
 ## Programs and Functionality <a name="Programs-and-Functionality"></a>
 
-## Desktop Environtment vs Window Manager <a name="Desktop-Environntment-vs-Window-Manager"></a>
+## Desktop Environtment vs Window Manager <a name="Desktop-Environtment-vs-Window-Manager"></a>
 
 From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. After using and trying to improve my i3 config files for at least 1.5 years, my experience with it says that, it is good if you use i3 in a PC, but it is not good for notebooks. Many limitations in automation and simple tasks (like using wifi, or using a output monitor).
 
