@@ -1,39 +1,7 @@
-PELO AMOR DE DEUS, VOCE PRECISA VER ISSO
+To install CLion, follow the instattion on [clion](https://www.jetbrains.com/clion/download/#section=linux).
 
-DEPOIS DE INSTLAR O CLION NORMALMENTE, FOADSE COMPLETAMENTE O SEU LOCAL DE INSTA
-LAÇÃO.
+Download the tar, unzip it, and run the bin with bash.
 
-PARA QUE O CLION SEJA ACESSADO PELO SISTEMA NORMALMENTE, INSIRA O PATH
-DO BAGULHO NO SEU .bashrc no final do arquivo.
+$ bash clion.bin (once inside bin dir on clion installation).
 
-COmo assim?
-
-
-para o do clion
-
-nano .bashrc
-
-export PATH="/opt/Clion/clion-2022.3.2/bin:$PATH"
-
-salve, e depois
-
-source ~/.bashrc
-
-funciona p qualquer programa em uqalquer diret
-
-P/ zsh:
-
-nano ~/.zshrc
-
-#go to the end of the file
-
-path+=("/home/gh0st/sources/clion-2023.1.2/b>
-export PATH
-
-and restart the terminal or 
-
-source ~/.zshrc
-
-
-
-Or, after installing normally (without doing the export part), open the program, close any project (if open), and click on the settings in the left inferior corner, and on create new desktop entry (for all users).
+After installing, go to the setting and click on create a desktop entry.
