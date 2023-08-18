@@ -10,7 +10,7 @@ A repo for configurations, ideas, apps, scripts and the experience of using a Ar
 3. [The Experience using Arch](#The-Experience-(2023))
 4. [Mid 2023](#Mid-2023)
 5. [Programs and functionality](#Programs-and-funnctionality)
-6. [WM vs DE](#Trying-a-Windows-Manager-Again)
+6. [WM vs DE](#Desktop-Environtment-vs-Window-Manager)
 
 
 ## What is Arch Linux? 
