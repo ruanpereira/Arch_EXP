@@ -20,11 +20,11 @@ Arch Linux is a linux operational system, x86_84 based, where the idea of the sy
 
 The system only come with the bare minimum installation, and you construct the system as it pleases you. Since the partition table, to the desktop enviroment(or windows manager) of your choice. 
 
-## Installation Discussions. (On construction)
+## Installation Discussions. (On construction) <a name="Installaion-Discussions"></a>
 After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for 
 the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, based on another archive here. You can find the edited script on a forked project here. 
 
-## The Experience (2023)
+## The Experience (2023) <a name="The-Experience-(2023)"></a>
 Actually, i use KDE DE (how to install in the install file), with linux standard newer kernel available. I don't use zsh, or other bash things. For installing, i use pacman and yay, pretty good ones, i recommend. To the pacman, some tips: 
 
 - Update your mirrors from time to time (monthy or somethig like this) There are many ways to do so, the most common are [reflector](https://ostechnix.com/retrieve-latest-mirror-list-using-reflector-arch-linux/), or with the full mirrorlist (to get, go to [this site](https://archlinux.org/mirrorlist/), you put that in the /etc/pacman.d/mirrorlist file, and the package rankmirrors will rank by speed (to know how to [use](https://www.reddit.com/r/linuxbrasil/comments/9esc3s/usando_reflector_e_rankmirrors_no_arch_linux/))
@@ -49,7 +49,7 @@ All this in 30 minutes searching ideas from my not-creative mind. More examples 
 
 This is what i like about it.
 
-## Mid 2023
+## Mid 2023 <a name="Mid-2023"></a>
 After 6 months of using Arch Linux, i figured out some important tasks(important for new meat using, and for oldest users that don't organize themselfs [i don't blame, i am also confused at some point.]):
 1 - The basics of Arch Linux is being capable of completing a installation WITHOUT desktop environtments. Having the disks partitioned, the language set, the hclock working, wifi working, and other basics that matter to then primitive use of a computer these days. That is the basic of Arch Linux.
 2 - After the base, comes the second important thing you will need: a desktop environtment or window management. These will set how your computer will look, but also how deep you are going to learn. In this part, you are not just pondering about the aesthetics, but how much functionality you system is going to have from the go, and how much you are going to configure. Clipboard (the ctrl + C ctrl + V history), Screenshots, bar on the screen, file manager, internet manager screen, sound manager screen. All of this is choosed in the moment you choose this part.
@@ -57,9 +57,9 @@ Even the login screen, is also set here (after the hardware initialization).
 
 Desktop environtments will be the first sign of a beaultiful computer, but also will be the most simple and plug and play way to get your computer working for your needs. If you don't have the time, the pacience, ou just don't care about it, Desktop Environtment is your way.
 
-## Programs and Functionality
+## Programs and Functionality <a name="Programs-and-Functionality"></a>
 
-## Desktop Environtment vs Window Manager
+## Desktop Environtment vs Window Manager <a name="Desktop-Environntment-vs-Window-Manager"></a>
 
 From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. After using and trying to improve my i3 config files for at least 1.5 years, my experience with it says that, it is good if you use i3 in a PC, but it is not good for notebooks. Many limitations in automation and simple tasks (like using wifi, or using a output monitor).
 
