@@ -250,6 +250,6 @@ sudo systemctl start lightdm.service
 https://itsfoss.com/i3-customization/ font. 
 ```
 
-Use polybar.
+After installing the i3 and going onto, start to install the programs that you think you will need. A file manager (pcmanfm), by example. To use wifi, go to a terminal and type nmtui. 
 
 **Finish this part properly later.**
