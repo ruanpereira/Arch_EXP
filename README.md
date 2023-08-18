@@ -5,7 +5,7 @@ A repo for configurations, ideas, apps, scripts and the experience of using a Ar
 </a></p>
 
 # Table of Contents
-1. [What is Arch Linux] (#What-is-Arch-Linux)
+1. [What is Arch Linux] (#What-is-Arch-Linux?)
 2. [Installation Discussions] (#Installation-Discussions)
 3. [The Experience using Arch] (#The-Experience-(2023))
 4. [Mid 2023] (#Mid-2023)
@@ -13,7 +13,7 @@ A repo for configurations, ideas, apps, scripts and the experience of using a Ar
 6. [WM vs DE] (#Trying-a-Windows-Manager-Again)
 
 
-# What is Arch Linux?
+## What is Arch Linux?
 
 Arch Linux is a linux operational system, x86_84 based, where the idea of the system is to make your owm system. 
 ![Arch-linux-logo](https://user-images.githubusercontent.com/77154574/230751122-7527170c-f03a-48e9-9e37-9f54fec8bb99.png)
