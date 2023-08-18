@@ -57,7 +57,7 @@ Even the login screen, is also set here (after the hardware initialization).
 
 Desktop environtments will be the first sign of a beaultiful computer, but also will be the most simple and plug and play way to get your computer working for your needs. If you don't have the time, the pacience, ou just don't care about it, Desktop Environtment is your way.
 
-## Trying a windows manager again
+## Desktop Environtment vs Window Manager
 
 From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. After using and trying to improve my i3 config files for at least 1.5 years, my experience with it says that, it is good if you use i3 in a PC, but it is not good for notebooks. Many limitations in automation and simple tasks (like using wifi, or using a output monitor).
 
