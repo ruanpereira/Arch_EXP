@@ -57,7 +57,7 @@ Even the login screen, is also set here (after the hardware initialization).
 
 Desktop environtments will be the first sign of a beaultiful computer, but also will be the most simple and plug and play way to get your computer working for your needs. If you don't have the time, the pacience, ou just don't care about it, Desktop Environtment is your way.
 
-## Programs and Funcionality
+## Programs and Functionality
 
 ## Desktop Environtment vs Window Manager
 
