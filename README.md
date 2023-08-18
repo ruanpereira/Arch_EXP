@@ -21,8 +21,19 @@ Arch Linux is a linux operational system, x86_84 based, where the idea of the sy
 The system only come with the bare minimum installation, and you construct the system as it pleases you. Since the partition table, to the desktop enviroment(or windows manager) of your choice. 
 
 ## Installation Discussions. (On construction) <a name="Installaion-Discussions"></a>
-After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for 
-the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, based on another archive here. You can find the edited script on a forked project here. 
+
+The installation can be found [here](https://wiki.archlinux.org/title/Installation_guide). This will be the MINIMUM to consider a operational system (and nowadays the operational systems don't use the minimum here, but much more.). I recommend searching for some guides for installations, [like this one](https://www.youtube.com/watch?v=PQgyW10xD8s). In my opinion, the basic installation is cool to start using Linux with more responsability. If you want to understand the installation, it is a good idea to create a VM or just use a secondary machine to redo this installation at least  5 or 6 times. Repetition is key. 
+
+Just to be sure that you are undestanding. Installing a operational system doesn't mean that you will have a GUI (a graphical interface). Just the basic of a system (terminal, programs, services). 
+
+After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, based on another archive here. You can find the edited script on a forked project here. 
+
+After installing, the post-installation is choose a GUI. There, it starts the discussion about the best DE, using or not a WM, etc. The best start is to use KDE or GNOME (search and choose the best to you, and how to install it on arch).
+
+For dual-boot, it is the best option.
+
+If you do not want the installation process, or to automate it, use arch-install, or search about arco-linux and how to install.
+Using arch-install, it is a  bit tricky, but teoreticaly it works. 
 
 ## The Experience (2023) <a name="The-Experience-(2023)"></a>
 Actually, i use KDE DE (how to install in the install file), with linux standard newer kernel available. I don't use zsh, or other bash things. For installing, i use pacman and yay, pretty good ones, i recommend. To the pacman, some tips: 
