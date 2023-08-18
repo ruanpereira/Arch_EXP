@@ -5,7 +5,7 @@ A repo for configurations, ideas, apps, scripts and the experience of using a Ar
 </a></p>
 
 # Table of Contents
-1. [What is Arch Linux](#what-is-arch-linux?)
+1. [What is Arch Linux](#What-is-Arch-Linux?)
 2. [Installation Discussions](#Installation-Discussions)
 3. [The Experience using Arch](#The-Experience-(2023))
 4. [Mid 2023](#Mid-2023)
