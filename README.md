@@ -23,6 +23,7 @@ The system only come with the bare minimum installation, and you construct the s
 # Installation Discussions. (On construction)
 After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for 
 the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, based on another archive here. You can find the edited script on a forked project here. 
+
 # The Experience (2023)
 Actually, i use KDE DE (how to install in the install file), with linux standard newer kernel available. I don't use zsh, or other bash things. For installing, i use pacman and yay, pretty good ones, i recommend. To the pacman, some tips: 
 
@@ -48,6 +49,14 @@ All this in 30 minutes searching ideas from my not-creative mind. More examples 
 
 This is what i like about it.
 
+## Mid 2023
+After 6 months of using Arch Linux, i figured out some important tasks(important for new meat using, and for oldest users that don't organize themselfs [i don't blame, i am also confused at some point.]):
+1 - The basics of Arch Linux is being capable of completing a installation WITHOUT desktop environtments. Having the disks partitioned, the language set, the hclock working, wifi working, and other basics that matter to then primitive use of a computer these days. That is the basic of Arch Linux.
+2 - After the base, comes the second important thing you will need: a desktop environtment or window management. These will set how your computer will look, but also how deep you are going to learn. In this part, you are not just pondering about the aesthetics, but how much functionality you system is going to have from the go, and how much you are going to configure. Clipboard (the ctrl + C ctrl + V history), Screenshots, bar on the screen, file manager, internet manager screen, sound manager screen. All of this is choosed in the moment you choose this part.
+Even the login screen, is also set here (after the hardware initialization).
+
+Desktop environtments will be the first sign of a beaultiful computer, but also will be the most simple and plug and play way to get your computer working for your needs. If you don't have the time, the pacience, ou just don't care about it, Desktop Environtment is your way.
+
 ## Trying a windows manager again
 
 From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. After using and trying to improve my i3 config files for at least 1.5 years, my experience with it says that, it is good if you use i3 in a PC, but it is not good for notebooks. Many limitations in automation and simple tasks (like using wifi, or using a output monitor).
@@ -59,10 +68,4 @@ All im learning is from : https://wiki.hyprland.org/Getting-Started/Master-Tutor
 
 From this, my gratuation took some of my soul for a while. Consider this the end of this sprint os experience, since i no longer remember what i was writing. I decided to make a new start point. More organized, more explained, more detailed. But experiences are experiences, and this is an experience.
 
-## Mid 2023
-After 6 months of using Arch Linux, i figured out some important tasks(important for new meat using, and for oldest users that don't organize themselfs [i don't blame, i am also confused at some point.]):
-1 - The basics of Arch Linux is being capable of completing a installation WITHOUT desktop environtments. Having the disks partitioned, the language set, the hclock working, wifi working, and other basics that matter to then primitive use of a computer these days. That is the basic of Arch Linux.
-2 - After the base, comes the second important thing you will need: a desktop environtment or window management. These will set how your computer will look, but also how deep you are going to learn. In this part, you are not just pondering about the aesthetics, but how much functionality you system is going to have from the go, and how much you are going to configure. Clipboard (the ctrl + C ctrl + V history), Screenshots, bar on the screen, file manager, internet manager screen, sound manager screen. All of this is choosed in the moment you choose this part.
-Even the login screen, is also set here (after the hardware initialization).
 
-Desktop environtments will be the first sign of a beaultiful computer, but also will be the most simple and plug and play way to get your computer working for your needs. If you don't have the time, the pacience, ou just don't care about it, Desktop Environtment is your way.
