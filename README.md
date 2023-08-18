@@ -9,7 +9,7 @@ A repo for configurations, ideas, apps, scripts and the experience of using a Ar
 2. [Installation Discussions](#Installation-Discussions)
 3. [The Experience using Arch](#The-Experience-(2023))
 4. [Mid 2023](#Mid-2023)
-5. [Programs and functionality]
+5. [Programs and functionality](#Programs-and-funnctionality)
 6. [WM vs DE](#Trying-a-Windows-Manager-Again)
 
 
@@ -20,11 +20,11 @@ Arch Linux is a linux operational system, x86_84 based, where the idea of the sy
 
 The system only come with the bare minimum installation, and you construct the system as it pleases you. Since the partition table, to the desktop enviroment(or windows manager) of your choice. 
 
-# Installation Discussions. (On construction)
+## Installation Discussions. (On construction)
 After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for 
 the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, based on another archive here. You can find the edited script on a forked project here. 
 
-# The Experience (2023)
+## The Experience (2023)
 Actually, i use KDE DE (how to install in the install file), with linux standard newer kernel available. I don't use zsh, or other bash things. For installing, i use pacman and yay, pretty good ones, i recommend. To the pacman, some tips: 
 
 - Update your mirrors from time to time (monthy or somethig like this) There are many ways to do so, the most common are [reflector](https://ostechnix.com/retrieve-latest-mirror-list-using-reflector-arch-linux/), or with the full mirrorlist (to get, go to [this site](https://archlinux.org/mirrorlist/), you put that in the /etc/pacman.d/mirrorlist file, and the package rankmirrors will rank by speed (to know how to [use](https://www.reddit.com/r/linuxbrasil/comments/9esc3s/usando_reflector_e_rankmirrors_no_arch_linux/))
