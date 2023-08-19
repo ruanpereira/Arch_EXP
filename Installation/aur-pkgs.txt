@@ -1,12 +1,9 @@
-# Using pikaur
+# Using pikaur or paru or yay
 #Optional
 jerry (no needed)
 
 #For calibre
 onedrive-abraunegg
-
-#Saving configs from KDE
-konsave
 
 #Programs
 spotify
