@@ -50,7 +50,7 @@ if home, ```mount /dev/sdx``` (home partition) ```/mnt/home``` (you should have 
 
 ```
 pacstrap
- -i /mnt base base-devel linux linux-headers linux-firmware 
+ -K /mnt base base-devel linux linux-headers linux-firmware 
 intel-ucode(or amd-ucode) sudo git man-db man-pages neovim
 ```
 ## Generating the filesystem table:
