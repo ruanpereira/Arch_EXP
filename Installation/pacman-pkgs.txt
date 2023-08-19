@@ -98,6 +98,8 @@ virt-manager
 
 Post install
 
+Install ohmyzsh
+
 iptables-nft
 neofetch
 discord
