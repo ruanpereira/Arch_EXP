@@ -5,6 +5,8 @@ jerry (no needed)
 #For calibre
 onedrive-abraunegg
 
+julia-bin
+
 #Programs
 spotify
 alacritty-themes #configure theme and activate by just typing on the console
