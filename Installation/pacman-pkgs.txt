@@ -34,19 +34,15 @@ bluez-utils
 base-devel
 firefox 
 emacs
-neofetch
 calibre 
 openvpn
 bitwarden
-julia
-clion (from source)
-spyder (from anaconda)
-discord
 htop
+btop
 obs-studio
 alacritty
 spectacle
-libreoffice-still
+libreoffice-fresh
 gimp
 
 
@@ -93,11 +89,20 @@ virtualbox
 virtualbox-guest-iso
 qemu
 libvirt
-iptables-nft
+iptables
 dnsmasq
 openbsd-netcat
 bridge-utils
 virt-manager
+
+
+Post install
+
+iptables-nft
+neofetch
+discord
+Clion (from source)
+Spyder (from miniconda)
 
 # For python support on Emacs (lsp-mode)
 sudo pacman -S python-lsp-server
