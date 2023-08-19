@@ -51,10 +51,7 @@ if home, ```mount /dev/sdx``` (home partition) ```/mnt/home``` (you should have 
 ```
 pacstrap
  -i /mnt base base-devel linux linux-headers linux-firmware 
-intel-ucode(or amd-ucode) sudo nano vim git neofetch (to show off) 
-networkmanager(internet manager) dhcpcd (dhcp client) 
-pulseaudio(audio) bluez(for bluetooth) man-db man-pages texinfo emacs
-neovim
+intel-ucode(or amd-ucode) sudo git man-db man-pages neovim
 ```
 ## Generating the filesystem table:
 ```genfstab -U /mnt >> /mnt/etc/fstab ```
