@@ -14,5 +14,6 @@ miniconda (from sh archive from site)
 haskell-language-server-static (for emacs lsp)
 
 #Fonts
+ttf-icomoon-feather
 ttf-all-the-icons
 powerlevel10k  #(to configure, go to the github page)
