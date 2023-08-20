@@ -99,7 +99,7 @@ virt-manager
 Post install
 
 Install ohmyzsh
-gtk-engine-murrine
+github-clie
 iptables-nft
 neofetch
 discord
