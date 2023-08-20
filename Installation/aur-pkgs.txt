@@ -5,6 +5,7 @@ jerry (no needed)
 #For calibre
 onedrive-abraunegg
 
+#To run Julia
 julia-bin
 
 #Programs
