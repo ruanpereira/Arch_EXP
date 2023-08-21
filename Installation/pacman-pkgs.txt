@@ -44,6 +44,7 @@ alacritty
 spectacle
 libreoffice-fresh
 gimp
+timeshift
 
 
 #Fonts you possibly gonna use
