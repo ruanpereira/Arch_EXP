@@ -44,8 +44,6 @@ alacritty
 spectacle
 libreoffice-fresh
 gimp
-timeshift
-
 
 #Fonts you possibly gonna use
 font-manager
@@ -100,7 +98,8 @@ virt-manager
 Post install
 
 Install ohmyzsh
-github-clie
+timeshift
+github-cli
 iptables-nft
 neofetch
 discord
