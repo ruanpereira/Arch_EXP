@@ -22,3 +22,5 @@ and add the following:
 
 [Font](https://wiki.archlinux.org/title/PCManFM#%22Not_authorized%22_error_when_attempting_to_mount_drive).
 
+For dolphin, go [here](https://wiki.archlinux.org/title/Udisks#Permissions)
+
