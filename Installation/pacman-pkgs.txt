@@ -6,14 +6,14 @@ efibootmgr
 os-prober
 dosfstools
 
-#Audio (pulse_audio, jack and alsa are old envs)
+# Audio (pulse_audio, jack and alsa are old envs)
 pipewire
 wireplumber
 pipewire-alsa
 pipewire-pulse
 pipewire-jack
 
-#Connectivity
+# Connectivity
 dhcpcd
 networkmanager
 network-manager-applet
@@ -25,8 +25,11 @@ openssh
 git
 github-cli
 cups
+ntfs-3g
+openresolv
+openvpn
 
-#Bluetooth
+# Bluetooth
 bluez
 bluez-utils
 
@@ -44,6 +47,22 @@ alacritty
 spectacle
 libreoffice-fresh
 gimp
+kalendar
+bzip2
+pcmanfm
+dolphin
+lm_sensors
+lxappearence
+polkit-kde-agent
+redshift
+udisks2
+unzip
+xarchiver
+xf86-video-intel
+xf86-video-mesa
+xf86-input-synaptics
+xkeyboard-config
+xdg-user-dirs
 
 #Fonts you possibly gonna use
 font-manager
@@ -61,7 +80,6 @@ ttf-indic-otf
 ttf-roboto
 ttf-hack
 ttf-ubuntu-font-family
-
 
 #Latex dependencies
 biber
@@ -94,19 +112,28 @@ openbsd-netcat
 bridge-utils
 virt-manager
 
+# Icons
+adwaita
+breeze
+libappindicator-gtk3
+network-manager-applet
+nm-connection-editor
+notification-daemon
+oxygen
+oxygen-icons
+papirus-icon-theme
 
-Post install
+# Post install
+# ohmyzsh
+# timeshift
+# github-cli
+# iptables-nft
+# neofetch
+# discord
+# Clion (from source)
+# Spyder (from miniconda)
 
-Install ohmyzsh
-timeshift
-github-cli
-iptables-nft
-neofetch
-discord
-Clion (from source)
-Spyder (from miniconda)
-
-# For python support on Emacs (lsp-mode)
-sudo pacman -S python-lsp-server
-sudo pacman -S --asdeps python-mccabe python-pycodestyle python-pyflakes python-pylint yapf python-whatthepatch flake8 python-rope python-pydocstyle
+# For python support on Emacs (lsp-mode) (post install)
+# sudo pacman -S python-lsp-server
+# sudo pacman -S --asdeps python-mccabe python-pycodestyle python-pyflakes python-pylint yapf python-whatthepatch flake8 python-rope python-pydocstyle
 
