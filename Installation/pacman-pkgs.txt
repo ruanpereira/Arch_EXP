@@ -25,6 +25,7 @@ openssh
 git
 github-cli
 cups
+hplip
 ntfs-3g
 openresolv
 openvpn
