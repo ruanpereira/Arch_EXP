@@ -29,6 +29,7 @@ hplip
 ntfs-3g
 openresolv
 openvpn
+system-config-printer
 
 # Bluetooth
 bluez
