@@ -29,6 +29,7 @@ hplip
 ntfs-3g
 openresolv
 openvpn
+networkmanager-openvpn
 system-config-printer
 
 # Bluetooth
@@ -65,6 +66,7 @@ xf86-video-mesa
 xf86-input-synaptics
 xkeyboard-config
 xdg-user-dirs
+libnma-gtk4
 
 #Fonts you possibly gonna use
 font-manager
