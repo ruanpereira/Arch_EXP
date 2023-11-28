@@ -250,3 +250,24 @@ https://itsfoss.com/i3-customization/ font.
 After installing the i3 and going onto, start to install the programs that you think you will need. A file manager (pcmanfm), by example. To use wifi, go to a terminal and type nmtui. 
 
 **Finish this part properly later.**
+
+# Polkit Agent
+
+A polkit agent is a utilitary that permits the user to authenticate thenselfs (sudo using by example). On any system, a polkit exists. For DE(Desktop Environtments), this comes along the system. Since i3 does not have one, i use the kde agent. To use it, first you need to install it using pacman:
+
+```
+
+$ sudo pacman -S polkit-kde-agent
+
+```
+
+After that, enable the autostart in the config file of i3:
+
+
+```
+
+exec_always --no-startup-id "/usr/lib/polkit-kde-authentication-agent-1"
+
+```
+
+And thats it. Should now enable the authentication agent for uses like building a disk by a file manager, starting a systemd service, etc.
