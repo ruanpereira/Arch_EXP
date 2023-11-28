@@ -46,7 +46,9 @@ bitwarden
 htop
 btop
 obs-studio
-alacritty
+kitty
+polybar
+neovim
 spectacle
 libreoffice-fresh
 gimp
@@ -67,6 +69,13 @@ xf86-input-synaptics
 xkeyboard-config
 xdg-user-dirs
 libnma-gtk4
+rofi
+picom
+sxhkd
+zsh
+hplip
+
+
 
 #Fonts you possibly gonna use
 font-manager
