@@ -281,3 +281,12 @@ https://wiki.archlinux.org/title/Fingerprint_GUI (for undestanding how agents wo
 https://wiki.archlinux.org/title/Polkit#Authentication_agents
 
 ```
+
+# Set keyboard to br if you use english lang on installation of Arch (brazillians problem, ta entendeno?)
+
+Do
+
+```
+$ localectl set-x11-keymap br
+
+```
