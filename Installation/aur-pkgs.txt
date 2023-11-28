@@ -10,7 +10,6 @@ julia-bin
 
 #Programs
 spotify
-alacritty-themes #configure theme and activate by just typing on the console
 miniconda (from sh archive from site)
 haskell-language-server-static (for emacs lsp)
 
