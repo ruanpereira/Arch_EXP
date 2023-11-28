@@ -1,0 +1,8 @@
+require("aktsu.plugins-setup")
+require("aktsu.core.options")
+require("aktsu.core.keymaps")
+require("aktsu.core.theme")
+require("aktsu.plugins.comment")
+require("aktsu.plugins.nvim-tree")
+require("aktsu.plugins.lualine")
+-- require("aktsu.plugins.telescope")

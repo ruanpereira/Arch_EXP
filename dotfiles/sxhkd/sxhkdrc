@@ -1,0 +1,87 @@
+# Change keyboard layout
+
+super + space
+
+  {setxkbmap us, setxkbmap br}
+
+# Switch / Move between workspaces using i3wm
+
+super + {1-9}
+
+    i3-msg workspace {1-9}
+
+super + shift+{1-9}
+
+    i3-msg move container to workspace number {1-9}
+
+# Open powermenu
+
+control + alt + l
+
+    sh ~/.config/rofi/mypowermenu/powermenu.sh
+
+# Open application launcher
+
+super + d
+
+    sh  ~/.config/rofi/mylauncher/launcher.sh
+
+# Decrease brightness
+
+XF86MonBrightnessDown
+
+    xbacklight -dec 10%
+
+# Increase brightness
+
+XF86MonBrightnessUp
+
+    xbacklight -inc 10%
+
+# Print options
+
+Print
+
+    spectacle --region
+
+shift + Print 
+
+    spectacle --current
+
+super + shift + Print
+
+    spectacle --gui
+
+# [ Favorite apps ]
+
+# Terminal
+
+super + Return
+
+    kitty
+
+# File manager
+
+super + e
+
+    pcmanfm
+
+# Online Navigator
+
+super + z
+
+    firefox
+
+# Text Editor
+
+super + x
+
+    emacs
+
+# Music
+
+super + c
+
+     spotify
+
+
