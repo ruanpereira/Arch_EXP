@@ -12,6 +12,7 @@ wireplumber
 pipewire-alsa
 pipewire-pulse
 pipewire-jack
+pavucontrol
 
 # Connectivity
 dhcpcd
@@ -45,27 +46,37 @@ openvpn
 bitwarden
 htop
 btop
+gnome-terminal
 obs-studio
 kitty
 polybar
+gparted
 neovim
 spectacle
 libreoffice-fresh
 gimp
+korganizer
+nano
 kalendar
+numlockx
+nitrogen
 bzip2
+tmux
 pcmanfm
 dolphin
 lm_sensors
+evince
 lxappearence
 polkit-kde-agent
+print-manager
 redshift
 udisks2
 unzip
 xarchiver
 xf86-video-intel
-xf86-video-mesa
+xf86-video-vesa
 xf86-input-synaptics
+xf86-input-libinput
 xkeyboard-config
 xdg-user-dirs
 libnma-gtk4
@@ -74,6 +85,19 @@ picom
 sxhkd
 zsh
 hplip
+sddm
+qbittorrent
+qt5ct
+ripgrep
+unrar 
+unzip
+virtualbox
+virtalbox-guest-iso
+xapp
+xclip
+xorg
+
+
 
 
 
