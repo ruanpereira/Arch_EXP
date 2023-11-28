@@ -261,7 +261,7 @@ $ sudo pacman -S polkit-kde-agent
 
 ```
 
-After that, enable the autostart in the config file of i3:
+After that, enable the autostart in the config file of i3 by :
 
 
 ```
