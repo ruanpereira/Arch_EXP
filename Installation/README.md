@@ -271,3 +271,13 @@ exec_always --no-startup-id "/usr/lib/polkit-kde-authentication-agent-1"
 ```
 
 And thats it. Should now enable the authentication agent for uses like building a disk by a file manager, starting a systemd service, etc.
+
+This was possible by: 
+
+```
+https://wiki.archlinux.org/title/Autostarting
+https://wiki.archlinux.org/title/I3#Autostart
+https://wiki.archlinux.org/title/Fingerprint_GUI (for undestanding how agents work with other apps)
+https://wiki.archlinux.org/title/Polkit#Authentication_agents
+
+```
