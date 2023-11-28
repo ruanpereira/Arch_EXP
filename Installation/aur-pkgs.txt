@@ -19,3 +19,4 @@ powerlevel10k  #(to configure, go to the github page)
 
 # For lock screen
 i3lock-color #(also needs to be configured, may be on dotfiles already working, but not in the sleep screen timer)
+betterlockscreen (corrently using)
