@@ -87,7 +87,6 @@ qbittorrent
 qt5ct
 ripgrep
 unrar 
-unzip
 virtualbox
 virtalbox-guest-iso
 xapp
