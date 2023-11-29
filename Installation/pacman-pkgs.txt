@@ -42,10 +42,8 @@ base-devel
 firefox 
 emacs
 calibre 
-openvpn
 bitwarden
 htop
-btop
 gnome-terminal
 obs-studio
 kitty
@@ -69,11 +67,10 @@ evince
 lxappearence
 polkit-kde-agent
 print-manager
-redshift
 udisks2
 unzip
 xarchiver
-xf86-video-intel
+xf86-video-intel #preferably mesa instead#
 xf86-video-vesa
 xf86-input-synaptics
 xf86-input-libinput
