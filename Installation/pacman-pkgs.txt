@@ -27,11 +27,9 @@ git
 github-cli
 cups
 hplip
-ntfs-3g
 openresolv
 openvpn
 networkmanager-openvpn
-system-config-printer
 
 # Bluetooth
 bluez
@@ -90,7 +88,7 @@ unrar
 xapp
 xclip
 xorg
-
+ntfs-3g
 
 
 
