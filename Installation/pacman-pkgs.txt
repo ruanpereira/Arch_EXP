@@ -61,7 +61,7 @@ tmux
 pcmanfm
 dolphin
 lm_sensors
-evince
+evince #or okular
 lxappearence
 polkit-kde-agent
 print-manager
@@ -79,7 +79,6 @@ rofi
 picom
 sxhkd
 zsh
-hplip
 sddm
 qbittorrent
 qt5ct
