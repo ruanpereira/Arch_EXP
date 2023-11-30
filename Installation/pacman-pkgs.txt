@@ -81,7 +81,7 @@ sxhkd
 zsh
 sddm
 qbittorrent
-qt5ct
+qt5
 ripgrep
 unrar 
 xapp
