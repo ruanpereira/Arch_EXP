@@ -1,4 +1,4 @@
-# INSTALLATION MANUAL, FOR LEARN AND GUIDE PURPOSES,  KDE version, from SCRATCH
+# INSTALLATION MANUAL, FOR LEARN AND GUIDE PURPOSES,  KDE and i3 version, from SCRATCH
 
 ## First test the connection:
 
