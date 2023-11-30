@@ -129,6 +129,9 @@ texlive-humanities
 texlive-pictures
 texlive-pstricks
 
+# For install biber texlive-basic texlive-latex texlive-latexrecommended texlive-latexextra texlive-binextra texlive-bibtexextra texlive-fontsrecommended texlive-fontsextra texlive-fontutils texlive-langcyrillic texlive-langportuguese texlive-formatsextra texlive-mathscience texlive-publishers texlive-humanities texlive-pictures texlive-pstricks
+
+
 #Virtual Machine
 virtualbox
 virtualbox-guest-iso
