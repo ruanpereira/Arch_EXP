@@ -21,8 +21,6 @@ pavucontrol
 # Connectivity
 dhcpcd
 networkmanager
-network-manager-applet
-nm-connection-editor
 firewalld
 curl
 wget
@@ -30,6 +28,7 @@ openssh
 git
 github-cli
 cups
+# Below here in the connectivity category, it is optional. I need it. You maybe not.
 hplip
 openresolv
 openvpn
