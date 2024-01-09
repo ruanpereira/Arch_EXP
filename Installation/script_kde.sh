@@ -70,7 +70,7 @@ echo "
 ###################################################
 "
 
-pacman -S --needed - < pkgs_kde.txt --noconfirm
+pacman -S --needed - < pkgs_kde.txt
 
 echo "Done!"
 
