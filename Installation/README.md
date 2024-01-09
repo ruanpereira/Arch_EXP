@@ -44,7 +44,7 @@ Now, we ```mount``` the partitions:
 
 ```mount /dev/sdx(root partition) /mnt```
 
-if home, ```mount /dev/sdx``` (home partition) ```/mnt/home``` (you should have this created by now, with ```mkdir```)
+if home partition was created, ```mount /dev/sdx``` (home partition) ```/mnt/home``` (you should have this created by now, with ```mkdir```). If not, just create the partition with ```mkdir /mnt/home```
 
 ```mount /dev/sdx```(Efi partition) (if created) ```/mnt/efi```
 
@@ -91,7 +91,7 @@ Save the changes and exit.
 
 ```nano /etc/locale.gen ```
 
-uncomment the system language to be used (```en_US.UTF-8``` for US English, and ```pt_BR-UTF-8``` for Brazilian Portuguese) 
+uncomment the system language to be used (```en_US.UTF-8``` for US English, and ```pt_BR-UTF-8``` for Brazilian Portuguese).
 
 Generating the locale:
 
@@ -101,9 +101,43 @@ We create a locale configuration file with the command
 
 ```echo LANG=*insert the language to be utilized, for example pt_BR.UTF-8* > /etc/locale.conf```
 
-At the end, export the language:
+For the keyboard persistent change:
 
-```export LANG=en_BR.UTF-8 (same thing as above)```
+```echo "KEYMAP=br-abnt2" >> /etc/vconsole.conf```
+
+Since i am brazilian and have different keyboard and units, got from a friend (credits below on this README, ezequias júnior) a set of locales that mix english with portuguese. 
+
+```
+echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+echo "en_GB.UTF-8 UTF-8" >> /etc/locale.gen
+echo "pt_BR.UTF-8 UTF-8" >> /etc/locale.gen
+```
+
+```
+locale-gen
+```
+
+```
+echo "LANG=en_US.UTF-8
+LC_ADDRESS=en_US.UTF-8
+LC_COLLATE=C
+LC_CTYPE=en_US.UTF-8
+LC_IDENTIFICATION=en_US.UTF-8
+LC_MEASUREMENT=pt_BR.UTF-8
+LC_MESSAGES=en_US.UTF-8
+LC_MONETARY=en_US.UTF-8
+LC_NAME=en_US.UTF-8
+LC_NUMERIC=en_US.UTF-8
+LC_PAPER=en_US.UTF-8
+LC_TELEPHONE=en_US.UTF-8
+LC_TIME=en_GB.UTF-8" > /etc/locale.conf
+
+```
+
+
+```
+echo "KEYMAP=br-abnt2" >> /etc/vconsole.conf
+```
 
 Now we create the hostname for the computer: 
 
@@ -177,7 +211,10 @@ Now we generate the grub configuration file:
 
 So, after finishing installing, more down on the file, you are going to have the explanation for the rest. For now, follow without thinking about.
 
-Finally, we will start the 
+From this point on, the Arch is already installed on your computer. However, for didactic purposes, let's install a graphical user interface, KDE. 
+You can install whatever you like, from there you have to look up environments and window managers and choose one and install it on your system. Also you can just install some minor packages (such as networkmanager and dhcpcd, enable it, and you can use Arch linux without GUI).
+
+Finally, we will start the installation of KDE and 
 
 ## internet services. 
 
@@ -224,8 +261,7 @@ os-prober (this time it will recognize that Windows exists, and a warning messag
 
 And now dual boot is configured.
 
-From this point on, the Arch is already installed on your computer. However, for didactic purposes, let's install a graphical user interface, KDE. 
-You can install whatever you like, from there you have to look up environments and window managers and choose one and install it on your system. 
+
 
 # For KDE
 
