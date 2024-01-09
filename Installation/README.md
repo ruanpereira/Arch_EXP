@@ -179,6 +179,9 @@ Finally, we will start the
 
 ## internet services. 
 
+Install them:
+```pacman -S networkmanager firewalld dhcpcd```
+
 First, dhcp: 
 
 ```systemctl enable dhcpcd.service```
@@ -186,6 +189,11 @@ First, dhcp:
 And now the internet connection: 
 
 ```systemctl enable NetworkManager.service``` 
+
+For firewall: 
+
+```systemctl enable firewalld.service``` 
+
 
 Now we can exit the arch-chroot environment: 
 
