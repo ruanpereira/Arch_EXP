@@ -1,11 +1,8 @@
-# First enable multilib, paralell downloads and ILoveCandy pplssssssssss.
-# Boot and processor
 intel-ucode
 grub
 efibootmgr
 os-prober
 dosfstools
-# If you want the themes, uncomment one.
 # breeze-grub
 # grub-theme-vimix
 
