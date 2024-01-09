@@ -12,6 +12,10 @@ If you are using wireless conection, use  ```iwd``` **before testing the connect
 
 ```loadkeys br-abnt2``` (for example)
 
+## Update system clock 
+
+```timedatectl set-ntp true```
+
 ## Create the partitions on the disk:
 
 *******If dual booting, do not need to create the boot partition.*******
@@ -214,12 +218,19 @@ So, after finishing installing, more down on the file, you are going to have the
 From this point on, the Arch is already installed on your computer. However, for didactic purposes, let's install a graphical user interface, KDE. 
 You can install whatever you like, from there you have to look up environments and window managers and choose one and install it on your system. Also you can just install some minor packages (such as networkmanager and dhcpcd, enable it, and you can use Arch linux without GUI).
 
-Finally, we will start the installation of KDE and 
+Finally, we will start the installation of KDE and internet services, along with a session manager (SDDM).
 
-## internet services. 
+## For KDE, internet services and SDDM
 
-Install them:
-```pacman -S networkmanager firewalld dhcpcd```
+```sudo pacman -S xorg xorg-xinit xterm tmux plasma plasma-desktop kde-applications kdeplasma-addons sddm firewalld networkmanager dhcpcd ```
+
+Now, let's activate(just if you don't use sddm): 
+
+```sudo nano ~/.xinitrc```
+
+And inside, write ```exec startkde```, so that the environment is set to always start. 
+
+Then we start the services: 
 
 First, dhcp: 
 
@@ -233,7 +244,9 @@ For firewall:
 
 ```systemctl enable firewalld.service``` 
 
+SDDM:
 
+```sudo systemctl enable sddm.service ```
 Now we can exit the arch-chroot environment: 
 
 ```exit (or CTRL+D)```
@@ -248,36 +261,11 @@ Now, go for the hug:
 
 Take out the USB stick, *bless yourself*, and go. 
 
-After rebooting, you log into Arch again, and type:
+After rebooting, you log into Arch, and type on terminal:
 
-```
-mkdir /mnt2
-mount /dev/sda1 /mnt2
-```
-
-os-prober (this time it will recognize that Windows exists, and a warning message will appear. If not, just reboot again and try again, until it works.)
-
-```grub mkconfig again```
+```grub-mkconfig -o /boot/grub/grub.cfg```
 
 And now dual boot is configured.
-
-
-
-# For KDE
-
-```sudo pacman -S xorg xorg-xinit xterm tmux plasma plasma-desktop kde-applications kdeplasma-addons sddm ```
-
-Now, let's activate(just if you don't use sddm): 
-
-```sudo nano ~/.xinitrc```
-
-And inside, write ```exec startkde```, so that the environment is set to always start. 
-
-Then we start the service: 
-
-```sudo systemctl enable sddm.service ```
-
-And reboot.
 
 **Thats it!!!! You installed Arch Linux with KDE DE. Have fun!**:laughing:
 
@@ -294,6 +282,10 @@ If you are using wireless conection, use  ```iwd``` **before testing the connect
 ## Load the keyboard:
 
 ```loadkeys br-abnt2``` (for example)
+
+## Update system clock 
+
+```timedatectl set-ntp true```
 
 ## Create the partitions on the disk:
 
@@ -360,7 +352,7 @@ Go to a temporary directory and clone the repository:
 
 ```
 cd /tmp
-git clone tararara
+git clone https://github.com/ruanpereira/Arch_EXP.git
 cd Installation
 ```
 
