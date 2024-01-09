@@ -9,6 +9,17 @@ dosfstools
 # breeze-grub
 # grub-theme-vimix
 
+# Desktop Environtment
+xorg 
+xorg-xinit 
+xterm 
+tmux 
+plasma 
+plasma-desktop 
+kde-applications 
+kdeplasma-addons 
+sddm   
+
 # Connectivity
 dhcpcd
 networkmanager
