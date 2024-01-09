@@ -4,7 +4,6 @@ efibootmgr
 os-prober
 dosfstools
 
-
 xorg 
 xorg-xinit 
 xterm 
