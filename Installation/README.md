@@ -361,7 +361,7 @@ Make the script executable:
 
 ```chmod +x script_kde.sh```
 
-Before executing, have in mind that the timezone is America/Fortaleza. Make sure to use your zone.
+Before executing, have in mind that the timezone is America/Fortaleza. Make sure to use your zone. Also the script has support for theming grub, but you need to search for one (grub themes on google, and find a way to install it). If it is in pacman, it is easy. Just put the name of the package in pacman in the pkgs_kde.txt, below the boot and processor packages, following the formatation. Also, there are some programs that i personally use, so check the pkgs list to put more ou remove some.
 
 Execute it:
 
