@@ -132,14 +132,10 @@ echo "
 ###################################################
 "
 
-systemctl enable NetworkManager
-systemctl enable sddm
-systemctl enable systemd-timesyncd
-systemctl enable bluetooth.service
-systemctl enable fstrim.timer
-systemctl enable systemd-homed
-systemctl enable sshd.service
+systemctl enable NetworkManager.service
+systemctl enable sddm.service
 systemctl enable firewalld.service
+systemctl enable dhcpcd.service
 # pacman -S iwd
 # systemctl enable iwd.service # if wireless
 echo "Done!
