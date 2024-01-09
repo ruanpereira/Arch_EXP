@@ -229,7 +229,7 @@ You can install whatever you like, from there you have to look up environments a
 
 ```sudo pacman -S xorg xorg-xinit xterm tmux plasma plasma-desktop kde-applications kdeplasma-addons sddm ```
 
-Now, let's activate: 
+Now, let's activate(just if you don't use sddm): 
 
 ```sudo nano ~/.xinitrc```
 
