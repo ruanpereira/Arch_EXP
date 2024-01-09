@@ -367,6 +367,17 @@ Execute it:
 
 ```sh script_kde.sh USERNAME HOSTNAME```
 
+When using the script, keep attention to select your KDE options. If you don't know or don't want to change anything, just press ENTER on all prompts of the pacman installation. I, by example, like pipewire more than jack, so i change this option when installing KDE.
+
+After all, if dual booting, redo the steps to enable the dual boot. 
+
+
+After rebooting, you log into Arch, and type on terminal:
+
+```grub-mkconfig -o /boot/grub/grub.cfg```
+
+And now dual boot is configured.
+
 # To i3
 
 If you want, you can change the login screen to a more old one, ```lightdm```. *Choose yourself*. ```SDDM``` is more cool and beauty, and ```lightdm``` is more simple and archaic. 
