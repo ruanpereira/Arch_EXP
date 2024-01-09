@@ -109,7 +109,6 @@ timeshift
 # Post install
 # ohmyzsh
 # iptables-nft (for vm, optional)
-# neofetch
 # Clion (from source)
 # Spyder (from miniconda)
 
