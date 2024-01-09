@@ -1,5 +1,7 @@
 # INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!
 
+# First, installing with KDE, from scratch (With bootloader for dual booting, if you don't want skip the bootloader part).
+
 ## First test the connection:
 
 ``` ping archlinux.org -c 5 ``` (testing internet) 
