@@ -243,6 +243,98 @@ And reboot.
 
 **Thats it!!!! You installed Arch Linux with KDE DE. Have fun!**:laughing:
 
+# Script install for KDE
+
+Using ethernet connection (or having a connection enabled with iwd when booted the arch iso), you can automotize some of the steps above, to be more fast. Based on https://gitlab.com/ezequiasjunior/ezos. 
+
+First, after booting the iso, make sure that you are connected to a network: 
+
+``` ping archlinux.org -c 5 ``` (testing internet) 
+
+If you are using wireless conection, use  ```iwd``` **before testing the connection.**
+
+## Load the keyboard:
+
+```loadkeys br-abnt2``` (for example)
+
+## Create the partitions on the disk:
+
+*******If dual booting, do not need to create the boot partition.*******
+
+```cfdisk```
+
+In the program, create the 3 partitions: 
+
+```
+/boot(if needed, 512MB),
+/mnt(root), 
+/mnt/home(separated or not) and swap(5GB or less). 
+```
+
+If you do not want to separate the home partition, you can mount the home partition inside the root partition. It is possible by creating a folder called ```/mnt/home``` with  ```mkdir``` after mounting the root partition.
+
+We format the partitions with the filesystems for each:
+
+```mkfs.ext4 /dev/sdx``` (for home partition, with the number of  the partition that you created before for home)
+```mkfs.ext4 /dev/sdy``` (for root partitions, with the number of the partition that you created before for root)
+```mkfs.fat -F 32 /dev/sdx``` (**only if you created an EFI partition**)
+
+## Creating and activating swap:
+
+```
+mkswap /dev/sdx(create swap)
+swapon /dev/sdx (activate swap)
+```
+Now, we ```mount``` the partitions: 
+
+```mount /dev/sdx(root partition) /mnt```
+
+if home, ```mount /dev/sdx``` (home partition) ```/mnt/home``` (you should have this created by now, with ```mkdir```)
+
+```mount /dev/sdx```(Efi partition) (if created) ```/mnt/efi```
+
+## Upgrading the speed of the installation
+
+```nano /etc/pacman.conf```
+
+Enable by uncommenting ParallelDownloads, and set to 20.
+
+For colors, type ILoveCandy
+
+## Now we perform the installation of the main packages: 
+
+```
+pacstrap
+ -K /mnt base base-devel linux linux-headers linux-firmware 
+intel-ucode(or amd-ucode) sudo git man-db man-pages neovim nano
+```
+
+## Generating the filesystem table:
+```genfstab -U /mnt >> /mnt/etc/fstab ```
+
+## Logging into the root partition as root
+
+```arch-chroot /mnt```
+
+## Using the script to install a KDE working environtment
+
+Go to a temporary directory and clone the repository: 
+
+```
+cd /tmp
+git clone tararara
+cd Installation
+```
+
+Make the script executable:
+
+```chmod +x script_kde.sh```
+
+Before executing, have in mind that the timezone is America/Fortaleza. Make sure to use your zone.
+
+Execute it:
+
+```sh script_kde.sh USERNAME HOSTNAME```
 
 # To i3
 
