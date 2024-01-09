@@ -10,7 +10,7 @@ julia-bin
 
 #Programs
 spotify
-miniconda (from sh archive from site)
+teams
 
 #Fonts
 ttf-icomoon-feather
