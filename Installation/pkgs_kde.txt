@@ -9,15 +9,6 @@ dosfstools
 # breeze-grub
 # grub-theme-vimix
 
-
-# Audio (pulse_audio, jack and alsa are old envs)
-pipewire
-wireplumber
-pipewire-alsa
-pipewire-pulse
-pipewire-jack
-pavucontrol
-
 # Connectivity
 dhcpcd
 networkmanager
