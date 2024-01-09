@@ -3,10 +3,8 @@ grub
 efibootmgr
 os-prober
 dosfstools
-# breeze-grub
-# grub-theme-vimix
 
-# Desktop Environtment
+
 xorg 
 xorg-xinit 
 xterm 
@@ -17,7 +15,6 @@ kde-applications
 kdeplasma-addons 
 sddm   
 
-# Connectivity
 dhcpcd
 networkmanager
 firewalld
@@ -27,14 +24,12 @@ openssh
 git
 github-cli
 cups
-# Below here in the connectivity category, it is optional. I need it. You maybe not.
 hplip
 openvpn
 networkmanager-openvpn
 qbittorrent
 discord
 
-# Programs and for programming, again my usage, you can add or remove any that you need or not.
 base-devel
 firefox 
 emacs
@@ -63,7 +58,6 @@ ntfs-3g
 pyqt5
 neofetch
 
-# Fonts you possibly gonna use and/or need. Also optional, but i use it.
 nerd-fonts
 noto-fonts
 ttf-hack-nerd
@@ -79,7 +73,6 @@ ttf-roboto
 ttf-hack
 ttf-ubuntu-font-family
 
-# Latex dependencies. JUST FOR LATEX WRITERS.
 biber
 texlive-basic
 texlive-latex
@@ -98,8 +91,6 @@ texlive-publishers
 texlive-humanities
 texlive-pictures
 texlive-pstricks
-
-# Restore and backup utils
 
 timeshift
 
