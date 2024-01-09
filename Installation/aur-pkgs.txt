@@ -15,7 +15,7 @@ teams
 #Fonts
 ttf-icomoon-feather
 ttf-all-the-icons
-powerlevel10k  #(to configure, go to the github page)
+powerlevel10k  #(to configure, go to the github page, install zsh and after that the fonts.)
 
 # For lock screen
 i3lock-color #(also needs to be configured, may be on dotfiles already working, but not in the sleep screen timer)
