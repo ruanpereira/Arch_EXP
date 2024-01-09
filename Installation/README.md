@@ -363,6 +363,45 @@ Make the script executable:
 
 Before executing, have in mind that the timezone is America/Fortaleza. Make sure to use your zone. Also the script has support for theming grub, but you need to search for one (grub themes on google, and find a way to install it). If it is in pacman, it is easy. Just put the name of the package in pacman in the pkgs_kde.txt, below the boot and processor packages, following the formatation. Also, there are some programs that i personally use, so check the pkgs list to put more ou remove some.
 
+The package list is organized as: 
+
+- Processor and boot packages
+- Desktop Env/Windown Manager packages
+- Connectivity packages
+- Programs and programming packages
+- Fonts packages
+- Latex packages
+- Restore packages
+
+Also, you have some observations as: 
+
+- For Virtual Machine complete usage
+```
+virtualbox
+virtualbox-guest-iso
+qemu
+libvirt
+iptables
+dnsmasq
+openbsd-netcat
+bridge-utils
+virt-manager
+```
+
+- Post install options (for my usage, think about yours, this is more a inspirational list), after installing the system and booting up.
+```
+ohmyzsh
+iptables-nft (for vm, optional)
+Clion (from source, cpp)
+Spyder (from miniconda)
+
+```
+- For python support on Emacs (lsp-mode) (post install)
+```
+python-lsp-server
+sudo pacman -S --asdeps python-mccabe python-pycodestyle python-pyflakes python-pylint yapf python-whatthepatch flake8 python-rope python-pydocstyle
+```
+
 Execute it:
 
 ```sh script_kde.sh USERNAME HOSTNAME```
