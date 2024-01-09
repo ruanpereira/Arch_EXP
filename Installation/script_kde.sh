@@ -47,7 +47,7 @@ LC_TELEPHONE=en_US.UTF-8
 LC_TIME=en_GB.UTF-8" > /etc/locale.conf
 
 # if needed keep changes persistent
-echo "KEYMAP=us" >> /etc/vconsole.conf
+echo "KEYMAP=br-abnt2" >> /etc/vconsole.conf
 
 echo "Done!"
 
@@ -60,7 +60,7 @@ echo "$HOSTNAME" > /etc/hostname
 
 echo "127.0.0.1 localhost
 ::1 localhost
-127.0.1.1 $HOSTNAME" >> /etc/hosts
+127.0.1.1 $HOSTNAME.localdomain localhost" >> /etc/hosts
 
 echo "Done!"
 
@@ -70,7 +70,7 @@ echo "
 ###################################################
 "
 
-pacman -S --needed - < pkgs.txt --noconfirm
+pacman -S --needed - < pkgs_kde.txt --noconfirm
 
 echo "Done!"
 
@@ -80,7 +80,7 @@ echo "
 ###################################################
 "
 
-useradd -m -g users -G wheel -s /bin/zsh $USERNAME
+useradd -m -g users -G wheel,storage,power -s /bin/zsh $USERNAME
 
 echo "%wheel ALL=(ALL) ALL" >> /etc/sudoers
 
@@ -112,12 +112,14 @@ echo "
 # The test enviroment is a machine with 2 OS (windows 11, efi)
 # mount windows EFI partition before os-prober exec.
 # Remeber to do mkconfig again if the win boot opt does not show in grub menu
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+grub-install --target=x86_64-efi --bootloader-id=GRUB-Arch --recheck
 echo "GRUB_DEFAULT=saved" >> /etc/default/grub
 echo "GRUB_SAVEDEFAULT=true" >> /etc/default/grub
 echo "GRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
+
+# If you want themes, these are some examples, need to install it first
 # echo "GRUB_THEME=\"/usr/share/grub/themes/breeze/theme.txt\"" >> /etc/default/grub
-echo "GRUB_THEME=\"/usr/share/grub/themes/Vimix/theme.txt\"" >> /etc/default/grub
+# echo "GRUB_THEME=\"/usr/share/grub/themes/Vimix/theme.txt\"" >> /etc/default/grub
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
