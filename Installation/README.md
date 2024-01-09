@@ -247,6 +247,7 @@ For firewall:
 SDDM:
 
 ```sudo systemctl enable sddm.service ```
+
 Now we can exit the arch-chroot environment: 
 
 ```exit (or CTRL+D)```
@@ -336,7 +337,7 @@ For colors, type ILoveCandy
 ```
 pacstrap
  -K /mnt base base-devel linux linux-headers linux-firmware 
-intel-ucode(or amd-ucode) sudo git man-db man-pages neovim nano
+intel-ucode(or amd-ucode) sudo git man-db man-pages neovim nano zsh ntfs-3g
 ```
 
 ## Generating the filesystem table:
