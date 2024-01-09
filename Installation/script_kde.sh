@@ -142,7 +142,7 @@ echo "Done!
 "
 
 while true; do
-    read -p "Do you want to exit chroot now to finish your EZ.OS installation? [Y/n] " yn
+    read -p "Do you want to exit chroot now to finish your installation? [Y/n] " yn
     case $yn in
         [Yy]* ) 
         echo "All done, bye!
