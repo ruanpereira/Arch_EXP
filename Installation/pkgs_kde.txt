@@ -21,74 +21,41 @@ github-cli
 cups
 # Below here in the connectivity category, it is optional. I need it. You maybe not.
 hplip
-openresolv
 openvpn
 networkmanager-openvpn
+qbittorrent
+discord
 
-# Bluetooth
-bluez
-bluez-utils
-
-#Programs and for programming
+# Programs and for programming, again my usage, you can add or remove any that you need or not.
 base-devel
 firefox 
 emacs
 calibre 
 bitwarden
 htop
-gnome-terminal
+gnome-terminal    
 obs-studio
 kitty
-polybar
 gparted
 neovim
-spectacle
 libreoffice-fresh
 gimp
-korganizer
 nano
-kalendar
-numlockx
-nitrogen
 bzip2
 tmux
-pcmanfm
-dolphin
-lm_sensors
-evince #or okular
-lxappearence
-polkit-kde-agent
-print-manager
 udisks2
 unzip
-xarchiver
-xf86-video-intel #preferably mesa instead#
-xf86-video-vesa
-xf86-input-synaptics
-xf86-input-libinput
-xkeyboard-config
-xdg-user-dirs
 libnma-gtk4
-rofi
-picom
-sxhkd
 zsh
 sddm
-qbittorrent
 qt5
 ripgrep
 unrar 
-xapp
-xclip
-xorg
 ntfs-3g
 pyqt5
+neofetch
 
-
-
-
-#Fonts you possibly gonna use
-font-manager
+# Fonts you possibly gonna use and/or need. Also optional, but i use it.
 nerd-fonts
 noto-fonts
 ttf-hack-nerd
@@ -104,7 +71,7 @@ ttf-roboto
 ttf-hack
 ttf-ubuntu-font-family
 
-#Latex dependencies
+# Latex dependencies. JUST FOR LATEX WRITERS.
 biber
 texlive-basic
 texlive-latex
@@ -124,38 +91,25 @@ texlive-humanities
 texlive-pictures
 texlive-pstricks
 
-# For install biber texlive-basic texlive-latex texlive-latexrecommended texlive-latexextra texlive-binextra texlive-bibtexextra texlive-fontsrecommended texlive-fontsextra texlive-fontutils texlive-langcyrillic texlive-langportuguese texlive-formatsextra texlive-mathscience texlive-publishers texlive-humanities texlive-pictures texlive-pstricks
+# Restore and backup utils
 
+timeshift
 
-#Virtual Machine
-virtualbox
-virtualbox-guest-iso
-qemu
-libvirt
-iptables
-dnsmasq
-openbsd-netcat
-bridge-utils
-virt-manager
-
-# Icons
-adwaita
-breeze
-libappindicator-gtk3
-network-manager-applet
-nm-connection-editor
-notification-daemon
-oxygen
-oxygen-icons
-papirus-icon-theme
+# Virtual Machine 
+# virtualbox
+# virtualbox-guest-iso
+# qemu
+# libvirt
+# iptables
+# dnsmasq
+# openbsd-netcat
+# bridge-utils
+# virt-manager
 
 # Post install
 # ohmyzsh
-# timeshift
-# github-cli
-# iptables-nft
+# iptables-nft (for vm, optional)
 # neofetch
-# discord
 # Clion (from source)
 # Spyder (from miniconda)
 
