@@ -143,6 +143,7 @@ dnsmasq
 openbsd-netcat
 bridge-utils
 virt-manager
+x11-ssh-askpass
 
 # Icons
 adwaita
