@@ -110,6 +110,8 @@ ttf-roboto
 ttf-hack
 ttf-ubuntu-font-family
 
+For install nerd-fonts noto-fonts ttf-hack-nerd ttf-meslo-nerd awesome-terminal-fonts ttf-dejavu ttf-droid ttf-inconsolata ttf-liberation ttf-joypixels ttf-indic-otf ttf-roboto ttf-hack ttf-ubuntu-font-family
+
 #Latex dependencies
 biber
 texlive-basic
