@@ -16,9 +16,6 @@ set $mod Mod4
 #exec_always --no-startup-id sh $HOME/.config/i3/monitor_layout.sh
 exec --no-startup-id xrandr --output eDP1 --right-of HDMI1 --auto
 
-# SSH agent eval
-#exec sh $HOME/.config/i3/ssh_agent_eval.sh 
-
 # Define gaps between windows
 gaps inner 4
 
@@ -48,7 +45,7 @@ workspace_auto_back_and_forth yes
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-#exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l
+exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -189,7 +186,7 @@ exec_always --no-startup-id picom -b
 exec_always --no-startup-id sh $HOME/.config/polybar/launchmybar.sh
 
 #Kalendar
-for_window [title="KOrganizer"] floating enable
+#for_window [title="KOrganizer"] floating enable
 
 #KDE agent policykit
 exec_always --no-startup-id "/usr/lib/polkit-kde-authentication-agent-1"

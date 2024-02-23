@@ -1,0 +1,174 @@
+# First enable multilib, paralell downloads and ILoveCandy pplssssssssss.
+#Boot and processor
+intel-ucode
+grub
+efibootmgr
+os-prober
+dosfstools
+
+# Audio (pulse_audio, jack and alsa are old envs)
+pipewire
+wireplumber
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+pavucontrol
+
+# Connectivity
+dhcpcd
+networkmanager
+network-manager-applet
+nm-connection-editor
+firewalld
+curl
+wget
+openssh
+git
+github-cli
+cups
+hplip
+openresolv
+openvpn
+networkmanager-openvpn
+
+# Bluetooth
+bluez
+bluez-utils
+
+#Programs and for programming
+base-devel
+firefox 
+emacs
+calibre 
+bitwarden
+htop
+gnome-terminal
+obs-studio
+kitty
+polybar
+gparted
+neovim
+spectacle
+libreoffice-fresh
+gimp
+korganizer
+nano
+kalendar
+numlockx
+nitrogen
+bzip2
+tmux
+pcmanfm
+dolphin
+lm_sensors
+evince #or okular
+lxappearence
+polkit-kde-agent
+print-manager
+udisks2
+unzip
+xarchiver
+xf86-video-intel #preferably mesa instead#
+xf86-video-vesa
+xf86-input-synaptics
+xf86-input-libinput
+xkeyboard-config
+xdg-user-dirs
+libnma-gtk4
+rofi
+picom
+sxhkd
+zsh
+sddm
+qbittorrent
+qt5
+ripgrep
+unrar 
+xapp
+xclip
+xorg
+ntfs-3g
+pyqt5
+
+
+
+
+#Fonts you possibly gonna use
+font-manager
+nerd-fonts
+noto-fonts
+ttf-hack-nerd
+ttf-meslo-nerd
+awesome-terminal-fonts
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-liberation
+ttf-joypixels
+ttf-indic-otf
+ttf-roboto
+ttf-hack
+ttf-ubuntu-font-family
+
+For install nerd-fonts noto-fonts ttf-hack-nerd ttf-meslo-nerd awesome-terminal-fonts ttf-dejavu ttf-droid ttf-inconsolata ttf-liberation ttf-joypixels ttf-indic-otf ttf-roboto ttf-hack ttf-ubuntu-font-family
+
+#Latex dependencies
+biber
+texlive-basic
+texlive-latex
+texlive-latexrecommended
+texlive-latexextra
+texlive-binextra
+texlive-bibtexextra
+texlive-fontsrecommended
+texlive-fontsextra
+texlive-fontutils
+texlive-langcyrillic
+texlive-langportuguese
+texlive-formatsextra
+texlive-mathscience
+texlive-publishers
+texlive-humanities
+texlive-pictures
+texlive-pstricks
+
+# For install biber texlive-basic texlive-latex texlive-latexrecommended texlive-latexextra texlive-binextra texlive-bibtexextra texlive-fontsrecommended texlive-fontsextra texlive-fontutils texlive-langcyrillic texlive-langportuguese texlive-formatsextra texlive-mathscience texlive-publishers texlive-humanities texlive-pictures texlive-pstricks
+
+
+#Virtual Machine
+virtualbox
+virtualbox-guest-iso
+qemu
+libvirt
+iptables
+dnsmasq
+openbsd-netcat
+bridge-utils
+virt-manager
+x11-ssh-askpass
+
+# Icons
+adwaita
+breeze
+libappindicator-gtk3
+network-manager-applet
+nm-connection-editor
+notification-daemon
+oxygen
+oxygen-icons
+papirus-icon-theme
+
+# Post install
+# ohmyzsh
+# timeshift
+# github-cli
+# iptables-nft
+# neofetch
+# discord
+# Clion (from source)
+# Spyder (from miniconda)
+
+# For python support on Emacs (lsp-mode) (post install)
+# sudo pacman -S python-lsp-server
+# sudo pacman -S --asdeps python-mccabe python-pycodestyle python-pyflakes python-pylint yapf python-whatthepatch flake8 python-rope python-pydocstyle
+
