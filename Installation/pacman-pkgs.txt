@@ -138,7 +138,7 @@ texlive-pstricks
 #Virtual Machine
 virtualbox
 virtualbox-guest-iso
-qemu
+qemu-full
 libvirt
 iptables
 dnsmasq

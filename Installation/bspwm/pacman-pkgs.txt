@@ -35,14 +35,13 @@ networkmanager-openvpn
 bluez
 bluez-utils
 
-#Programs and for programming
+#Programs and essentials for the system
 base-devel
 firefox 
 emacs
 calibre 
 bitwarden
 htop
-gnome-terminal
 obs-studio
 kitty
 polybar
@@ -51,17 +50,14 @@ neovim
 spectacle
 libreoffice-fresh
 gimp
-korganizer
 nano
-kalendar
 numlockx
-nitrogen
+feh
 bzip2
 tmux
 pcmanfm
-dolphin
 lm_sensors
-evince #or okular
+okular
 lxappearence
 polkit-kde-agent
 print-manager
@@ -89,8 +85,10 @@ xclip
 xorg
 ntfs-3g
 pyqt5
-
-
+dmenu 
+bspwm 
+sxhkd
+xorg-xbacklight
 
 
 #Fonts you possibly gonna use
@@ -109,6 +107,7 @@ ttf-indic-otf
 ttf-roboto
 ttf-hack
 ttf-ubuntu-font-family
+ttf-font-awesome
 
 For install nerd-fonts noto-fonts ttf-hack-nerd ttf-meslo-nerd awesome-terminal-fonts ttf-dejavu ttf-droid ttf-inconsolata ttf-liberation ttf-joypixels ttf-indic-otf ttf-roboto ttf-hack ttf-ubuntu-font-family
 

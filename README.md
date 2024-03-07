@@ -85,4 +85,17 @@ All im learning is from : https://wiki.hyprland.org/Getting-Started/Master-Tutor
 
 From this, my gratuation took some of my soul for a while. Consider this the end of this sprint os experience, since i no longer remember what i was writing. I decided to make a new start point. More organized, more explained, more detailed. But experiences are experiences, and this is an experience.
 
+(This)[https://www.reddit.com/r/unixporn/comments/vngxl0/which_wm_is_better_bspwm_or_awesome/] post on reddit unix porn summerize how choosing a WM works, with lots of toughts about it, but one made it CLEAR AS WATER for me:
+"
+Sources: I've used i3wm (i3-gaps) extensively, just started trying out bspwm and have also dabbled in AwesomeWM a bit
+
+What I've learned is that in the end it doesn't even matter. They all do pretty much the exact same thing with only a few small differences here and there. Their primary function is to draw application windows on your screen. The only question is how do you want to configure it. If you know Haskell and want to configure it in Haskell, then try Xmonad. If you know Python and want to configure it in Python, try QTile. If, for some strange reason, you know Lua and want to configure it in Lua, try AwesomeWM. If you know C and want to configure it in C by directly editing the source code and don't mind recompiling the whole thing every time you make even the smallest change, then try DWM. If you just want something easy to configure with human readable configs, i3wm, sway (for Wayland) and bspwm are great choices.
+
+I love i3wm for being easy to configure. The config file isn't very hard to figure out as it uses a human readable syntax and is generally usable out of the box anyways. Not particularly pretty, but usable.
+
+I'm loving bspwm because the configs (yes, plural) also use human readable syntax and is just as easy to figure out without having to know a programming language. I think I'm going to like it more than i3wm simply because it's more modular. It doesn't come with a bar, which is fine because I use polybar anyways, even on i3wm. It doesn't handle keybinds by itself, it requires a separate program like sxhkd which comes with it's own config. The advantage of separating out the configs like this is that each config remains fairly small which makes it easier to read and easier to find something you want to change.
+
+But, as I stated earlier in the end they all pretty much do the same thing and the main difference is how they are configured."
+
+It IS just this.
 
