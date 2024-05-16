@@ -3,14 +3,14 @@
 # Autostarting sxhkd, and others
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
-feh --bg-fill --randomize ~/Workspace/Arch_EXP/red-wallpapers/* &
 nm-applet &
-#flameshot &
-conky &
-$HOME/.config/polybar/launch.sh 
+firewalld &
+/usr/lib/polkit-kde-authentication-agent-1 &
+$HOME/.config/polybar/launch.sh &
+feh --bg-fill ~/Workspace/Arch_EXP/red-wallpapers/wall-1.png
 
 # Workspaces
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor eDP-1 -d I II III IV V VI  
 
 # Workspaces behavior and appearence
 bspc config border_width         2
@@ -19,7 +19,9 @@ bspc config window_gap          12
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-
+bspc config remove_disabled_monitors      true
+bspc config remove_unplugged_monitors     true
+bspc config merge_overlapping_monitors    true
 
 # For starting a app on a certain desktop
 bspc rule -a firefox desktop='^2'

@@ -8,12 +8,18 @@ super + Return
 
 # program launcher
 super + d
+
 #	dmenu_run
-  rofi -show drun
+  ~/.config/rofi/launchers/type-1/launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+# powermenu laucher
+
+super + c
+	~/.config/rofi/powermenu/type-2/powermenu.sh
 
 #
 # bspwm hotkeys
@@ -154,12 +160,6 @@ super + shift + Print
 
     spectacle --gui
 
-# Lockscreen
-
-super + l
-
-    betterlockscreen -l dim
-
 # [ Favorite apps ]
 
 # File manager
@@ -179,3 +179,9 @@ super + z
 super + x
 
     kitty --hold nvim
+
+# Lock Screen
+
+super + v
+
+    betterlockscreen -l
