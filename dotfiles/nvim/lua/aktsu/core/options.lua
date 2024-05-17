@@ -5,8 +5,8 @@ opt.number = true
 -- opt.relativenumber = true caso queira a posição relativa
 
 -- tabs and indentation
-opt.tabstop = 2
-opt.shiftwidth = 2     -- change the numbers to increase the space of the tabs
+opt.tabstop = 4
+opt.shiftwidth = 4     -- change the numbers to increase the space of the tabs
 opt.expandtab = true
 opt.autoindent = true
 

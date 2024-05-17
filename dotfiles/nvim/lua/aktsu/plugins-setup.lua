@@ -63,6 +63,9 @@ require("lazy").setup({{
   -- auto closing
   "windwp/nvim-autopairs", -- autoclose parens, brackets, quotes, etc...
 
+  -- colorizer
+  "norcalli/nvim-colorizer.lua", -- for showing hex colors on terminal
+
   -- git integration
   "lewis6991/gitsigns.nvim", -- show line modifications on left hand side
 
