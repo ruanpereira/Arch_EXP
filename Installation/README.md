@@ -8,13 +8,29 @@
 
 If you are using wireless conection, use  ```iwd``` **before testing the connection.**
 
+## FOR WIFI USERS from (this)[https://wiki.archlinux.org/title/iwd]
+
+´´´ iwctl  ´´´
+
+´´´ device list  ´´´
+
+´´´ station 'device' scan  ´´´
+
+´´´ station 'device' get-networks  ´´´
+
+´´´ station 'device' connect SSID  ´´´
+
 ## Load the keyboard:
 
-```loadkeys br-abnt2``` (for example)
+```loadkeys br-abnt2 ``` (for pt-br)
 
 ## Update system clock 
 
 ```timedatectl set-ntp true```
+
+## Enable parallel downloads so the download of the system is more fast
+
+´´´ nano /etc/pacman.conf ´´´
 
 ## Create the partitions on the disk:
 
@@ -22,76 +38,130 @@ If you are using wireless conection, use  ```iwd``` **before testing the connect
 
 ```cfdisk```
 
-In the program, create the 3 partitions: 
+In the program, create the 3 partitions(ext4 mount): 
 
 ```
 /boot(if needed, 512MB),
 /mnt(root), 
-/mnt/home(separated or not) and swap(5GB or less). 
+/mnt/home(separated or not, optional)
+/swap(4GB). 
 ```
 
-If you do not want to separate the home partition, you can mount the home partition inside the root partition. It is possible by creating a folder called ```/mnt/home``` with  ```mkdir``` after mounting the root partition.
+In the program, create the 2 partitions(btrfs mount):
 
-We format the partitions with the filesystems for each:
+```
+/boot(if needed, 512MB),
+/(root) 
 
-```mkfs.ext4 /dev/sdx``` (for home partition, with the number of  the partition that you created before for home)
-```mkfs.ext4 /dev/sdy``` (for root partitions, with the number of the partition that you created before for root)
-```mkfs.fat -F 32 /dev/sdx``` (**only if you created an EFI partition**)
+´´´
 
-## Creating and activating swap:
+If you do not want to separate the home partition, you can mount the home partition inside the root partition. 
+It is possible by creating a folder called ```/mnt/home``` with  ```mkdir``` after mounting the root partition.
+
+## We format the partitions with the filesystems for each(ext4 mount):
+
+``` mkfs.ext4 /dev/sdx ``` (for home partition, with the number of  the partition that you created before for home, if you created a home partition)
+``` mkfs.ext4 /dev/sdy ``` (for root partitions, with the number of the partition that you created before for root)
+``` mkfs.fat -F 32 /dev/sdz ``` (**only if you created an EFI partition**)
+
+## We format the partitions with the filesystems for each(btrfs mount):
+
+``` mkfs.btfrs -f /dev/sdy ``` (for root partitions, with the number of the partition that you created before for root)
+``` mkfs.fat -F 32 /dev/sdz ``` (**only if you created an EFI partition**)
+
+
+**Only if you used btrfs!!!**
+
+## If using btfrs, first mount the partition:
+
+mount /dev/sdx /
+
+## Then create the subvolumes(btrfs): 
+
+´´´
+@ ( / ) ( already created when mounting the partition )
+
+@home ( /home ) ( btrfs subvolume create /home ) 
+
+@log ( /var/log ) ( btrfs subvolume create /var/log) 
+
+@pkg (/var/cache/pacman/pkg) ( btrfs subvolume create /var/cache/pacman/pkg ) 
+
+@.snapshots (  /.snapshots ) ( btrfs subolume create /.snapshots ) 
+
+´´´
+
+## Creating and activating swap(ext4):
 
 ```
 mkswap /dev/sdx(create swap)
 swapon /dev/sdx (activate swap)
+
 ```
-Now, we ```mount``` the partitions: 
 
-```mount /dev/sdx(root partition) /mnt```
+## Creating and activating swap(btrfs):
 
-if home partition was created, ```mount /dev/sdx``` (home partition) ```/mnt/home``` (you should have this created by now, with ```mkdir```). If not, just create the partition with ```mkdir /mnt/home```
+```
+btrfs subvolume create /swap
+btrfs filesystem mkswapfile --size 4g --uuid clear /swap/swapfile
+swapon /swap/swapfile
 
-```mount /dev/sdx```(Efi partition) (if created) ```/mnt/efi```
+```
+
+And:
+
+´´´ nano /etc/fstab ´´´
+ 
+´´´ /swap/swapfile none swap defaults 0 0 ´´´
+
+##Now, we ```mount``` the partitions(ext4): 
+
+``` mount /dev/sdx(root partition) /mnt ```
+
+if home partition was created: 
+
+``` mount --mkdir /dev/sdx(home partition) /mnt/home ```
+ 
+If not, just create the partition with:
+
+``` mkdir /mnt/home ```
+
+``` mount /dev/sdx (Efi partition) /mnt/boot ```
 
 ## Now we perform the installation of the main packages: 
 
 ```
-pacstrap
- -K /mnt base base-devel linux linux-headers linux-firmware 
-intel-ucode(or amd-ucode) sudo git man-db man-pages neovim
+pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sof-firmware( for laptops after 2019 ) intel-ucode(or amd-ucode) 
+sudo git man-db man-pages neovim nano networkmanager texinfo doxygen iwd dhcpcd
+
 ```
 ## Generating the filesystem table:
-```genfstab -U /mnt >> /mnt/etc/fstab ```
+``` 
+genfstab -U /mnt >> /mnt/etc/fstab 
+
+```
 
 ## Logging into the root partition as root
 
-```arch-chroot /mnt```
+``` 
+arch-chroot /mnt
 
-## Set the superuser password: 
-```passwd ```
+```
 
-Create ordinary users: 
+##To set the **region/timezone** and **link the information to localtime**:
 
-```useradd -m *username*```
+```
+ln -sf /usr/share/zoneinfo/*tab*(to see the list of zones and see which one is yours 
+zone, in this case mine is America)/*tab*(Insert the local, in my case 
+Fortaleza) /etc/localtime
 
-Set the user's password: 
+```
 
-```passwd *username*```
+##Syncing the internal clock:
 
-Set the permissions of the ordinary user: 
+```hwclock --systohc```
 
-```usermod -aG wheel```(group to run everything and have privileges of root users),```storage```(access to external memory, such as hds, usbs, etc),```power *username*``` 
-
-Editing the sudoers file to allow the sudo command for members of the wheel group, so that all wheel users can use sudo: 
-
-```EDITOR=nano visudo ```
-
-Inside, uncomment the line ```%wheel ALL=(ALL) ALL``` and, if you wish, add the line just below the one you uncommented. This is to prompt the user again for the password after a certain period of time:
-
-```Defaults timestamp_timeout=0```
-
-Save the changes and exit. 
-
-## Generating the system language: 
+## Generating the system language(simple LANG): 
 
 ```nano /etc/locale.gen ```
 
@@ -101,26 +171,32 @@ Generating the locale:
 
 ```locale-gen```
 
-We create a locale configuration file with the command 
+We create a locale configuration file with the command
 
-```echo LANG=*insert the language to be utilized, for example pt_BR.UTF-8* > /etc/locale.conf```
+´´´echo LANG=*insert the language to be utilized, for example pt_BR.UTF-8* > /etc/locale.conf```
 
 For the keyboard persistent change:
 
 ```echo "KEYMAP=br-abnt2" >> /etc/vconsole.conf```
 
-Since i am brazilian and have different keyboard and units, got from a friend (credits below on this README, ezequias júnior) a set of locales that mix english with portuguese. 
+## Generating the system language(multi LANG)
 
+Since i am brazilian and have different keyboard and units, got from a friend (credits below on this README, ezequias júnior) a set of locales that mix english with portuguese.
+
+
+Setting the language used:
 ```
 echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
-echo "en_GB.UTF-8 UTF-8" >> /etc/locale.gen
 echo "pt_BR.UTF-8 UTF-8" >> /etc/locale.gen
+
 ```
 
+Creating locale:
 ```
 locale-gen
 ```
 
+Adding specific LC environtment variables:
 ```
 echo "LANG=en_US.UTF-8
 LC_ADDRESS=en_US.UTF-8
@@ -134,13 +210,14 @@ LC_NAME=en_US.UTF-8
 LC_NUMERIC=en_US.UTF-8
 LC_PAPER=en_US.UTF-8
 LC_TELEPHONE=en_US.UTF-8
-LC_TIME=en_GB.UTF-8" > /etc/locale.conf
+LC_TIME=pt_BR.UTF-8" > /etc/locale.conf
 
 ```
 
-
+Persistent keyboard configuration:
 ```
 echo "KEYMAP=br-abnt2" >> /etc/vconsole.conf
+
 ```
 
 Now we create the hostname for the computer: 
@@ -159,33 +236,67 @@ And add the following lines:
 127.0.1.1 *hostname*.localdomain localhost
 ```
 
-To set the **region/timezone** and **link the information to localtime**: 
+## Enable the service for networking:
+
+´´´
+systemctl enable NetworkManager
+
+´´´
+
+## Set the superuser password: 
 
 ```
-ln -sf /usr/share/zoneinfo/*tab*(to see the list of zones and see which one is yours 
-zone, in this case mine is America)/*tab*(Insert the local, in my case 
-Fortaleza) /etc/localtime
+passwd 
+
 ```
 
-Syncing the internal clock: 
+## Create ordinary users: 
 
-```hwclock --systohc```
+```
+useradd -m *username*
+
+```
+
+Set the user's password:
+
+``` 
+passwd *username*
+
+```
+
+Set the permissions of the ordinary user:
+
+``` 
+usermod -aG wheel```(group to run everything and have privileges of root users),```storage```(access to external memory, such as hds, usbs, etc),```power *username*
+
+``` 
+
+Editing the sudoers file to allow the sudo command for members of the wheel group, so that all wheel users can use sudo: 
+
+``` EDITOR=nano visudo ```
+
+Inside, uncomment the line ``` %wheel ALL=(ALL) ALL``` 
+and, if you wish, add the line just below the one you uncommented. This is to prompt the user again for the password after few seconds
+
+```
+Defaults timestamp_timeout=0
+```
+
+Save the changes and exit.
 
 ## **Installing the bootloader (extremely important)**:
 
 See which partition the boot is on (in this case, as we have dual boot with Windows, the partition is the Windows boot partition). You can do this with ```cfdisk``` or ```fdisk```
 
-Create an ```efi``` directory:
 
-```mkdir /boot/efi ```
+Mount the partition in this created directory or ensure that the partition is mounted: 
 
-Mount the partition in this created directory: 
+``` mount /dev/sdx /boot ```
 
-```mount /dev/sdx /boot/efi```
 
 *(If you are dual booting, here on /dev/sdx you put the EFI partition that already exists with your other system).*
 
-Install the packages needed for the bootloader: 
+Install the packages needed for the bootloader and dualboot : 
 
 ```pacman -S grub efibootmgr dosfstools mtools```
 
@@ -204,8 +315,10 @@ It needs to be installed. By default, os-prober is disabled in grub, because the
 Install it now:
 
 ```
-pacman -S os-prober
-grub-install --target=x86_64-efi --bootloader-id=grub_uefi --recheck
+pacman -S os-prober (only if dualbooting)
+
+grub-install --target=x86_64-efi --efi-directory=/boot  --bootloader-id=archlinux --recheck
+
 ```
 Now we generate the grub configuration file: 
 
@@ -216,13 +329,23 @@ Now we generate the grub configuration file:
 So, after finishing installing, more down on the file, you are going to have the explanation for the rest. For now, follow without thinking about.
 
 From this point on, the Arch is already installed on your computer. However, for didactic purposes, let's install a graphical user interface, KDE. 
-You can install whatever you like, from there you have to look up environments and window managers and choose one and install it on your system. Also you can just install some minor packages (such as networkmanager and dhcpcd, enable it, and you can use Arch linux without GUI).
+You can install whatever you like, from there you have to look up environments and window managers and choose one and install it on your system. 
+Also you can just install some minor packages (such as networkmanager and dhcpcd, enable it, and you can use Arch linux without GUI).
+
+to guarantee that you can reboot properly to continue this README:
+
+´´´
+systemctl enable NetworkManager
+
+´´´
+
+And reboot.
 
 Finally, we will start the installation of KDE and internet services, along with a session manager (SDDM).
 
 ## For KDE, internet services and SDDM
 
-```sudo pacman -S xorg xorg-xinit xterm tmux plasma plasma-desktop kde-applications kdeplasma-addons sddm firewalld networkmanager dhcpcd ```
+```sudo pacman -S xorg xorg-xinit xterm plasma plasma-desktop kde-applications kdeplasma-addons sddm firewalld networkmanager dhcpcd ```
 
 Now, let's activate(just if you don't use sddm): 
 
@@ -232,13 +355,10 @@ And inside, write ```exec startkde```, so that the environment is set to always 
 
 Then we start the services: 
 
-First, dhcp: 
+For dhcpcd
 
-```systemctl enable dhcpcd.service```
+´´´systemctl enable dhcpcd.service´´´
 
-And now the internet connection: 
-
-```systemctl enable NetworkManager.service``` 
 
 For firewall: 
 
@@ -268,7 +388,91 @@ After rebooting, you log into Arch, and type on terminal:
 
 And now dual boot is configured.
 
-**Thats it!!!! You installed Arch Linux with KDE DE. Have fun!**:laughing:
+**Thats it!!!! You installed Arch Linux with KDE DE. Have fun!** :laughing:
+
+##For bspwm install
+
+Install the following(obligatory):
+
+´´´
+sudo pacman -S xorg-xinit xorg-xprop xdg-user-dirs bspwm sxhkd firefox chromium pcmanfm rxvt-unicode kitty firewalld pipewire wireplumber pipewire-alsa xclip
+pipewire-jack pipewire-pulse pavucontrol network-manager-applet nm-connection-editor curl wget wpa_supplicant openssh git github-cli cups hplip print-manager
+openresolv openvpn networkmanager-openvpn net-tools bluez bluez-utils blueman sddm partitionmanager polkit-kde-agent ntfs-3g polybar(can be another) udisks2 feh
+
+´´´
+
+After that, install a AUR manager such as pikaur, yay, paru, etc.
+
+## Services and enabling bspwm
+
+Enable sddm: 
+
+´´´
+systemctl enable sddm
+´´´
+
+Enable firewall
+
+´´´
+systemctl enable firewalld
+´´´
+
+Enable NetworkManager
+
+´´´
+systemctl enable NetworkManager
+´´´
+
+Enabling bluetooth (optional, if you don't want just unninstall bluez bluez-utils blueman): 
+
+´´´
+systemctl enable bluetooth
+´´´
+
+Enable cups (for printers)
+
+´´´
+systemctl enable cups
+´´´
+
+
+If you don't have a configuration file for bspwm and sxhkd:
+
+First git clone the repo:
+
+´´´
+git clone https://github.com/baskerville/bspwm.git
+´´´
+
+Then copy the example config file for bspwm ( if you don't have the dir, create with mkdir ):
+
+´´´
+sudo cp ~/bspwm/examples/bspwmrc ~/.config/bspwm/
+
+´´´
+
+After that:
+
+´´´
+chmod +x ~/.config/bspwm/bspwmrc
+´´´
+
+The copy the example config file for sxkhd ( same observation as above ):
+
+´´´
+sudo cp ~/bspwm/examples/sxkhdrc ~/.config/sxkhd/
+
+´´´
+
+Add blueman-applet to the bspwmrc config file. 
+
+Add a wallpaper using feh: 
+
+feh --bg-fill ~/Workspace/Arch_EXP/red-wallpapers/wall-1.png
+
+Should be enough.
+
+
 
 # Script install for KDE
 
