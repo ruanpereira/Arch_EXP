@@ -1,9 +1,13 @@
+# Cute start
+### RANDOM COLOR SCRIPT ###
+colorscript -e pinguco
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -15,7 +19,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -123,19 +127,18 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # >>> Alias shortcuts
-alias update="sudo pacman -Syyu --noconfirm && paru -Syyu --noconfirm"
+alias update="sudo pacman -Syyu --noconfirm && yay -Syyu --noconfirm"
 alias zshupdate="source /home/aktsu/.zshrc"
-alias py3="python3" 
 alias l="eza -lah --icons --git --group-directories-first"
 alias la="eza -a --icons --git --group-directories-first"
 alias ll="eza -lh --icons --git --group-directories-first"
 alias ls="eza --icons --git --group-directories-first"
-
- 
+alias kitty_pid="echo $KITTY_LISTEN_ON | cut -d "-" -f 2 | xclip -selection clipboard"
 # <<< Alias shortcuts
 
 # Easy acess to rofi adi1090x scripts
 export PATH=$HOME/.config/rofi/scripts/:$PATH
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Oh my posh
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/catppuccin_mocha.omp.json)"
+

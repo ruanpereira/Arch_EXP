@@ -7,7 +7,7 @@ super + Return
 	kitty
 
 # program launcher
-super + d
+super + @space
 
 #	dmenu_run
   ~/.config/rofi/launchers/type-1/launcher.sh
@@ -130,7 +130,7 @@ super + {Left,Down,Up,Right}
 
 # Change keyboard layout
 
-super + @space
+super + alt + @space
 
   {setxkbmap us, setxkbmap br}
 
@@ -146,19 +146,38 @@ XF86MonBrightnessUp
 
     light -A 5
 
+# Decrease volume
+
+XF86AudioLowerVolume
+
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# Increase volume
+
+XF86AudioRaiseVolume
+
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Mute mic
+
+XF86AudioMute
+
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+
 # Print options
 
 Print
 
-    spectacle --region
+    flameshot gui
 
 shift + Print 
 
-    spectacle --current
+    flameshot screen
 
 super + shift + Print
 
-    spectacle --gui
+    flameshot full
 
 # [ Favorite apps ]
 
@@ -172,16 +191,10 @@ super + e
 
 super + z
 
-    firefox
+    zen-browser
 
 # Text Editor
 
 super + x
 
     kitty --hold nvim
-
-# Lock Screen
-
-super + v
-
-    betterlockscreen -l

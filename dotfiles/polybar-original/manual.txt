@@ -1,3 +1,0 @@
-Essa é a config padrão feita a mão para a polybar. Simples, sem cores, apenas com baterias e local para network etc. Sem rofi. 
-
-Para utilizar, baixe e renomeie a pasta. 

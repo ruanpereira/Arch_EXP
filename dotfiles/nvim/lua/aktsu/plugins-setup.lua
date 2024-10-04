@@ -34,6 +34,27 @@ require("lazy").setup({{
       ts_update()
     end,
   },  --to better highlight
+
+    { -- neovim notes
+    "nvim-neorg/neorg",
+    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
+    version = "*", -- Pin Neorg to the latest stable release
+    build = ":Neorg sync-parsers", --Added from the dependencies tab on github
+        opts = {
+            load = {
+                ["core.defaults"] = {}, -- Loads default behaviour
+                ["core.concealer"] = {}, -- Adds pretty icons to your documents
+                ["core.dirman"] = { -- Manages Neorg workspaces
+                    config = {
+                        workspaces = {
+                            notes = "~/notes",
+                        },
+                        default_workspace = "notes",
+                    },
+                },
+            },
+        },
+    },
     -- autocompletion
   "hrsh7th/nvim-cmp", -- completion plugin
   "hrsh7th/cmp-buffer", -- source for text in buffer
@@ -69,46 +90,18 @@ require("lazy").setup({{
   -- git integration
   "lewis6991/gitsigns.nvim", -- show line modifications on left hand side
 
-  --latex 
-  "evesdropper/luasnip-latex-snippets.nvim",
-  { "lervag/vimtex",
-        init= function ()
-            --- Vim Tex plugin config
-            -- Compiler with latexmk pdflatex biber pdflatex2x
-            -- If other methods are needed just run again after e.g. makeglossaries
-            vim.g.vimtex_compiler_method = 'latexmk'
-            vim.g.vimtex_parser_bib_backend = 'biber'
-            vim.g.vimtex_compiler_silent = 0
-            vim.g.vimtex_complete_enabled = 1
-            vim.g.vimtex_fold_enabled = 0
-            vim.g.vimtex_fold_bib_enabled = 1
-            vim.opt.conceallevel = 2
-            vim.g.vimtex_conceal_cites = 'icon'--'brackets'
-            vim.g.vimtex_syntax_conceal = {
-                accents = 1,
-                ligatures = 1,
-                cites = 1,
-                fancy = 1,
-                spacing = 0,
-                greek = 1,
-                math_bounds = 1,
-                math_delimiters = 1,
-                math_fracs = 1,
-                math_super_sub = 1,
-                math_symbols = 0,
-                sections = 0,
-                styles = 1,
-            }
-            -- Configure okular vim side
-            vim.g.vimtex_view_general_viewer = 'okular'
-            vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
-            -- Okular side
-            -- "Settings > Editor > Custom Text Editor"
-            -- command: nvim --headless -c "VimtexInverseSearch %l '%f'"
-            -- source: https://docs.kde.org/stable5/en/okular/okular/inverse_search.html 
-            vim.g.vimtex_syntax_enabled = 0
+  -- slime copy paste to target
+    {"jpalardy/vim-slime",
+        lazy=true,
+        ft = 'julia',
+        config = function ()
+            vim.g.slime_target="kitty"
         end
     },
+
+  --latex (ez config) 
+  "evesdropper/luasnip-latex-snippets.nvim",
+  "lervag/vimtex",
 
   { "nvimdev/dashboard-nvim",
   event = "VimEnter",
@@ -132,15 +125,15 @@ require("lazy").setup({{
           key = 'f',
         },
         {
-          desc = ' Apps',
+          desc = ' Notes',
           group = 'DiagnosticHint',
-          action = 'Telescope app',
+          action = 'Neorg',
           key = 'a',
         },
         {
           desc = ' dotfiles',
           group = 'Number',
-          action = 'Telescope dotfiles',
+          action = 'Telescope find_files hidden=true<cr>',
           key = 'd',
         },
       },
