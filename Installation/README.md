@@ -1,4 +1,26 @@
-# INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!
+# Summary 
+1. [How_to_explore_this_directory](#How_to_explore_this_directory)
+2. [Programs](#Programs)
+3. [Themes_and_custom](#Themes_and_custom)
+4. [Terminal](#Terminal)
+5. [FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!](#FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!)
+
+## How_to_explore_this_directory <a name="How_to_explore_this_directory"></a>
+
+## Programs <a name="Programs"></a>
+
+## Themes_and_custom <a name="Themes_and_custom"></a>
+
+## Terminal <a name="Terminal"></a>
+
+
+
+
+
+
+
+
+## FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT! <a name="FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!"></a>
 
 # First, installing with KDE, from scratch (With bootloader for dual booting, if you don't want skip the bootloader part).
 
