@@ -2,7 +2,7 @@
 1. [How_to_explore_this_directory](#How_to_explore_this_directory)
 3. [Themes_and_custom](#Themes_and_custom)
 4. [Terminal](#Terminal)
-5. [FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!](#FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!)
+5. [FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!](#FULL_INSTALLATION_GUIDE_FOR_ARCH,FOR_LEARN_AND_USE_PURPOSES,KDE_and_i3_version,from_SCRATCH_and_WITH_SCRIPT!)
 
 ## How_to_explore_this_directory <a name="How_to_explore_this_directory"></a>
 
