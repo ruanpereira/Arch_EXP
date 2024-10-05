@@ -11,6 +11,7 @@ A repo for configurations, ideas, apps, scripts and the experience of using a Ar
 4. [Mid 2023](#Mid-2023)
 5. [Programs and functionality](#Programs-and-Functionality)
 6. [WM vs DE](#Desktop-Environtment-vs-Window-Manager)
+7. [Conclusion](#Conclusion)
 
 
 ## What is Arch Linux? <a name="What-is-Arch-Linux?"></a>
@@ -22,18 +23,22 @@ The system only come with the bare minimum installation, and you construct the s
 
 ## Installation Discussions. (On construction) <a name="Installaion-Discussions"></a>
 
-The installation can be found [here](https://wiki.archlinux.org/title/Installation_guide). This will be the MINIMUM to consider a operational system (and nowadays the operational systems don't use the minimum here, but much more.). I recommend searching for some guides for installations, [like this one](https://www.youtube.com/watch?v=PQgyW10xD8s). In my opinion, the basic installation is cool to start using Linux with more responsability. If you want to understand the installation, it is a good idea to create a VM or just use a secondary machine to redo this installation at least  5 or 6 times. Repetition is key. 
+The installation can be found [here](https://wiki.archlinux.org/title/Installation_guide). This will be the MINIMUM to consider a operational system (on linux terms. System nowadays have much more than what is set here). I recommend searching for some guides for installations, [like this one](https://www.youtube.com/watch?v=PQgyW10xD8s), to have a more pleasent and straightforward install, while adding features that on other system are the pattern. In my opinion, the basic installation is cool to start using Linux with more responsability. If you want to understand the installation, it is a good idea to create a VM or just use a secondary machine to redo this installation at least  5 or 6 times. Repetition is key. Breaking the system is a step.
 
-Just to be sure that you are undestanding. Installing a operational system doesn't mean that you will have a GUI (a graphical interface). Just the basic of a system (terminal, programs, services). 
+Just to be sure that you are understanding. Installing a operational system on arch linux docs terms doesn't mean that you will have a GUI (a graphical interface), or any navigator like firefox, or a file manager, or a print utilitary, etc. Just the basic of a linux system (terminal(or tty for the intimate), processes, and the kernel). So, for begginers, this can be a nightmare.
 
-After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, based on another archive here. You can find the edited script on a forked project here. 
+After installing a few times, i figured what are the important things, so i needed a rapid way to install it. So, i searched for a pre-made recipe for the script, and i founded it here: https://github.com/tom5760/arch-install . After that, i just edited with my things, based on another archive here. You can find the edited script on a forked project here. It is a bit of a workup, and after some changes, i do not find that much inportant to use a script, only if you reeeally need the time and you don't change options
+ever. In my case, i like to try new things, aways trying to get new options, adding and removing programs, etc. Sure, in my opinion, when you use something constantly, you have that saved on your brain, so reinstalling is a must and you probably does not need to
+write that down. But since the start of ![archinstall](https://wiki.archlinux.org/title/Archinstall) lib, to me creating a script is only necessary if you want the costumized and READY TO GO install. Archinstall, to me, really does the job on crunching the time
+needed to install Arch. Just set your settings (you can also save that configuration for another install with archinstall), and after 30 min max, you are ready to install your programs, and the most part of it is already installed (things like drivers, how your system will be created, basic partitioning, language, and basically the fresh new and best suited for more simple usage of the system). On this note, archinstall is a bit harsh on the disc partition, primarially for dual boot. 
 
-After installing, the post-installation is choose a GUI. There, it starts the discussion about the best DE, using or not a WM, etc. The best start is to use KDE or GNOME (search and choose the best to you, and how to install it on arch).
+But, if you want the COMPLETE control of your installation, just get you step by step by the ![install_guide](https://wiki.archlinux.org/title/Installation_guide), and add your settings, and after that, get your proprietary install script. To me, fast-installing the basic and working my way up to a workspace is better that have a only step script. 
+
+After installing, the post-installation is choose a GUI. There, it starts the discussion about the best DE, using or not a WM, etc. The best start is to use KDE or GNOME (search and choose the best to you, and how to install it on arch). When using the ![archinstall](https://wiki.archlinux.org/title/Archinstall) script, you can also choose the GUI that you gonna have on your system, and you will have that GUI already installed. Bonus points for that.  
 
 For dual-boot, it is the best option.
 
-If you do not want the installation process, or to automate it, use arch-install, or search about arco-linux and how to install.
-Using arch-install, it is a  bit tricky, but teoreticaly it works. 
+If you do not want the installation process, or to automate it, use ![archinstall](https://wiki.archlinux.org/title/Archinstall), or search about arco-linux and how to install, or a way to have a calamares install on arch linux.
 
 ## The Experience (2023) <a name="The-Experience-(2023)"></a>
 Actually, i use KDE DE (how to install in the install file), with linux standard newer kernel available. I don't use zsh, or other bash things. For installing, i use pacman and yay, pretty good ones, i recommend. To the pacman, some tips: 
@@ -68,21 +73,24 @@ Even the login screen, is also set here (after the hardware initialization).
 
 Desktop environtments will be the first sign of a beaultiful computer, but also will be the most simple and plug and play way to get your computer working for your needs. If you don't have the time, the pacience, ou just don't care about it, Desktop Environtment is your way.
 
-## Programs and Functionality <a name="Programs-and-Functionality"></a>
-
 ## Desktop Environtment vs Window Manager <a name="Desktop-Environtment-vs-Window-Manager"></a>
 
 D.E. is short for desktop environtment. WM is for window manager. 
 
-A Desktop Environtment is 
+A Desktop Environtment is composed of a way to showing the programs, the basic funcions (such as wifi, bluetooth, disks, etc), basic programs (file manager, settings, music player, archives reading etc.), taskbar, and other features. It is the most common way of a system, since it is the core of the most used systems (Windows, Ubuntu, Fedora, Manjaro, and others). So, for the most part of people, that is what you want. On arch, this concept is a optional, that's one of the big choices of arch linux. Being able to choose if you want to have a simple install, or configuring your way, or maybe just use the simplest way possible, almost live a server, is a big choice for the common user, and normally this is not presented as a option, and that is a challenge as itself. Don't bite about it. If you want the most efective way, just choose one of the already existing ![ones](https://wiki.archlinux.org/title/Desktop_environment) when installing arch. Also, remenber that can be choosed by the ![archinstall](https://wiki.archlinux.org/title/Archinstall) script. But, when using other systems, that option is kind of masked with choosing your system. 
 
-From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. After using and trying to improve my i3 config files for at least 1.5 years, my experience with it says that, it is good if you use i3 in a PC, but it is not good for notebooks. Many limitations in automation and simple tasks (like using wifi, or using a output monitor).
+I used Debian, Ubuntu, Linux Mint, Arco Linux, Pop_OS, and others. These have their main shipping options of Desktop Environtments, and each with their own options and features. Some of them have the option given to choose others Desktop Environtments, or maybe even not use one, but use a window manager pre-configured (basically creating a desktop environtment based off a window manager). But, when i tried a real window manager, that is the first experience that i have with that. 
 
-A smart and good way to solve a problem in i3, the display resolution and external HDMI recognition problem, is to install arandr and open it, configure, and save the configuration. Inside the file saved, it will have the configuration of the xrandr you want! So, ignore the /bin/sh part, and paste that command in your i3 config.  
+Common desktop environtments are GNOME, KDE, XFCE. That's the normal way to go about it. Each has their complete experience, choose and try what fits you the most. Gnome and KDE are awesome, and XFCE is a great way of having a lightweight option for weaker computers. 
 
-Another WM that i will be testing is Hyprland. Need a basic configuration.
-All im learning is from : https://wiki.hyprland.org/Getting-Started/Master-Tutorial/
+I choose to try something new, and that is a window manager. But, with my limited knowledge at the time, a window manager pre-configured seemed like a good option (that is a good option, just not for me, because i like to customize things for me).
 
+From Manjaro, i used i3 for a while, and i liked it. But, trying to use pure i3 and configure it, it takes too much time. After using and trying to improve my i3 config files for at least 1.5 years, my experience with it says that, it is good if you use i3 in a PC, but it is not good for notebooks. Many limitations in automation and simple tasks (like using wifi, or using a output monitor). So, when using notebooks, try and have a thought about it. 
+
+After chooosing to maintain the window-manager based use, other options came, such as ![xmonad](https://xmonad.org/), ![bspwm](https://github.com/baskerville/bspwm), ![hyprland](https://hyprland.org/), and this goes a loooooong way. The basic idea is the same, but with different ways of configuring it. 
+
+
+## Conclusion <a name="Conclusion"></a>
 From this, my gratuation took some of my soul for a while. Consider this the end of this sprint os experience, since i no longer remember what i was writing. I decided to make a new start point. More organized, more explained, more detailed. But experiences are experiences, and this is an experience.
 
 (This)[https://www.reddit.com/r/unixporn/comments/vngxl0/which_wm_is_better_bspwm_or_awesome/] post on reddit unix porn summerize how choosing a WM works, with lots of toughts about it, but one made it CLEAR AS WATER for me:
