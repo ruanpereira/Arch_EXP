@@ -91,7 +91,9 @@ After chooosing to maintain the window-manager based use, other options came, su
 
 
 ## Conclusion <a name="Conclusion"></a>
-From this, my gratuation took some of my soul for a while. Consider this the end of this sprint os experience, since i no longer remember what i was writing. I decided to make a new start point. More organized, more explained, more detailed. But experiences are experiences, and this is an experience.
+From this, my gratuation took some of my soul for a while. Consider this the end of this sprint os experience, since i no longer remember what i was writing. I decided to make a new start point. More organized, more explained, more detailed. But experiences are experiences, and this is an experience on my usage with Arch Linux. 
+
+I love it. It is a system that have enable the options that to me is entertaining and also amusing. Also, as a rolling release, you have acess to the newest functionality releases on each program. This comes a a gift and a curse. 
 
 ![This](https://www.reddit.com/r/unixporn/comments/vngxl0/which_wm_is_better_bspwm_or_awesome/) post on reddit unix porn summerize how choosing a WM works, with lots of toughts about it, but one made it CLEAR AS WATER for me:
 "
