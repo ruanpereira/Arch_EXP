@@ -1,6 +1,5 @@
 # Summary 
 1. [How_to_explore_this_directory](#How_to_explore_this_directory)
-2. [Programs](#Programs)
 3. [Themes_and_custom](#Themes_and_custom)
 4. [Terminal](#Terminal)
 5. [FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!](#FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!)
@@ -19,8 +18,6 @@ Programs is a dir to save install steps for certain programs that can be buggy a
 dotfiles is a dir for configuration files for specific programs. 
 
 commands&scripts is for personal scripts or magic line commands that i could forget so i saved there. 
-
-## Programs <a name="Programs"></a>
 
 ## Themes_and_custom <a name="Themes_and_custom"></a>
 
