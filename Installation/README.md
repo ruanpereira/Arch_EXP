@@ -21,7 +21,21 @@ commands&scripts is for personal scripts or magic line commands that i could for
 
 ## Themes_and_custom <a name="Themes_and_custom"></a>
 
-For theming, first we can do this by two ways: getting a complete theme for your terminal (with the colors, fonts, etc ), or change the settings of said terminal as you like, adding little by little, changing the line, setup, font, colors, etc. 
+Theming depends on what you are using as a GUI output and the tecnology (GTK, qt, wayland basically), the colorscheme that you like, the font that you like, the icons, and if you use a desktop environtment or window manager. 
+
+Attacking each bullet:
+- GUI output: For each GUI output, you have a configuration app. Qt is configured by Kvantum, GTK is configured by Customize Looks and Feel, and Wayland i don't know. More information on that can be found ![here](https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications)
+- Colorscheme: Appearently, it came from the colorschemes from VSCode, and the pattern has spread to other applications. A compreensive list can be found ![here](https://vscodethemes.com/). When you find a good one, just try to found that colorscheme or a similar for what you want. Also this colorscheme thing exists with customizable IDEs and Text Editors such as VSCode itself, nvim, emacs.
+- Font: Linux has a TON of possible fonts, you can find some of that on the packages lists here, but i personaly suggest to find videos about it on youtube, or use ones that comes with a certain theme package, or some specific that you like. Some know names are Jetbrain Font, Meslo, Hack, monospace, and others. Have in mind that font configuration can be tricky as hell, since you can set fonts for a lot of specific things, such as terminal, status bar (window manager only), text editors, IDEs, system-wide, navigators, etc.
+- Icons: same state as the Font. A heck of options, but it depends more on what you use as a GUI tech. On window-manager side, icons can be also configured by some fonts, on things such as the status bar and certain menus that you configure it. (ROFI as as example). On desktop environtments, that comes with a certain bundle, but you can always search and install different ones. 
+- D.E. vs W.M. : on D.E., you will have a certain set of options as you install, some to change, and you can search for other options of that said D.E. (like, by example, a catpucchin theme for the gnome D.E.). On W.M., as you can see on previous bullets, each part can be configured seperattly, so prepare some time to unsderstand that part and seek what combination you personally like. Normally, you will have both Qt and GTK tech installed on your system, so you will have a bunch of options to choose from.
+
+Specifically, on my bspwm config, i use as Kvantum theme catppuccin. and for gtk i use tokyonight. For cursors, catppuccin, and papirus dark for icons. Numix is also a good choice on my opinion. 
+
+
+## Terminal <a name="Terminal"></a>
+
+For theming on terminal, first we can do this by two ways: getting a complete theme for your terminal (with the colors, fonts, etc ), or change the settings of said terminal as you like, adding little by little, changing the line, setup, font, colors, etc. 
 
 I have two main ways to do it: ![theme](https://github.com/catppuccin), and ![oh-my-posh](https://ohmyposh.dev/). 
 My 2 main theme colors are ToykoNight and Catpucchin. I currently use kitty as terminal.
@@ -31,19 +45,10 @@ Catpucchin has a complete ![theme](https://github.com/catppuccin/kitty) for kitt
 When using ![oh-my-posh](https://ohmyposh.dev/), since it changes the line input only, after installing it you will have just that. So, when using this option, you need/can change the colors, the font, start animation, etc. 
 For me, it is, when on this option: 
 - Font: ![Hack](https://github.com/source-foundry/Hack)
-- Colors: ![TokyoNight](https://github.com/davidmathers/tokyo-night-kitty-theme)
+- Colors: ![TokyoNight](https://github.com/davidmathers/tokyo-night-kitty-theme) (i also have it here on the dotfiles/kitty dir, so you can just copy paste that)
 - Startup message: ![colorscript](https://gitlab.com/dwt1/shell-color-scripts)
 
 After installing, make sure to configure it correctly and you should have something good. 
-
-
-
-
-
-
-
-## Terminal <a name="Terminal"></a>
-
 
 
 
