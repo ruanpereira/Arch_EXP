@@ -7,6 +7,17 @@
 
 ## How_to_explore_this_directory <a name="How_to_explore_this_directory"></a>
 
+Here, we have directories for the programs that i use on arch linux install with: 
+- i3wm
+- Bspwm
+- kde
+
+Also, we have wallpaper dirs, for, well, wallpapers that i personally like. 
+Programs is a dir to save install steps for certain programs that can be buggy at times (such as MATLAB). 
+
+dotfiles is a dir for configuration files for specific programs. 
+commands&scripts is for personal scripts or magic line commands that i could forget so i saved there. 
+
 ## Programs <a name="Programs"></a>
 
 ## Themes_and_custom <a name="Themes_and_custom"></a>
