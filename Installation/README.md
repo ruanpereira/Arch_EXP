@@ -21,6 +21,27 @@ commands&scripts is for personal scripts or magic line commands that i could for
 
 ## Themes_and_custom <a name="Themes_and_custom"></a>
 
+For theming, first we can do this by two ways: getting a complete theme for your terminal (with the colors, fonts, etc ), or change the settings of said terminal as you like, adding little by little, changing the line, setup, font, colors, etc. 
+
+I have two main ways to do it: ![theme](https://github.com/catppuccin), and ![oh-my-posh](https://ohmyposh.dev/). 
+My 2 main theme colors are ToykoNight and Catpucchin. I currently use kitty as terminal.
+
+Catpucchin has a complete ![theme](https://github.com/catppuccin/kitty) for kitty, so you can install these and create the full change simply. Just follow it and install. Catpucchin also has a font that uses, so you can totally set that. 
+
+When using ![oh-my-posh](https://ohmyposh.dev/), since it changes the line input only, after installing it you will have just that. So, when using this option, you need/can change the colors, the font, start animation, etc. 
+For me, it is, when on this option: 
+- Font: ![Hack](https://github.com/source-foundry/Hack)
+- Colors: ![TokyoNight](https://github.com/davidmathers/tokyo-night-kitty-theme)
+- Startup message: ![colorscript](https://gitlab.com/dwt1/shell-color-scripts)
+
+After installing, make sure to configure it correctly and you should have something good. 
+
+
+
+
+
+
+
 ## Terminal <a name="Terminal"></a>
 
 
