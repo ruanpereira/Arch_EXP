@@ -14,5 +14,10 @@ betterlockscreen
 font-config-info-git
 light
 stremio
-
-
+ttf-ms-win11-auto
+kvantum-theme-catppuccin-git
+sddm-theme-catppuccin-git
+catppuccin-gtk-theme-mocha
+papirus-icon-theme
+tela-icon-theme
+ttf-icomoon-feather

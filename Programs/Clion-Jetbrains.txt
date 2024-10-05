@@ -1,9 +1,0 @@
-To install CLion, follow the instattion on [clion](https://www.jetbrains.com/clion/download/#section=linux).
-
-Download the tar, unzip it, and run the bin with bash.
-
-$ bash clion.bin (once inside bin dir on clion installation).
-
-After installing, go to the setting and click on create a desktop entry.
-
-Also works on others jetbrains ide (like pycharm).
