@@ -28,13 +28,10 @@ Clone the repository on the plugin repository:
 ´´´git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions´´´
 Enable it at the .zshrc config file. I like to clone all repositories of all plugins before enabling it. 
 
-Install the font recommended by the powerlevel 10k (MesloLGS NF) and configure it to your terminal to use(in kitty, open the kitty.conf file and add font_family MesloLGS NF). 
-Or, if you are like me and has a font that you like, you can just set the font that you use, and install the font that the powerlevel1-k uses. 
+Install the font that you like, and configure it. (That kinda stucks with theming so it is optional)
 
-´´´sudo pacman -S ttf-font-awesome ttf-hack(the font that i personally use)´´´
-And download the TTF from the powerlevel10k github and install it.
+´´´sudo pacman -S ttf-hack(the font that i personally use)´´´
 
-In the end, install the powerlevel10k theme, in the same way as the plugins.
 
 After that, i like to use another version of the ´´´ls´´´ command, also courtesy of my friend Ezequias. 
 To do that, just install this package: 
