@@ -32,6 +32,8 @@ Attacking each bullet:
 
 Specifically, on my bspwm config, i use as Kvantum theme catppuccin. and for gtk i use tokyonight. For cursors, catppuccin, and papirus dark for icons. Numix is also a good choice on my opinion. 
 
+On the wm side, you can style your polybar, set a launcher, and a powermenu. For all that,  i use the hack theme from ![here](https://github.com/adi1090x/polybar-themes). This is configured on my dotfiles and bspwm dir.
+
 
 ## Terminal <a name="Terminal"></a>
 
