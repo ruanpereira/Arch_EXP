@@ -50,6 +50,8 @@ For me, it is, when on this option:
 
 After installing, make sure to configure it correctly and you should have something good. 
 
+After terminal customizing, comes the editor customizing for me, since i use neovim. You can have the configuration file on this repo. 
+
 
 
 
