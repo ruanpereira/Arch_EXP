@@ -1,6 +1,6 @@
 # Using pikaur or paru or yay
 #Optional
-jerry (no needed)
+jerry (no needed,for anime watchcing)
 
 #For calibre
 onedrive-abraunegg
@@ -9,14 +9,15 @@ onedrive-abraunegg
 julia-bin
 
 #Programs
-spotify
-teams
-
-#Fonts
+auto-cpufreq
+betterlockscreen
+font-config-info-git
+light
+stremio
+ttf-ms-win11-auto
+kvantum-theme-catppuccin-git
+sddm-theme-catppuccin-git
+catppuccin-gtk-theme-mocha
+papirus-icon-theme
+tela-icon-theme
 ttf-icomoon-feather
-ttf-all-the-icons
-powerlevel10k  #(to configure, go to the github page, install zsh and after that the fonts.)
-
-# For lock screen
-i3lock-color #(also needs to be configured, may be on dotfiles already working, but not in the sleep screen timer)
-betterlockscreen (corrently using)
