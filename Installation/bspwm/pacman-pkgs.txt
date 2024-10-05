@@ -62,7 +62,9 @@ doxygen
 timeshift
 man
 man-utils
+krita
 steam
+gnome-calculator
 
 # Usability for WM standalone
 picom
@@ -83,6 +85,9 @@ qt6
 pyqt5
 dunst
 ripgrep
+gvfs
+hplip
+smartmontools
 dmenu (in case of not using rofi)
 unrar 
 unzip
@@ -185,15 +190,9 @@ x11-ssh-askpass
 adwaita
 breeze
 libappindicator-gtk3
-nm-connection-editor
 oxygen
 oxygen-icons
 papirus-icon-theme
-arc-icon-theme
-
-# Themes for GTK, QT, etc.
-
-arc-gtk-theme
 
 
 # Post install
