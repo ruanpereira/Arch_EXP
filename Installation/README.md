@@ -13,6 +13,7 @@ Here, we have directories for the programs that i use on arch linux install with
 - kde
 
 Also, we have wallpaper dirs, for, well, wallpapers that i personally like. 
+
 Programs is a dir to save install steps for certain programs that can be buggy at times (such as MATLAB). 
 
 dotfiles is a dir for configuration files for specific programs. 
