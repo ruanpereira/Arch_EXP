@@ -35,7 +35,6 @@ hplip
 openresolv
 openvpn
 networkmanager-openvpn
-keepassxc
 net-tools
 
 # Bluetooth
@@ -51,7 +50,6 @@ calibre
 bitwarden
 btop
 discord
-alacritty
 qbittorrent
 obs-studio
 kitty
@@ -69,7 +67,7 @@ steam
 # Usability for WM standalone
 picom
 bash-completion
-sxhkd (bspwm only)
+sxhkd
 numlockx
 flameshot
 pavucontrol
@@ -200,6 +198,7 @@ arc-gtk-theme
 
 # Post install
 # ohmyzsh
+# ohmyposh
 # timeshift
 # github-cli
 # iptables-nft
