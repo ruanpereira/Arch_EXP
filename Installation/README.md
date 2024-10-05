@@ -58,7 +58,7 @@ After terminal customizing, comes the editor customizing for me, since i use neo
 
 
 
-## FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT! <a name="FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT!"></a>
+## FULL INSTALLATION GUIDE FOR ARCH, FOR LEARN AND USE PURPOSES, KDE and i3 version, from SCRATCH and WITH SCRIPT! <a name="FULL_INSTALLATION_GUIDE_FOR_ARCH,FOR_LEARN_AND_USE_PURPOSES,KDE_and_i3_version,from_SCRATCH_and_WITH_SCRIPT!"></a>
 
 # First, installing with KDE, from scratch (With bootloader for dual booting, if you don't want skip the bootloader part).
 
