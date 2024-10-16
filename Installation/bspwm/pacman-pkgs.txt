@@ -121,6 +121,7 @@ xkeyboard-config
 xdg-user-dirs
 xdgd-utils
 libinput
+libnotify
 libnma-gtk4
 gtk2
 gtk3

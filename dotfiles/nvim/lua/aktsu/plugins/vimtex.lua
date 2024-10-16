@@ -24,9 +24,12 @@
                 sections = 0,
                 styles = 1,
             }
-            -- Configure okular vim side
-            vim.g.vimtex_view_general_viewer = 'okular'
-            vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
+
+	    -- Built-in viewer method
+ 	    vim.g.vimtex_view_method = "okular"
+            -- Configure okular vim side (for general view)
+            -- vim.g.vimtex_view_general_viewer = 'okular'
+            -- vim.g.vimtex_view_general_options = [[--unique file:@pdf\#src:@line@tex]]
             -- Okular side
             -- "Settings > Editor > Custom Text Editor"
             -- command: nvim --headless -c "VimtexInverseSearch %l '%f'"
