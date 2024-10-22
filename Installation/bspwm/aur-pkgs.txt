@@ -14,7 +14,6 @@ manga-tui
 mkinitcpio-firmware
 numix-icon-theme-git 
 oh-my-posh
-onedrive-abraunegg 
 phinger-cursors
 python-pyqt5-3 
 python-pyqt5-chart 
@@ -29,9 +28,7 @@ qt5-quicktimeline
 qt5-serialbus
 qt5-webglplugin
 qt5-webview
-shell-color-scripts
+shell-color-scripts-git
 stremio
 ttf-icomoon-feather
-ttf-ms-win11-auto
 yay
-zen-browser-avx2-bin

@@ -32,6 +32,7 @@ git
 github-cli
 cups
 hplip
+print-manager
 openresolv
 openvpn
 networkmanager-openvpn
@@ -79,6 +80,7 @@ sddm
 fzf
 polybar (or eww in the future)
 xarchiver
+fastfetch
 partitionmanager
 qt5
 qt6
@@ -88,7 +90,6 @@ ripgrep
 gvfs
 hplip
 smartmontools
-dmenu (in case of not using rofi)
 unrar 
 unzip
 xapp
@@ -136,7 +137,7 @@ rofi
 
 #Fonts you possibly gonna use (choose what you want please)
 font-manager
-nerd-fonts (for all nerd fonts)
+nerd-fonts
 noto-fonts-cjk (japanese caracters )
 ttf-hack (terminal font)
 ttf-meslo-nerd (if you)
@@ -195,35 +196,3 @@ oxygen
 oxygen-icons
 papirus-icon-theme
 
-
-# Post install
-# ohmyzsh
-# ohmyposh
-# timeshift
-# github-cli
-# iptables-nft
-# neofetch
-# discord
-# Spyder (from miniconda)
-
-# backup for xorg
-xorg-fonts-encodings 1.1.0-1
-xorg-server 21.1.13-1
-xorg-server-common 21.1.13-1
-xorg-setxkbmap 1.3.4-1
-xorg-xauth 1.1.3-1
-xorg-xbacklight 1.2.3-3
-xorg-xdpyinfo 1.3.4-1
-xorg-xev 1.2.6-1
-xorg-xgamma 1.0.7-1
-xorg-xinit 1.4.2-1
-xorg-xkbcomp 1.4.7-1
-xorg-xmessage 1.0.7-1
-xorg-xmodmap 1.0.11-1
-xorg-xprop 1.2.7-1
-xorg-xrandr 1.5.2-1
-xorg-xrdb 1.2.2-1
-xorg-xset 1.2.5-1
-xorg-xsetroot 1.1.3-1
-xorg-xwayland 23.2.6-2
-xorg-xwininfo 1.1.6-1
