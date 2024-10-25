@@ -106,6 +106,7 @@ bzip2
 pcmanfm
 lm_sensors
 okular
+ebook-tools
 e2fsprogs
 exfatprogs
 btrfs-progs
