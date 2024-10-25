@@ -31,9 +31,13 @@ openssh
 git
 github-cli
 cups
+sane
+sane-airscan
 hplip
 print-manager
+skanlite
 openresolv
+gvfs
 openvpn
 networkmanager-openvpn
 net-tools
@@ -76,19 +80,20 @@ flameshot
 pavucontrol
 mkinitcpio-firmware
 zsh
-sddm
+lightdm
 fzf
-polybar (or eww in the future)
+polybar
 xarchiver
 fastfetch
+chafa
 partitionmanager
 qt5
 qt6
+qt5ct
+qt6ct
 pyqt5
 dunst
 ripgrep
-gvfs
-hplip
 smartmontools
 unrar 
 unzip
@@ -97,7 +102,6 @@ xclip
 xorg
 ntfs-3g
 feh
-pyqt5
 bzip2
 pcmanfm
 lm_sensors
@@ -105,22 +109,18 @@ okular
 e2fsprogs
 exfatprogs
 btrfs-progs
-lxappearence
+lxappearance
 kvantum
 polkit-kde-agent
 polkit-qt5
 polkit-qt6
 print-manager
 udisks2
-unzip
-xarchiver
-xf86-video-intel #preferably mesa instead#
-xf86-video-mesa or mesa
-xf86-input-synaptics
-xf86-input-libinput
+mesa
+xf86-video-intel
 xkeyboard-config
 xdg-user-dirs
-xdgd-utils
+xdg-utils
 libinput
 libnotify
 libnma-gtk4
@@ -138,20 +138,19 @@ rofi
 #Fonts you possibly gonna use (choose what you want please)
 font-manager
 nerd-fonts
-noto-fonts-cjk (japanese caracters )
-ttf-hack (terminal font)
-ttf-meslo-nerd (if you)
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+noto-fonts
+ttf-hack
 ttf-dejavu
 ttf-droid
 ttf-inconsolata
-ttf-liberation (or ms-win11 fonts on AUR packages)
+ttf-liberation
 ttf-joypixels
 ttf-indic-otf
 ttf-roboto
 ttf-ubuntu-font-family
-ttf-jetbrains-mono-nerd
-
-For install nerd-fonts noto-fonts ttf-hack-nerd ttf-meslo-nerd awesome-terminal-fonts ttf-dejavu ttf-droid ttf-inconsolata ttf-liberation ttf-joypixels ttf-indic-otf ttf-roboto ttf-hack ttf-ubuntu-font-family
 
 #Latex dependencies
 biber
@@ -173,9 +172,6 @@ texlive-humanities
 texlive-pictures
 texlive-pstricks
 
-# For install biber texlive-basic texlive-latex texlive-latexrecommended texlive-latexextra texlive-binextra texlive-bibtexextra texlive-fontsrecommended texlive-fontsextra texlive-fontutils texlive-langcyrillic texlive-langportuguese texlive-formatsextra texlive-mathscience texlive-publishers texlive-humanities texlive-pictures texlive-pstricks
-
-
 #Virtual Machine
 virtualbox
 virtualbox-guest-iso
@@ -189,10 +185,10 @@ virt-manager
 x11-ssh-askpass
 
 # Icons
-adwaita
+arc-gtk-theme
 breeze
+breeze-gtk
 libappindicator-gtk3
-oxygen
-oxygen-icons
 papirus-icon-theme
+arc-icon-theme
 
