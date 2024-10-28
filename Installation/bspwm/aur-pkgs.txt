@@ -10,7 +10,6 @@ julia-bin
 kvantum-theme-catppuccin-git
 light
 manga-tui
-mkinitcpio-firmware
 oh-my-posh
 phinger-cursors
 python-pyqt5 
