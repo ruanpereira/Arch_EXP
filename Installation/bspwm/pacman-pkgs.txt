@@ -3,14 +3,14 @@
 pakstrap -K /mnt base linux linux-firmware sof-firmware (for laptops after 2019) intel-ucode(ou adm-ucode) nano neovim networkmanager man-db man-pages texinfo doxygen
 
 
-#Boot, processor
+#Boot and processor
 intel-ucode
 grub
 efibootmgr
 os-prober
 dosfstools
 
-# Audio (pulse_audio, jack and alsa are old envs)
+# Audio-pipewire
 pipewire
 wireplumber
 pipewire-alsa
