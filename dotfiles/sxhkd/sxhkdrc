@@ -10,7 +10,7 @@ super + Return
 super + @space
 
 #	dmenu_run (if using dmenu)
-  ~/.config/polybar/blocks/scripts/launcher.sh
+  ~/.config/polybar/hack/scripts/launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -19,7 +19,7 @@ super + Escape
 # powermenu laucher
 
 super + c
-	~/.config/polybar/blocks/scripts/powermenu.sh
+	~/.config/polybar/hack/scripts/powermenu.sh
 
 #
 # bspwm hotkeys
