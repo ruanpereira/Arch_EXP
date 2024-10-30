@@ -9,13 +9,8 @@ super + Return
 # program launcher
 super + @space
 
-<<<<<<< HEAD
-#	dmenu_run
-	~/.config/polybar/forest/scripts/launcher.sh
-=======
 #	dmenu_run (if using dmenu)
   ~/.config/polybar/hack/scripts/launcher.sh
->>>>>>> 2ca9c9b6fa2c11ebd6dcc395fe4e9585bd52d394
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -24,11 +19,7 @@ super + Escape
 # powermenu laucher
 
 super + c
-<<<<<<< HEAD
-	~/.config/polybar/forest/scripts/powermenu.sh
-=======
 	~/.config/polybar/hack/scripts/powermenu.sh
->>>>>>> 2ca9c9b6fa2c11ebd6dcc395fe4e9585bd52d394
 
 #
 # bspwm hotkeys
@@ -208,11 +199,7 @@ super + x
 
     kitty --hold nvim
 
-<<<<<<< HEAD
-# Audio control
-
-=======
->>>>>>> 2ca9c9b6fa2c11ebd6dcc395fe4e9585bd52d394
+# audio control
 super + v
 
     pavucontrol
