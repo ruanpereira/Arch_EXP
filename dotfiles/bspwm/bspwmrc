@@ -3,8 +3,8 @@
 # Autostarting sxhkd, and others
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
-nm-applet &
-blueman-applet &
+# nm-applet &
+# blueman-applet &
 dunst &
 pgrep -x firewall-applet > /dev/null || firewall-applet &
 firewalld &
@@ -12,13 +12,13 @@ flameshot &
 xss-lock -- betterlockscreen -l &
 /usr/lib/polkit-kde-authentication-agent-1 &
 # $HOME/.config/polybar/launch.sh &
-bash ~/.config/polybar/launch.sh --hack
+bash ~/.config/polybar/launch.sh --forest
 # polybar example &
-feh --bg-fill ~/Workspace/Arch_EXP/wallpapers/vgirl.jpg
+feh --bg-fill ~/Workspace/Arch_EXP/wallpapers/car-int.png
 
 # Workspaces
-bspc monitor eDP-1 -d I II III IV V  
-bspc monitor HDMI-1 -d 6 7 8 9 10
+bspc monitor eDP-1 -d 1 2 3 4
+bspc monitor HDMI-1 -d 5 6 7 8
 
 # Workspaces behavior and appearence
 bspc config border_width        2
@@ -31,7 +31,3 @@ bspc config remove_disabled_monitors      true
 bspc config remove_unplugged_monitors     true
 bspc config merge_overlapping_monitors    true
 
-# For starting a app on a certain desktop
-# bspc rule -a firefox desktop='^2'
-# bspc rule -a kitty desktop='^1'
-#bspc rule -a steam desktop='^4' follow=on state=floating
