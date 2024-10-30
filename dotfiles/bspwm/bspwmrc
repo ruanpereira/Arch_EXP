@@ -3,8 +3,8 @@
 # Autostarting sxhkd, and others
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom &
-# nm-applet &
-# blueman-applet &
+nm-applet &
+blueman-applet &
 dunst &
 pgrep -x firewall-applet > /dev/null || firewall-applet &
 firewalld &
