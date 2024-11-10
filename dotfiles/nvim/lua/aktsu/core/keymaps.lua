@@ -13,11 +13,6 @@ keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- 
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 keymap.set("n", "<leader>st", "<cmd>:vsplit term://%:p:h//zsh<CR>", { desc = "Open a terminal split"})
 
--- compilation commands
--- 
---
-
-
 -- tab management
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
@@ -38,5 +33,6 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
 
 -- Package manager keymaps
--- keymap.set("n", "<leader>l", "<cmd>:Lazy<cr>", { desc = " [L]azy package manager" })
+
+keymap.set("n", "<leader>l", "<cmd>:Lazy<cr>", { desc = " [L]azy package manager" })
 keymap.set("n", "<leader>m", "<cmd>:Mason<cr>", { desc = " [M]ason LSP manager" })

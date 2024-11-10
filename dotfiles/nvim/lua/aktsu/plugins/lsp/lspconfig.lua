@@ -35,14 +35,6 @@ end
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
---configure C++ server
-lspconfig["clangd"].setup({
-  server = {
-    capabilities = capabilities,
-    on_attach = on_attach,
-  },
-})
-
 --configure julia server
 lspconfig["julials"].setup({
   server = {
@@ -79,14 +71,6 @@ lspconfig["lua_ls"].setup({
       },
     },
   },
-  },
-})
-
---configure Markdown server
-lspconfig["marksman"].setup({
-  server = {
-    capabilities = capabilities,
-    on_attach = on_attach,
   },
 })
 

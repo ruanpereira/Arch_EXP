@@ -16,11 +16,9 @@ mason.setup()
 mason_lspconfig.setup({
   -- list of servers for mason to install
   ensure_installed = {
-    "clangd",                         --C/C++
     "julials",                        --julia
     "ltex",                           --latex
     "lua_ls",                         --lua
-    "marksman",                       --markdown
     "jedi_language_server",           --python
     "rust_analyzer",                  --rust
   }})
