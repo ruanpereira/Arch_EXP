@@ -140,5 +140,5 @@ alias kitty_pid="echo $KITTY_LISTEN_ON | cut -d "-" -f 2 | xclip -selection clip
 export PATH=$HOME/.config/rofi/scripts/:$PATH
 
 # Oh my posh
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/catppuccin_mocha.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/tokyonight_storm.omp.json)"
 
