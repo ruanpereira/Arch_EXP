@@ -43,12 +43,6 @@ require("lazy").setup({
           key = 'f',
         },
         {
-          desc = ' Notes',
-          group = 'DiagnosticHint',
-          action = 'Neorg',
-          key = 'a',
-        },
-        {
           desc = ' dotfiles',
           group = 'Number',
           action = 'Telescope find_files hidden=true<cr>',

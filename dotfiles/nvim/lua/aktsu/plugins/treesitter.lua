@@ -22,7 +22,6 @@ treesitter.setup({
     "cpp",
     "csv",
     "dockerfile",
-    "julia",
     "markdown",
     "markdown_inline",
     "latex",

@@ -35,8 +35,8 @@ end
 -- used to enable autocompletion (assign to every lsp server config)
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
---configure julia server
-lspconfig["julials"].setup({
+--configure cpp server
+lspconfig["clangd"].setup({
   server = {
     capabilities = capabilities,
     on_attach = on_attach,
