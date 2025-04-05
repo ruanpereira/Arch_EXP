@@ -11,10 +11,8 @@ firewalld &
 flameshot & 
 xss-lock -- betterlockscreen -l &
 /usr/lib/polkit-kde-authentication-agent-1 &
-# $HOME/.config/polybar/launch.sh &
-bash ~/.config/polybar/launch.sh --forest
-# polybar example &
-feh --bg-fill ~/Workspace/Arch_EXP/wallpapers/car-int.png
+bash ~/.config/polybar/launch.sh --hack # hack/forest used
+feh --bg-fill ~/workspace/Arch_EXP/wallpapers/girl-manga.jpeg
 
 # Workspaces
 bspc monitor eDP-1 -d 1 2 3 4

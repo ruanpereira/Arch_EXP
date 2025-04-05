@@ -33,6 +33,7 @@ github-cli
 cups
 sane
 sane-airscan
+ipp-usb
 hplip
 print-manager
 skanlite
@@ -41,6 +42,7 @@ gvfs
 openvpn
 networkmanager-openvpn
 net-tools
+xdg-desktop-portal
 
 # Bluetooth
 bluez
@@ -49,19 +51,18 @@ bluedevil
 bluez-libs
 
 #Programs and for programming
-base-devel
-firefox 
+base-devel 
 calibre 
 bitwarden
 btop
 discord
+firefox
 qbittorrent
 obs-studio
 kitty
 neovim
 libreoffice-fresh
 gimp
-nano
 chromium
 doxygen
 timeshift
@@ -69,6 +70,7 @@ man
 krita
 steam
 gnome-calculator
+tree-sitter-cli
 
 # Usability for WM standalone
 picom
@@ -76,8 +78,6 @@ bash-completion
 sxhkd
 numlockx
 flameshot
-pavucontrol
-mkinitcpio-firmware
 zsh
 lightdm
 fzf
@@ -116,8 +116,6 @@ polkit-qt5
 polkit-qt6
 print-manager
 udisks2
-mesa
-xf86-video-intel
 xkeyboard-config
 xdg-user-dirs
 xdg-utils
@@ -185,10 +183,7 @@ virt-manager
 x11-ssh-askpass
 
 # Icons
-arc-gtk-theme
 breeze
 breeze-gtk
 libappindicator-gtk3
 papirus-icon-theme
-arc-icon-theme
-

@@ -6,10 +6,10 @@ catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha 
 font-config-info-git  
 jre 
-julia-bin
 kvantum-theme-catppuccin-git
 light
 manga-tui
+mkinitcpio-firmware
 oh-my-posh
 phinger-cursors
 python-pyqt5 
@@ -27,5 +27,9 @@ qt5-webglplugin
 qt5-webview
 shell-color-scripts-git
 stremio
-ttf-icomoon-feather
 yay
+
+# icons
+arc-gtk-theme
+arc-icon-theme
+
