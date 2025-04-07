@@ -1,19 +1,28 @@
+# microcode and boot related
 intel-ucode
 grub
 efibootmgr
 os-prober
 dosfstools
 
-xorg 
-xorg-xinit 
-xterm 
-tmux 
-plasma 
-plasma-desktop 
-kde-applications 
-kdeplasma-addons 
+# Desktop Environtment Related
+ark
+dolphin
+iwd
+kate
+konsole
+nano 
+plasma-meta
+plasma-workspace
+smartmontools
+wpa_supplicant
+xdg-utils
 sddm   
 
+#audio 
+pipewire
+
+# connectividade
 dhcpcd
 networkmanager
 firewalld
@@ -38,13 +47,11 @@ htop
 gnome-terminal    
 obs-studio
 kitty
-gparted
+partitionmanager
 neovim
 libreoffice-fresh
 gimp
-nano
 bzip2
-tmux
 udisks2
 unzip
 libnma-gtk4
@@ -55,13 +62,10 @@ ripgrep
 unrar 
 ntfs-3g
 pyqt5
-neofetch
+fastfetch
 
 nerd-fonts
 noto-fonts
-ttf-hack-nerd
-ttf-meslo-nerd
-awesome-terminal-fonts
 ttf-dejavu
 ttf-droid
 ttf-inconsolata
@@ -90,5 +94,3 @@ texlive-publishers
 texlive-humanities
 texlive-pictures
 texlive-pstricks
-
-timeshift
