@@ -1,0 +1,6 @@
+ani-cli
+manga-tui
+oh-my-posh
+shell-color-scripts-git
+stremio
+

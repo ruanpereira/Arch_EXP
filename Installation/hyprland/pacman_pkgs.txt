@@ -1,0 +1,44 @@
+# wm usability
+xdg-user-dirs
+waybar
+wl-clipboard
+lib-notify
+hyprpaper
+pavucontrol
+
+# programs
+bash-completion
+bitwarden
+eza
+fd
+git
+github-cli
+luarocks
+node-js
+partitionmanager
+python-pynvim
+unzip
+tree-sitter-cli
+zsh
+
+# file support
+dosfstools
+exfat-utils
+fatresize
+ntfs-3g
+
+# fonts
+otf-font-awesome
+ttf-hack
+nerd-fonts
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+ttf-dejavu
+ttf-droid
+ttf-inconsolata
+ttf-liberation
+ttf-joypixels
+ttf-indic-otf
+ttf-roboto
