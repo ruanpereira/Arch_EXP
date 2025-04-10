@@ -3,4 +3,5 @@ manga-tui
 oh-my-posh
 shell-color-scripts-git
 stremio
-
+vesktop #discord replacement for wayland
+clipse #clipboard management
