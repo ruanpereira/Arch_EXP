@@ -1,14 +1,16 @@
 # wm usability
 brightnessctl
 xdg-user-dirs
-waybar
 wl-clipboard
 lib-notify
 hyprpaper
+hyprpicker
 pavucontrol
 dunst
 qt5-wayland 
 qt6-wayland
+cava
+playerctl
 
 # programs
 bash-completion

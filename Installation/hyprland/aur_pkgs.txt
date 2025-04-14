@@ -5,3 +5,5 @@ shell-color-scripts-git
 stremio
 vesktop #discord replacement for wayland
 clipse #clipboard management
+xdg-desktop-portal-hyprland-git
+waybar-cava
