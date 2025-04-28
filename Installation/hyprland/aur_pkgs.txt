@@ -1,9 +1,3 @@
-ani-cli
-manga-tui
-oh-my-posh
-shell-color-scripts-git
-stremio
-vesktop #discord replacement for wayland
-clipse #clipboard management
-xdg-desktop-portal-hyprland-git
-waybar-cava
+ani-cli manga-tui mkinitcpio-firmware oh-my-posh shell-color-scripts-git
+stremio vesktop clipse kvantum-theme-catppuccin-git 
+xdg-desktop-portal-hyprland-git waybar-cava
