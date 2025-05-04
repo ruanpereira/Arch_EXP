@@ -1,11 +1,12 @@
 # wm usability
 brightnessctl xdg-user-dirs wl-clipboard lib-notify hyprpaper
 hyprpicker pavucontrol dunst qt5-wayland qt6-wayland playerctl
-kvantum
+kvantum hyprlock
 
 # programs
 bash-completion bitwarden eza fd git github-cli luarocks node-js
 partitionmanager python-pynvim unzip tree-sitter-cli zsh qt6-tools
+uv
 
 # file support
 dosfstools exfat-utils fatresize ntfs-3g

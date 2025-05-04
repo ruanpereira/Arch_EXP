@@ -1,3 +1,2 @@
 ani-cli manga-tui mkinitcpio-firmware oh-my-posh shell-color-scripts-git
-stremio vesktop clipse kvantum-theme-catppuccin-git 
-xdg-desktop-portal-hyprland-git waybar-cava
+stremio vesktop clipse kvantum-theme-catppuccin-git waybar-cava
