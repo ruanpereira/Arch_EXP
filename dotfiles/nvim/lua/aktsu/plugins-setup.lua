@@ -59,7 +59,7 @@ require("lazy").setup({
   "nvim-lualine/lualine.nvim", -- status bar
   "szw/vim-maximizer",  --maximize and restore current window
   "nvim-tree/nvim-tree.lua", -- file explorer
-  { 'echasnovski/mini.icons', version = false },
+
   -- fuzzy finding w/ telescope
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }, -- dependency for better sorting performance
   { "nvim-telescope/telescope.nvim", branch = "0.1.x" }, -- fuzzy finder
