@@ -97,15 +97,6 @@ require("lazy").setup({
   "saadparwaiz1/cmp_luasnip", -- for autocompletion
   "rafamadriz/friendly-snippets", -- useful snippets
 
-    -- slime copy paste to target
-  {"jpalardy/vim-slime",
-        lazy=true,
-        ft= "julia",
-        config = function()
-            vim.g.slime_target="kitty"
-        end
-  },
-
   -- git integration
   "lewis6991/gitsigns.nvim", -- show line modifications on left hand side
 
@@ -117,8 +108,16 @@ require("lazy").setup({
   -- colorizer
   "norcalli/nvim-colorizer.lua", -- for showing hex colors on terminal
 
+  -- task manager
+  {
+    "nvim-neorg/neorg",
+    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
+    version = "*", -- Pin Neorg to the latest stable release
+    config = true,
+  },
+
   -- for edit and save sudo files easy
-  "tpope/vim-eunuch",{
+  "tpope/vim-eunuch",
 
   --latex (ez config) 
   "evesdropper/luasnip-latex-snippets.nvim",
@@ -137,6 +136,4 @@ require("lazy").setup({
       desc = "Buffer Local Keymaps (which-key)",
     },
   },
-}
-
-  })
+})
