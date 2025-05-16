@@ -12,6 +12,7 @@ A repo for configurations, ideas, apps, scripts and the experience of using a Ar
 5. [Programs and functionality](#Programs-and-Functionality)
 6. [WM vs DE](#Desktop-Environtment-vs-Window-Manager)
 7. [Conclusion](#Conclusion)
+8. [After more than 2 years using, how it is holding?](#After more than 2 years using, how it is holding?)
 
 
 ## What is Arch Linux? <a name="What-is-Arch-Linux?"></a>
@@ -108,4 +109,18 @@ I'm loving bspwm because the configs (yes, plural) also use human readable synta
 But, as I stated earlier in the end they all pretty much do the same thing and the main difference is how they are configured."
 
 It IS just this.
+
+## After more than 2 years using, how it is holding? <a name="After more than 2 years using, how it is holding?"></a>
+
+After two years, Arch is still my system for me and Palhano. It is incredible that the pattern that Arch has, for installing and managing packages, rolling release, mounting your system, everything feels just right. On this time passed, me and Palhano had VERY diffe-
+rent uses and necessities, and we got go work on our "own things", let's say that. Palhano had to use Windows/Ubuntu for a long time, because work/graduation problems, and i needed Ubuntu for work, and Windows only for gaming, but later on got to try other systems. 
+In the spam of, like, 8 months, got to use Ubuntu again (did not like it), and after Ubuntu, Windows for 2 months (for development in c++ is terrible this shit only works with clion i swear & STILL YOU NEED TO INSTALL LIBRARIES AND THATS A PAIN IN THE ASS, 
+python it is ok, conda + vscode and stay happy). Started Rust but dropped because time crunches, need to get that later on, love the language until now, also on Windows is a pain. For software development outside python and web dev on general, i can't see how 
+it works on Windows. Today, i can use Arch again and even got to work with a window manager again, maybe it is really my thing. still like how it works. still like to configure, still tinker for more features. Right now i can also game on Linux, after i dumped
+some multiplayer games that i dont like anymore (lol, vava). everything else just works, and if not, dual boot or qemu solves it. Using hyprland + arch today, and loving the waylang protocol! MUCH better than 1 year ago, when launched with KDE for the first time, 
+and pure sway. ALSO, Igão came back to arch recently, KDE + arch, for him the DE workflow is better, and thats the magic of it. This repo is a way of guarding ideas of the general environtment of Arch and Linux systems on general. For him, having the programs 
+just work and be printed on the screen, with the rolling release, it is the better thing. 
+
+That said, i still want to distro hop a bit more, after trying the red hat base distros (opensuse and fedora), the next target is Gentoo. Hyped for it !!!! Have a friend that is trying NixOS, i didn't liked it from the first get go, relaying on her to get a second
+chance lol. By the end of the year, hope to be doing a Gentoo repository maybe. Distros like these i feel the need to documentate my learning curve. Also, going for projects and another repos of configuration, precisely neovim configuration (finally learned enought for it), and the learning repos for the programming languagens that i need it. 
 
