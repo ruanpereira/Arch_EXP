@@ -125,6 +125,8 @@ just work and be printed on the screen, with the rolling release, it is the bett
 That said, i still want to distro hop a bit more, after trying the red hat base distros (opensuse and fedora), the next target is Gentoo. Hyped for it !!!! Have a friend that is trying NixOS, i didn't liked it from the first get go, relaying on her to get a second
 chance lol. By the end of the year, hope to be doing a Gentoo repository maybe. Distros like these i feel the need to documentate my learning curve. Also, going for projects and another repos of configuration, precisely neovim configuration (finally learned enought for it), and the learning repos for the programming languagens that i need it. 
 
+By far, the best desktop 
+
 ## Current workstation <a name="Current workstation"></a>
 ### For Bpalhano:
 - KDE Plasma (wayland)
