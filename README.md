@@ -12,7 +12,8 @@ A repo for configurations, ideas, apps, scripts and the experience of using a Ar
 5. [Programs and functionality](#Programs-and-Functionality)
 6. [WM vs DE](#Desktop-Environtment-vs-Window-Manager)
 7. [Conclusion](#Conclusion)
-8. [After more than 2 years using, how it is holding?](#After more than 2 years using, how it is holding?)
+8. [After more than 2 years using, how it is holding?](#After-more-than-2-years-using,-how-it-is-holding?)
+9. [Current workstation](#Current-workstation)
 
 
 ## What is Arch Linux? <a name="What-is-Arch-Linux?"></a>
@@ -110,7 +111,7 @@ But, as I stated earlier in the end they all pretty much do the same thing and t
 
 It IS just this.
 
-## After more than 2 years using, how it is holding? <a name="After more than 2 years using, how it is holding?"></a>
+## After more than 2 years using, how it is holding? <a name="After-more-than-2-years-using,-how-it-is-holding?"></a>
 
 After two years, Arch is still my system for me and Palhano. It is incredible that the pattern that Arch has, for installing and managing packages, rolling release, mounting your system, everything feels just right. On this time passed, me and Palhano had VERY diffe-
 rent uses and necessities, and we got go work on our "own things", let's say that. Palhano had to use Windows/Ubuntu for a long time, because work/graduation problems, and i needed Ubuntu for work, and Windows only for gaming, but later on got to try other systems. 
@@ -124,3 +125,22 @@ just work and be printed on the screen, with the rolling release, it is the bett
 That said, i still want to distro hop a bit more, after trying the red hat base distros (opensuse and fedora), the next target is Gentoo. Hyped for it !!!! Have a friend that is trying NixOS, i didn't liked it from the first get go, relaying on her to get a second
 chance lol. By the end of the year, hope to be doing a Gentoo repository maybe. Distros like these i feel the need to documentate my learning curve. Also, going for projects and another repos of configuration, precisely neovim configuration (finally learned enought for it), and the learning repos for the programming languagens that i need it. 
 
+## Current workstation <a name="Current workstation"></a>
+### For Bpalhano:
+- KDE Plasma (wayland)
+- Arch Linux
+- yay
+- Obsidian for notes
+- need programming ides and shit here
+- qemu for virtualization
+- steam for games
+- firefox i guess
+### For ruanpereira:
+- Hyprland (wayland)
+- Arch Linux (maaaybe change later)
+- yay
+- neorg plugin neovim for notes
+- neovim for python, c++
+- qemu for virtualization
+- steam, mame, pcsx2 (mainly steam, not need lutris now since add launcher games to steam)
+- zen-browser
