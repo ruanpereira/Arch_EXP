@@ -129,8 +129,8 @@ By far, the best desktop
 
 ## Current workstation <a name="Current workstation"></a>
 ### For Bpalhano:
-- KDE Plasma (wayland)
-- Arch Linux
+- Gnome
+- Ubuntu
 - yay
 - Obsidian for notes
 - need programming ides and shit here
@@ -146,3 +146,6 @@ By far, the best desktop
 - qemu for virtualization
 - steam, mame, pcsx2 (mainly steam, not need lutris now since add launcher games to steam)
 - zen-browser
+- font: Hack (terminal) and MesloLGL(system, apps, qt kvantum gtk configuration)
+- theme: catppuccin-mocha (gtk and qt), vimix-kanagawa for cursor
+- icons: default
