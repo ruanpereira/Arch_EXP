@@ -85,10 +85,12 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+        "interval": 1,
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "interval": 1, 
     },
         "backlight": {
         // "device": "acpi_video1",
