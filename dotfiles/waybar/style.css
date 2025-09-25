@@ -96,7 +96,6 @@
 @define-color idle-inhibitor-color @foreground;
 @define-color idle-inhibitor-active-color @red;
 @define-color cava @red;
-
 * {
     /* Base styling for all modules */
     border: none;
@@ -183,6 +182,11 @@ window#waybar {
 #custom-playerctl.Paused {
     color: @orange;
     border-bottom-color: @orange;
+}
+
+#cava {
+    color: @red;
+    border-bottom-color: @red;
 }
 
 #clock {

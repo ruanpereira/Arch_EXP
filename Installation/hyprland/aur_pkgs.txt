@@ -1,2 +1,1 @@
-ani-cli manga-tui mkinitcpio-firmware oh-my-posh shell-color-scripts-git
-stremio vesktop clipse kvantum-theme-catppuccin-git waybar-cava
+ani-cli mkinitcpio-firmware oh-my-posh ttf-joypixels pwvucontrol stremio vesktop clipse kvantum-theme-catppuccin-git catppuccin-gtk-theme-mocha waybar-cava vimix-kanagawa-hyprcursors

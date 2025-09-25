@@ -123,6 +123,8 @@ require("lazy").setup({
   "evesdropper/luasnip-latex-snippets.nvim",
   "lervag/vimtex",
 
+    -- for code running with various languages
+  { "CRAG666/code_runner.nvim", config = true },
   -- showing key combination
   "folke/which-key.nvim",
   event = "VeryLazy",
