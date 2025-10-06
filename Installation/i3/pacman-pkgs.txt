@@ -14,7 +14,7 @@ pipewire-pulse
 pipewire-jack
 pavucontrol
 
-# Connectivity
+# Connectivity and Functionality
 dhcpcd
 networkmanager
 network-manager-applet
@@ -30,6 +30,13 @@ hplip
 openresolv
 openvpn
 networkmanager-openvpn
+python-pynvim
+xdg-user-dirs
+tree-sitter-cli
+feh
+pcmanfm
+pavucontrol
+playerctl
 
 # Bluetooth
 bluez
@@ -38,30 +45,21 @@ bluez-utils
 #Programs and for programming
 base-devel
 firefox 
-emacs
 calibre 
 bitwarden
 htop
-gnome-terminal
-obs-studio
 kitty
-polybar
-gparted
 neovim
-spectacle
 libreoffice-fresh
 gimp
-korganizer
 nano
-kalendar
 numlockx
-nitrogen
+feh
+xfce4-screenshooter
 bzip2
-tmux
 pcmanfm
-dolphin
 lm_sensors
-evince #or okular
+okular
 lxappearence
 polkit-kde-agent
 print-manager
@@ -75,11 +73,8 @@ xf86-input-libinput
 xkeyboard-config
 xdg-user-dirs
 libnma-gtk4
-rofi
 picom
-sxhkd
 zsh
-sddm
 qbittorrent
 qt5
 ripgrep
@@ -104,7 +99,6 @@ ttf-dejavu
 ttf-droid
 ttf-inconsolata
 ttf-liberation
-ttf-joypixels
 ttf-indic-otf
 ttf-roboto
 ttf-hack
@@ -134,19 +128,6 @@ texlive-pstricks
 
 # For install biber texlive-basic texlive-latex texlive-latexrecommended texlive-latexextra texlive-binextra texlive-bibtexextra texlive-fontsrecommended texlive-fontsextra texlive-fontutils texlive-langcyrillic texlive-langportuguese texlive-formatsextra texlive-mathscience texlive-publishers texlive-humanities texlive-pictures texlive-pstricks
 
-
-#Virtual Machine
-virtualbox
-virtualbox-guest-iso
-qemu
-libvirt
-iptables
-dnsmasq
-openbsd-netcat
-bridge-utils
-virt-manager
-x11-ssh-askpass
-
 # Icons
 adwaita
 breeze
@@ -157,18 +138,3 @@ notification-daemon
 oxygen
 oxygen-icons
 papirus-icon-theme
-
-# Post install
-# ohmyzsh
-# timeshift
-# github-cli
-# iptables-nft
-# neofetch
-# discord
-# Clion (from source)
-# Spyder (from miniconda)
-
-# For python support on Emacs (lsp-mode) (post install)
-# sudo pacman -S python-lsp-server
-# sudo pacman -S --asdeps python-mccabe python-pycodestyle python-pyflakes python-pylint yapf python-whatthepatch flake8 python-rope python-pydocstyle
-
