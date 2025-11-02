@@ -1,1 +1,1 @@
-ani-cli mkinitcpio-firmware oh-my-posh ttf-joypixels pwvucontrol stremio vesktop clipse kvantum-theme-catppuccin-git catppuccin-gtk-theme-mocha waybar-cava vimix-kanagawa-hyprcursors
+ani-cli mkinitcpio-firmware oh-my-posh ttf-joypixels stremio vesktop clipse kvantum-theme-catppuccin-git catppuccin-gtk-theme-mocha waybar-cava vimix-kanagawa-hyprcursors

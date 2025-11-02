@@ -1,7 +1,7 @@
 # wm usability
-brightnessctl xdg-user-dirs wl-clipboard lib-notify dunst hyprpaper
-hyprpicker qt5ct qt6ct qt5-wayland qt6-wayland playerctl
-kvantum hyprlock hyprshot imv
+brightnessctl xdg-user-dirs wl-clipboard libnotify dunst hyprpaper
+hyprpicker qt5ct qt6ct qt5-wayland qt6-wayland playerctl hyprpolkitagent
+kvantum hyprlock hyprshot imv pavucontrol fastfetch pacmanfm-qt firewalld
 
 # programs
 bash-completion bitwarden eza fd git github-cli luarocks
@@ -9,7 +9,7 @@ partitionmanager python-pynvim unzip tree-sitter-cli zsh qt6-tools
 uv conky qbittorrent calibre okular mpd rmpc
 
 # file support
-dosfstools exfat-utils fatresize ntfs-3g gvfs gvfs-mtp lxqt-archiver p7zip
+udiskie dosfstools exfat-utils fatresize ntfs-3g gvfs gvfs-mtp lxqt-archiver p7zip
 
 # fonts
 otf-font-awesome ttf-hack nerd-fonts noto-fonts noto-fonts-cjk

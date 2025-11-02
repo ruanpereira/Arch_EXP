@@ -114,11 +114,7 @@ alias l="eza -lah --icons --git --group-directories-first"
 alias la="eza -a --icons --git --group-directories-first"
 alias ll="eza -lh --icons --git --group-directories-first"
 alias ls="eza --icons --git --group-directories-first"
-alias kitty_pid="echo $KITTY_LISTEN_ON | cut -d "-" -f 2 | xclip -selection clipboard"
 # <<< Alias shortcuts
-
-# Easy acess to rofi adi1090x scripts
-export PATH=$HOME/.config/rofi/scripts/:$PATH
 
 # Oh my posh
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/kali.omp.json)"
