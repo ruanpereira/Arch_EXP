@@ -36,12 +36,12 @@ end
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
 --configure cpp server
-lspconfig["clangd"].setup({
-  server = {
-    capabilities = capabilities,
-    on_attach = on_attach,
-  },
-})
+-- lspconfig["clangd"].setup({
+--   server = {
+--     capabilities = capabilities,
+--     on_attach = on_attach,
+--   },
+-- })
 
 --configure Latex server
 lspconfig["ltex"].setup({

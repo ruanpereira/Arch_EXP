@@ -71,6 +71,7 @@ require("lazy").setup({
   -- configuring lsp servers
   "neovim/nvim-lspconfig", -- easily configure language servers
   "hrsh7th/cmp-nvim-lsp", -- for autocompletion on lsp
+    "hrsh7th/cmp-nvim-lua", 
   { "glepnir/lspsaga.nvim",
     branch = "main",
     requires = {
@@ -83,6 +84,7 @@ require("lazy").setup({
   "hrsh7th/nvim-cmp", -- completion plugin
   "hrsh7th/cmp-buffer", -- source for text in buffer
   "hrsh7th/cmp-path", -- source for file system paths
+
 
   -- treesitter (syntax highlighting)
   {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate",
@@ -108,14 +110,6 @@ require("lazy").setup({
   -- colorizer
   "norcalli/nvim-colorizer.lua", -- for showing hex colors on terminal
 
-  -- task manager
-  {
-    "nvim-neorg/neorg",
-    lazy = false, -- Disable lazy loading as some `lazy.nvim` distributions set `lazy = true` by default
-    version = "*", -- Pin Neorg to the latest stable release
-    config = true,
-  },
-
   -- for edit and save sudo files easy
   "tpope/vim-eunuch",
 
@@ -123,9 +117,7 @@ require("lazy").setup({
   "evesdropper/luasnip-latex-snippets.nvim",
   "lervag/vimtex",
 
-    -- for code running with various languages
-  { "CRAG666/code_runner.nvim", config = true },
-  -- showing key combination
+   -- showing key combination
   "folke/which-key.nvim",
   event = "VeryLazy",
   opts = {},
@@ -138,4 +130,5 @@ require("lazy").setup({
       desc = "Buffer Local Keymaps (which-key)",
     },
   },
+    change_detection = {notify = false},
 })

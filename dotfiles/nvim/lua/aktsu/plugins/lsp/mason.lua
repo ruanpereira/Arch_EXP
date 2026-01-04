@@ -16,7 +16,7 @@ mason.setup()
 mason_lspconfig.setup({
   -- list of servers for mason to install
   ensure_installed = {
-    "clangd",                        --cpp
+    -- "clangd",                        --cpp
     "ltex",                           --latex
     "lua_ls",                         --lua
     "jedi_language_server",           --python

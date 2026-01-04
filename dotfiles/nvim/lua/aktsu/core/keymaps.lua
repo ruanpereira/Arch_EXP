@@ -20,6 +20,9 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
+-- directory netrw
+keymap.set("n", "<leader>cd", "<cmd>Ex<CR>", {desc = "Open netrw"})
+
 -- plugin keymaps
   -- vim maximizer
 keymap.set("n", "<leader>wm", ":MaximizerToggle<CR>", {desc = "Maximize/Restore" })   --restore amd maximize current window
@@ -38,15 +41,6 @@ keymap.set("n", "<leader>fl", "<cmd>Telescope current_buffer_fuzzy_find<cr>", {d
   -- sudo files
 keymap.set("n", "<leader>sw", "<cmd>SudoWrite", {desc = "Write the file as sudo" })  -- write the live file as a sudo, no permission problems
 keymap.set("n", "<leader>se", "<cmd>SudoEdit", {desc = "Edit the file as sudo"})     -- edit the live file as a sudo, no permission problems
-
-  -- code runner
-keymap.set('n', '<leader>rr', ':RunCode<CR>', { noremap = true, silent = false })
-keymap.set('n', '<leader>rf', ':RunFile<CR>', { noremap = true, silent = false })
-keymap.set('n', '<leader>rft', ':RunFile tab<CR>', { noremap = true, silent = false })
-keymap.set('n', '<leader>rp', ':RunProject<CR>', { noremap = true, silent = false })
-keymap.set('n', '<leader>rc', ':RunClose<CR>', { noremap = true, silent = false })
-keymap.set('n', '<leader>crf', ':CRFiletype<CR>', { noremap = true, silent = false })
-keymap.set('n', '<leader>crp', ':CRProjects<CR>', { noremap = true, silent = false })
 
   -- manager keymaps
 keymap.set("n", "<leader>l", "<cmd>:Lazy<cr>", { desc = " [L]azy package manager" })
