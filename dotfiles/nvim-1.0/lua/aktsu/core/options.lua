@@ -21,7 +21,7 @@ opt.smartcase = true
 opt.backspace = "indent,eol,start"
 
 -- clipboard
-opt.clipboard:append("unnamed,unnamedplus") --use the system clipboard to copy something on neovim, basically nvim -> outside.
+opt.clipboard:append("unnamedplus") --use the system clipboard to copy something on neovim, basically nvim -> outside.
 
 -- "-" fixing
 opt.iskeyword:append("-")
