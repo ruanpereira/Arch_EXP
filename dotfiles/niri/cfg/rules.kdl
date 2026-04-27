@@ -1,0 +1,21 @@
+    window-rule {
+        geometry-corner-radius 2 // Set every window radius to 20
+        clip-to-geometry true
+    }
+
+    window-rule {
+        match app-id=r#"steam$"#
+        open-maximized true
+        match at-startup=true
+    }
+    
+    window-rule {
+        match app-id="Zen-Browser"
+        open-maximized true
+        match at-startup=true
+    }
+
+    layer-rule {
+        match namespace="^noctalia-wallpaper*"
+        place-within-backdrop true
+    }
