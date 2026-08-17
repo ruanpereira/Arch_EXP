@@ -54,5 +54,41 @@ require("lazy").setup({
   end,
   dependencies = { {'nvim-tree/nvim-web-devicons'}}
   },
+  "nvim-lua/plenary.nvim",  --lua functions for other plugins
+  "nvim-lualine/lualine.nvim", -- status bar
+  "nvim-tree/nvim-tree.lua", -- file explorer
+  -- auto closing
+  "windwp/nvim-autopairs", -- autoclose parens, brackets, quotes, etc...
+  -- colorizer
+  "norcalli/nvim-colorizer.lua", -- for showing hex colors on terminal
   -- { "github/copilot.vim"},
+ 
+  -- snippets
+  "L3MON4D3/LuaSnip", -- snippet engine
+  "saadparwaiz1/cmp_luasnip", -- for autocompletion
+  "rafamadriz/friendly-snippets", -- useful snippets
+ 
+  --latex (ez config) 
+  "evesdropper/luasnip-latex-snippets.nvim",
+  "lervag/vimtex",
+
+  -- autocompletion
+  "hrsh7th/nvim-cmp", -- completion plugin
+  "hrsh7th/cmp-buffer", -- source for text in buffer
+  "hrsh7th/cmp-path", -- source for file system paths
+
+   -- showing key combination
+  "folke/which-key.nvim",
+  event = "VeryLazy",
+  opts = {},
+  keys = {
+    {
+      "<leader>?",
+      function()
+        require("which-key").show({ global = false })
+      end,
+      desc = "Buffer Local Keymaps (which-key)",
+    },
+  },
+    change_detection = {notify = false},
 })

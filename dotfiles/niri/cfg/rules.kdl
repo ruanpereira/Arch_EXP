@@ -1,5 +1,5 @@
     window-rule {
-        geometry-corner-radius 2 // Set every window radius to 20
+        geometry-corner-radius 2
         clip-to-geometry true
     }
 
@@ -8,9 +8,15 @@
         open-maximized true
         match at-startup=true
     }
-    
+ 
     window-rule {
-        match app-id="Zen-Browser"
+        match app-id=r#"Alacritty"#
+        open-maximized true
+        match at-startup=true
+    }
+   
+    window-rule {
+        match app-id="Helium"
         open-maximized true
         match at-startup=true
     }
@@ -18,4 +24,20 @@
     layer-rule {
         match namespace="^noctalia-wallpaper*"
         place-within-backdrop true
+    }
+    
+    layout {
+        background-color "transparent"
+    }
+
+    window-rule {
+        match app-id="dev.noctalia.Noctalia"
+        open-floating true
+        default-column-width { fixed 1080; }
+        default-window-height { fixed 920; }
+    }
+
+    debug {
+        // Allows notification actions and window activation from Noctalia.
+        honor-xdg-activation-with-invalid-serial
     }
