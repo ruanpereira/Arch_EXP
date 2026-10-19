@@ -36,7 +36,7 @@ $ onedrive --monitor
 Para atualizar sempre:
 $ systemctl --user enable onedrive
 Para atualizar sempre, naquela sessao:
-$ systemctl -- user start onedrive
+$ systemctl --user start onedrive
 Para verificar se ta prestando:
 $systemctl --user status onedrive
 

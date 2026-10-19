@@ -128,13 +128,13 @@ It is possible by creating a folder called ```/mnt/home``` with  ```mkdir``` aft
 
 ## We format the partitions with the filesystems for each(btrfs mount):
 
-``` mkfs.btfrs -f /dev/sdy ``` (for root partitions, with the number of the partition that you created before for root)
+``` mkfs.btrfs -f /dev/sdy ``` (for root partitions, with the number of the partition that you created before for root)
 ``` mkfs.fat -F 32 /dev/sdz ``` (**only if you created an EFI partition**)
 
 
 **Only if you used btrfs!!!**
 
-## If using btfrs, first mount the partition:
+## If using btrfs, first mount the partition:
 
 mount /dev/sdx /
 
@@ -149,7 +149,7 @@ mount /dev/sdx /
 
 @pkg (/var/cache/pacman/pkg) ( btrfs subvolume create /var/cache/pacman/pkg ) 
 
-@.snapshots (  /.snapshots ) ( btrfs subolume create /.snapshots ) 
+@.snapshots (  /.snapshots ) ( btrfs subvolume create /.snapshots ) 
 
 ´´´
 
@@ -326,11 +326,10 @@ passwd *username*
 
 ```
 
-Set the permissions of the ordinary user:
+Set the permissions of the ordinary user (groups: `wheel` for root privileges via sudo, `storage` for external storage access, and `power` for power management):
 
-``` 
-usermod -aG wheel```(group to run everything and have privileges of root users),```storage```(access to external memory, such as hds, usbs, etc),```power *username*
-
+```bash
+usermod -aG wheel,storage,power <username>
 ``` 
 
 Editing the sudoers file to allow the sudo command for members of the wheel group, so that all wheel users can use sudo: 
@@ -519,12 +518,11 @@ After that:
 chmod +x ~/.config/bspwm/bspwmrc
 ´´´
 
-The copy the example config file for sxkhd ( same observation as above ):
+Then copy the example config file for sxhkd (same observation as above):
 
-´´´
-sudo cp ~/bspwm/examples/sxkhdrc ~/.config/sxkhd/
-
-´´´
+```bash
+sudo cp ~/bspwm/examples/sxhkdrc ~/.config/sxhkd/
+```
 
 Add blueman-applet to the bspwmrc config file. 
 

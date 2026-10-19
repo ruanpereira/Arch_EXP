@@ -30,7 +30,10 @@ Enable it at the .zshrc config file. I like to clone all repositories of all plu
 
 Install the font that you like, and configure it. (That kinda stucks with theming so it is optional)
 
-´´´sudo pacman -S ttf-hack(the font that i personally use)´´´
+# Fonte recomendada para o terminal
+```bash
+sudo pacman -S ttf-hack
+```
 
 
 After that, i like to use another version of the ´´´ls´´´ command, also courtesy of my friend Ezequias. 
