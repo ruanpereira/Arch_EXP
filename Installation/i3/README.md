@@ -71,9 +71,11 @@ Set the user's password:
 
 ```passwd *username*```
 
-Set the permissions of the ordinary user: 
+Set the permissions of the ordinary user (groups: `wheel` for root privileges via sudo, `storage` for external storage access, and `power` for power management):
 
-```usermod -aG wheel```(group to run everything and have privileges of root users),```storage```(access to external memory, such as hds, usbs, etc),```power *username*``` 
+```bash
+usermod -aG wheel,storage,power <username>
+``` 
 
 Editing the sudoers file to allow the sudo command for members of the wheel group, so that all wheel users can use sudo: 
 
@@ -101,7 +103,9 @@ We create a locale configuration file with the command
 
 At the end, export the language:
 
-```export LANG=en_BR.UTF-8 (same thing as above)```
+```bash
+export LANG=pt_BR.UTF-8
+```
 
 Now we create the hostname for the computer: 
 
@@ -210,7 +214,9 @@ mount /dev/sda1 /mnt2
 
 os-prober (this time it will recognize that Windows exists, and a warning message will appear. If not, just reboot again and try again, until it works.)
 
-```grub mkconfig again```
+```bash
+grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 And now dual boot is configured.
 

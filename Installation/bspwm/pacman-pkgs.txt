@@ -1,6 +1,7 @@
 # First enable multilib, paralell downloads and ILoveCandy pplssssssssss.
 # Base system install
-pakstrap -K /mnt base linux linux-firmware sof-firmware (for laptops after 2019) intel-ucode(ou adm-ucode) nano neovim networkmanager man-db man-pages texinfo doxygen
+# Nota: substitua intel-ucode por amd-ucode caso utilize processador AMD.
+pacstrap -K /mnt base linux linux-firmware sof-firmware intel-ucode nano neovim networkmanager man-db man-pages texinfo doxygen
 
 
 #Boot and processor

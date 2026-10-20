@@ -14,7 +14,7 @@ Once you have the environment installed, call ``conda activate tf``` in your ter
 
 Check that pip is installed on the env. (Inevitably we will fall into Python's dependence hell) and then do
 ```
-python3 -m pip install nvidia--cudnn-cu11=8.6.0.163 tensorflow==2.12.*
+python3 -m pip install nvidia-cudnn-cu11==8.6.0.163 tensorflow==2.12.*
 ```
 It is paramount that tensorflow and these libraries are in these versions.
 

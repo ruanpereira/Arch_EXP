@@ -1,0 +1,15 @@
+# Agentes e diretrizes de IA locais
+.agents/
+
+# Backups e arquivos temporários de editores
+*~
+*.bak
+*.swp
+*.swo
+*.tmp
+.DS_Store
+
+# Caches
+__pycache__/
+*.pyc
+.cache/
